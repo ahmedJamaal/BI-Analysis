@@ -36,4 +36,6 @@ you can adding coulmn  or rows and make conditiong on data
 # Reporter Design
 Finally we reach a stage where we are ready to report on the statistically computed values in a visually appealing way (i.e. reporting and analytics). We need to understand the different kinds of reports and different analytics options.
 
+# Here Screenshot
 
+![ScreenShot](https://github.com/ahmedJamaal/BI-Analysis/blob/master/ScreenShots/Screenshot_2019-01-28%20Dashbord.png)
