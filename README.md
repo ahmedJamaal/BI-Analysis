@@ -1,7 +1,7 @@
-# BI-Analysis
+## BI-Analysis using Pentaho Data Integration & Pentaho Report Designer
 Pentaho Business Intelligence Project Tutorial
 
-#What does Business Intelligence Developer do?
+# What does Business Intelligence Developer do?
 Business intelligence developers make the data understandable for businesses!
 
 Business intelligence (BI) leverages software tools to transform data into useful insights that help business decisions. 
