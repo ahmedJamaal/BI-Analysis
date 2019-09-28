@@ -33,7 +33,7 @@ you can get data from different resours like tables,xml files,json and data ware
 and make changes on it
 you can adding coulmn  or rows and make conditiong on data 
 
-#Reporter Design
+# Reporter Design
 Finally we reach a stage where we are ready to report on the statistically computed values in a visually appealing way (i.e. reporting and analytics). We need to understand the different kinds of reports and different analytics options.
 
 
