@@ -1,0 +1,1114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="dj_gecko dj_ff64 dj_contentbox"><head>
+  <title>Employe 2</title>
+  <meta name="helpTopic" content="CV/Business_User/about_reports.html">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale = 1, maximum-scale = 1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="viewer_data_003/ipad.css">
+
+  <link rel="stylesheet" type="text/css" media="all" href="viewer_data_003/common.css">
+  <link rel="stylesheet" type="text/css" href="pentaho.css">
+  <link rel="stylesheet" type="text/css" media="all" href="viewer_data_003/content.css">
+  <link rel="stylesheet" type="text/css" media="all" href="viewer_data_003/dialog.css">
+  <link rel="stylesheet" type="text/css" media="all" href="viewer_data_003/report.css">
+  <link rel="stylesheet" type="text/css" href="viewer_data_003/dojoThemeOverrides.css">
+
+  <!-- VizAPI 2.0 compatibility -->
+  <link rel="stylesheet" type="text/css" href="viewer_data_003/tipsy_002.css">
+
+    <script type="text/javascript" src="themeResources.js"></script><script type="text/javascript">
+
+      // Collect an array of Visualization plugin AMD modules to load, plugins add to this array through webcontext.js
+      var analyzerVizPlugins = [];
+
+      var debug = false;
+
+      var cv = {};
+      var cvCatalog = {"AccessDeniedAdministrator":"You must be a Pentaho administrator to access this functionality.","dlgErrFilterConditionNumberExpected":"<span class='dlgError'>Numeric values are expected for operands in \"Greater/Less Than, Equal to, etc.\".<\/span>","dlgChartPropsLegendPosLeft":"Left","VIZ_WATERFALL":"Waterfall","filterSummZoneHint":"<div class='filterPaneHint'>To add a new filter, drag a field from Available Fields to this area.<\/div>","filterPresetTIME_YEAR_0a1":"Current & Next Year","progressSaveReport":"Saving report ...","parameterUiDesc":"What type of file would you like this schedule to create?","popupMenuActionExport":"Export","linkDlgOpenCurrent":"Current Window","dlgReportOptionsEmptyCellsValue":"Blank measures display as","filterPresetTIME_YEAR_1":"Next Year","popupMenuProperties":"Properties...","dlgAboutFieldTypeMeasure":"Measure","filterPresetTIME_YEAR_0":"Current Year","ExceededMaxSelectionItems":"You have selected too many values, only the first {0} have been selected.","dlgNumberSubtotalMin":"Min","reportAdminActionXML":"XML","dropZoneLabels_BULLET_STYLE":"Bullet Style","RendererAcrossAllCols":"across all columns","dlgChartPropsBulletCircle":"Circle","filterOpString_EQUAL":"Include","dropZoneLabels_PIVOT_FULL_COL":"Columns","dlgSaveModelOverwriteButtonLabel":"Overwrite","actionKeepSelectedItems":"Keep Only Selection Items","dlgCreateMeasureCountLabel":"Count","dropZoneLabels_BOXPLOT_PCT05":"5% Percentil","dropZoneLabels_MULTI_CHART":"Multi-Chart","popupMenuAttributeSort":"Sort","ttHideFields":"Hide list of available fields","dlgReportOptionsDrillThrough":"Cell drill-through","dlgMeasurePropertiesFormatFieldLabel":"Format:","popupMenuRemoveFromReport":"Remove from Report","FilterPresetTIME_DATE__1_0":"Today and Yesterday","dlgFilterListTitle":"Edit Filters on %{0}","actionMoveHierarchy":"Moving Levels","dropZoneLabels_VERTICAL_BAR_ROW":"X-Axis","errorUsedByMetric":"<b>%{0}<\/b> cannot be removed because <b>%{1}<\/b> depends on it. You need to remove <b>%{1}<\/b> first.","dlgChartPropsAxisStart":"Start","FilterSummTIME_PREVIOUS":"previous {0}","dlgCSVDownloadDownload":"Export","filterValuesSummaryPartial":"Showing %{0} of %{1} values","menuNewReportInArea":"Using <b>%{0}<\/b>","FilterTIME_PREVIOUS":"Previous {0}","filterSummR_3_n1":"previous %{0}","FilterPresetTIME_QUARTER__1":"Previous Qtr","ttRemoveFilder":"Remove filter","dlgAboutFieldType":"Type","dropZoneLabels_MULTIPLE_PIE_NUM":"Measures","dropZoneLabels_SQUARE":"Square","dlgSharedName":"Display Name","dlgAttributeFilterParamName":"Parameter Name","dlgPageSetupPdfPageFormatTabloid":"Tabloid","ttClearSearch":"Clear Search","dlgPageSetupPdfPageFormatExecutive":"Executive","dlgCSVDownloadTitle":"Export to CSV","dropZoneLabels_CIRCLE":"Circle","dlgSharedAggTypeMinLabel":"Min","dropZoneLabels_HEATGRID_COL":"Y-axis","chartTreeMapRootCategoryLabel":"Root","filterTitlePlural":"%{0} Filters","dlgSummaryEditBaseNumber":"Base Measure","actionRemoveLevel":"Removing Level %{0}","dropZoneLabels_BOXPLOT_PCT25":"25% Percentil","dlgAboutFieldMemberProps":"Member Properties","dlgDrillthroughUnselectAll":"Unselect All","FilterSummNUMERIC_GREATER_THAN_EQUAL":"is greater than or equal to {0}","actionResetReport":"Resetting Report","dlgChartPropsLabelsWeight":"Weight","menuMembKEEP":"Keep Only <b>%{0}<\/b>","dlgDatePickerDatePrompt":"Type a date into the fields or click the calendar icon to select specific date ranges.","dlgAttributeFilterNoValuesSelected":"0 value selected","dropZoneLabels_COLUMN_LABEL_ANCHOR_INSIDE_BASE":"Inside Base","popupMenuNumberGreaterThan":"Greater/Less Than, Equal To, etc...","reportViewAs":"View As:","filterPresetTIME_QUARTER_n1":"Previous Qtr","dlgDatePickerDateFormatError":"Please input a valid date in YYYY-MM-DD format.","btnLabelOK":"OK","btnLabelYes":"Yes","ttShowHideFilters":"Click to show/hide filters (Ctrl+Alt+T)","dlgReportOptionsTotals":"Totals","VIZ_TREEMAP_DESC":"Treemap Chart","dlgAttributeFilterSelectLabel":"Select from a list","btnLabelNo":"No","dlgChartPropsMultiChartRangeScope_GLOBAL":"Same range for all","infoCancelReportSave":"Saving report was canceled.","popupMenuTellMeAbout":"Tell me about...","attributeBlankValue":"Not Available: spaces etc.","RendererPDFFieldsTooLong":"Unable to render report table.  The field labels used in this report are too long and cannot be displayed on a page.","dlgDatePickerDateRangeError":"Begin Date must be before End Date.","RendererGrandForAll":"for All","tabName":"Analysis Report","FilterSummEQUAL":"includes {0}","ReportErrorTopBottomChangeUndone":"Oops! You have built a report that this version of Pentaho is unable to run due to the Top 10 filter on {0} and filter on {1}. Your last change will be undone.","dlgChartPropsBackgroundFillTypeSolid":"Solid","dlgErrNumberFormatOrDecimalRequired":"<span class='dlgError'>Measure format and decimal places are required fields.<\/span>","infoCancelReportRefresh":"Report refresh was canceled.","dlgSummaryEditRankCols":"Rank Across Columns","dlgMeasurePropertiesTitle":"Measure Properties","dlgReportOptionsEmptyCells":"Blank cells","dlgChartPropsBulletSquare":"Square","btnSelectionKeepOnly":"Keep Only","popupMenuFilter":"Filter...","filterSummNUMERIC_BETWEEN":"is between %{0} and %{1}","dlgAttributeFilterIs":"is","dlgErrFilterMaxExpressions":"<span class='dlgError'>There can be at most %{0} expressions in a filter.<\/span>","dropZoneLabels_BOXPLOT_PCT50":"Median","reportRestriced":"is restricted as following:","warnMissingFields":"Some fields in this report have been made unavailable by the Administrator. They are:\n%{0}The report will open up without these fields. If there are calculated measures based on these fields, they will also be removed.","dropZoneLabels_GRID_LINE_NUM":"Measures","btnReportHelp":"Help","dlgChartPropsEmptyCellMode_ZERO":"Treat as Zero","FilterPresetTIME_QUARTER0_1_2_3":"Current and Next 3 Qtrs","dlgErrFilterConditionRequiredFields":"<span class='dlgError'>All fields are required for each condition in \"Greater/Less Than, Equal to, etc.\".<\/span>","dlgAttributeFilterNotContains":"Doesn't Contain","dlgCSVDownloadFormatting":"Keep Measure Formatting","dlgAttributeFilterIsNot":"is not","errorRptTooltipLoad":"Failed to open report information.","dlgPageSetupPdfPageFormatNote":"Note","dlgChartPropsBackgroundFillTypeGradient":"Gradient","dlgPageSetupFitWide":"page(s) wide by","popupMenuShowHideFields":"Show Hidden Fields","FilterPresetTIME_QUARTER0_1":"Current and Next Qtr","dlgCSVDownloadSubtotals":"Include Subtotals","dlgChartPropsLabelsSize":"Size","dlgDatePickerDate":"Date","enableAutoRefresh":"Enable auto refresh","actionDrillIntoChart":"Drill into chart","filterNoData":"Your current combination of %{FIELDS} and %{FILTERS} did not generate any data. %{VIEW_HELP} to learn more. %{UNDO} your last action.","ttRedo":"Redo (Ctrl+Y)","popupMenuCondFormatColorScaleBYR":"Color Scale: Blue-Yellow-Red","dlgNumberSubtotalSum":"Sum","actionKEEP":"Keeping only %{0}","menuMembSHOW_ALL":"Show All <b>%{0}<\/b>","dlgCreateMeasureTitle":"Create Measure","RendererReportName":"Report Name:","dlgSummaryEditPctOfColGrand":"Column (Grand Total Column is 100%)","dlgChartPropsSecondaryAxisTitle":"Secondary Axis","ttHideFilterPane":"Hide filter pane","GENERIC_ERROR_TITLE":"Alert","errorRenameReport":"Before renaming this report you need to save its changes.<br> Would you like to save changes now?","btnLabelHideLayout":"Hide Field Layout","dropZoneLabels_VALUE_POSITION_OUTSIDE":"Outside","FilterSummDetailed":"{0} values. The first {1} values are: {2}","actionShowField":"Show field %{0}","FilterPresetTIME_YEAR__1":"Previous Year","errorAddTrendWithFilterOnChild":"This report includes a filter over <b>%{0}<\/b>. To trend over <b>%{1}<\/b> in this report, please add <b>%{0}<\/b> to the report first.","reportAdminActionLog":"Log","reportAdminActionClearCache":"Clear Cache","ttMoreAction":"More actions and options","InvalidAnalysisArea":"This report cannot be opened. It is based on an AnalysisArea that has been (temporary) disabled by the Administrator","dlgTitleError":"Error","dlgErrNameAndNmbPeriodRequired":"<span class='dlgError'>Please provide a value for the Display Name and Number of Periods.<\/span>","dlgDrillthroughTitle":"Select Drill-Through Columns","VIZ_STACKED_VERTICAL_BAR_DESC":"Stacked Column Bar Chart","memberPropertyHelp":"%{0} is a member property of %{1}.","filterTitleNone":"No Filters","menuHideGrandTotalRow":"Hide Grand Totals for Rows","filterTemplate":"<div class='filterGroup'><\/div>","dlgCreateMeasureNameLabel":"Name","filterConditionOperators_LESS_THAN":"Less Than","dlgErrFilterLastCondition":"<span class='dlgError'>There has to be at least one condition in \"Greater/Less Than, Equal to, etc.\".<\/span>","dlgChartPropsBackgroundColor":"Fill color","dlgChartPropsLabelsFontSize":"Font Size","errorModelingNonMondrianDataSource":"Sorry, we do not currently support modeling data sources other than Mondrian","InvalidLicense":"Analysis is currently unavailable. Please contact your Administrator.","dlgReportPropsModified":"Date Modified","promptDirtyReport":"There are unsaved changes for this report. If you leave this page, the unsaved changes will be lost.","dlgAboutFieldMDX":"MDX","dlgPropertiesInvalidCharacters":"Name may not contain \\ or \"","dlgErrFieldNameFormatEmpty":"<span class='dlgError'>Please enter value for name, format and decimal places.<\/span>","dlgPageSetupPortrait":"Portrait","memberPropertiesMoreProps":"More Properties","selectSchemaNewDS":"Create Data Source","selectSchemaTitle":"Select Data Source","btnLabelClose":"Close","RendererRankAcrossRows":"across row fields","errorClearCache":"Error in clearing cache","dlgChartPropsBackgroundFillType":"Fill type","progressLoading":"Loading ...","VIZ_HEATGRID":"Heat Grid","menuHideGrandTotalCol":"Hide Grand Totals for Columns","dropZoneLabels_CROSS":"Cross","dlgTrendNumberTitle":"New Trend Measure","btnTitleHideLayout":"Hide layout panel (Ctrl+Alt+Y)","popupMenuCondFormatDataTrendArrowGR":"Trend Arrow: Green-Red","dropZoneLabels_SHOW_LABELS":"Show Labels","warnAutoRefreshPanel":"Report definition has been modified.","filterSummMetricLESS_THAN_EQUAL":"<b>%{METRIC}<\/b> is less than or equal to %{OP1} for each %{ATTR}","dropZoneLabels_GRID_HORIZONTAL_BAR_COL":"Add'l Charts","actionEXCLUDE":"Excluding %{0}","FilterSummNOT_CONTAIN":"contains no {0}","errorMissingCubeMetadata":"Unable to open report because either the data source name has been changed or you do not have access to the data source.<br><br>Details: {0}","dlgChartPropsSecondaryAxisTitleSubtext":"(Scatter and Column-Line combo charts only)","ErrorContentGenerator":"Exception occurred in Pentaho Analyzer content generator.  Please check the server log files.","promptOverwriteReport":"Report named <b>%{0}<\/b> already exists in folder <b>%{1}<\/b> (Note: report name is case-insensitive). Do you want to overwrite the existing report?","selectSchemaDeleteDS":"Delete Data Source","errorRemoveWithTrendOnAncestor":"In a report that trends over <b>%{1}<\/b> and has a filter over <b>%{0}<\/b>, <b>%{0}<\/b> must be included in the report. Please remove the filter or the trend measure <b>%{2}<\/b> before removing <b>%{0}<\/b> from the report.","dropZoneLabels_SORT_TYPE":"Order By","filterSelectionSummarySingle":"%{0} value selected","btnLabelNext":"Next","VIZ_MULTIPLE_PIE":"Pie","parameterUiPDF":"PDF","VIZ_TREEMAP":"Treemap","dlgPageSetupNormalSize":"% normal size","promptMoveFieldHierarchy":"<b>%{0}<\/b> has to be on the same axis as <b>%{1}<\/b>. Click 'OK' to move all fields.","dlgPropertiesBlankNameError":"Display Name can not be blank.","fieldTypes_TIME_SECOND":"Time - Second","fieldTypes_TIME_QUARTER":"Time - Quarter","actionAddMeasure":"Adding Measure %{0}","dropZoneLabels_TRIANGLE":"Triangle","RendererFilterSummary":"Filter Summary","filterSummMetricGREATER_THAN_EQUAL":"<b>%{METRIC}<\/b> is greater than or equal to %{OP1} for each %{ATTR}","ReportErrorNumericFilterOnSummary":"A numeric filter (e.g. Top 10, Greater/Less than) can not be applied to a summary metric: % of, Rank, Running sum etc. The measure you are attempting to filter includes a summary metric as part of its formula. The filter will be removed.","filterPresetTIME_MONTH_0a1a2a3":"Current & Next 3 Months","reportNewName":"Unsaved Report","VIZ_SCATTER":"Scatter","dlgErrNameRequired":"<span class='dlgError'>Please provide a Display Name.<\/span>","dlgErrFilterRankNumberExpected":"<span class='dlgError'>A positive integer value is expected for the operand in \"Top 10, etc.\".<\/span>","linkDlgOpenTab":"New Tab","dlgReportPluginDataDesc":"Copy or edit the visualization state JSON below","linkDlgEnable":"Enable Link","trendNumberEditTitle":"Edit Trend Measure","RendererWithinEach":"within each {0}","dropZoneLabels_PIVOT_FULL_ROW":"Rows","dlgSharedNumFormat":"Format","dlgAttributeFilterAndIncludes":"(and incl.)","dlgChartPropsSizeByMeasureTitle":"Size By Measure","errorModelingCalcMeasureValidationMissingOlapCube":"Cannot find cube: {0}","filterTemplateExpressionOR":"or","VIZ_PCT_STACKED_VERTICAL_BAR_DESC":"100% Stacked Column Bar Chart","FilterSummMetricGREATER_THAN_EQUAL":"{0} is greater than or equal to {2} for each {1}","dlgErrDuplicateName":"<span class='dlgError'>This name is already in use.<\/span>","linkRequiredFile":"Please select a valid repository file.","FilterPresetTIME_QUARTER0":"Current Qtr","FilterPresetTIME_QUARTER1":"Next Qtr","ttViewOptions":"View Options","errorReportDefinition":"There is an error in report definition.","ReportErrorTrendFreeDimension":"A trend measure requires a free dimension that is not used on the report or report filters. Your last change has been undone.","dropZoneLabels_BOXPLOT_ROW":"X-Axis","FilterPresetTIME_YEAR0_1":"Current and Next Year","dlgAttributeFilterRangeLabel":"Select a range","dlgChartPropsLineTitle":"Line Charts","RendererAcrossBothRowCol":"across both row and column fields (Table Grand Total is 100%)","filterSummMixed":"includes %{0}","dropZoneLabels_COLUMN_LABEL_ANCHOR_INSIDE_END":"Inside End","filterPresetTIME_WEEK_0":"Current Week","filterPresetTIME_WEEK_1":"Next Week","actionShowPivot":"Showing as Pivot Table","dropZoneLabels_PATTERN":"Pattern","actionUpdateCalculatedMeasure":"Update calculated member %{0}","errorUsedByTrendMetric":"<b>%{0}<\/b> cannot be removed because the trend measure <b>%{1}<\/b> depends on it. You need to remove <b>%{1}<\/b> first.","dropZoneLabels_TREND_TYPE":"Trend Type","popupMenuByNumberTextTime":"Measure - Level - Time","dlgChartPropsBulletTriangle":"Triangle","popupMenuCondFormatDataBarRed":"Data Bar: Red","FilterSummMetricEQUAL":"{0} is equal to {2} for each {1}","dropZoneLabels_VERTICAL_BAR_NUM":"Measures","VIZ_STACKED_HORIZONTAL_BAR_DESC":"Stacked Bar Chart","filterNoData.Filters":"Filters","dlgErrFilterNumericLevelNumberExpected":"<span class='dlgError'>Numeric values are expected for operands in \"Greater/Less Than, Between, etc.\".<\/span>","dlgChartPropsLabelsFontDefault":"Default","fieldSourceTime":"None","popupMenuActionChartProps":"Chart Options...","btnLabelCancel":"Cancel","filterSummMetricTOP":"<b>Top %{COUNT}<\/b> %{ATTR} by %{METRIC}","dlgReportOptionsShowMeasuresAndCalcMeasuresLabel":"Measure and calculated measure data","btnLabelHideFilters":"Hide Filters","dlgTrendNumberValue":"Value of previous period","popupMenuViewerShowColGrand":"Grand totals for columns","dlgChartPropsLegendPosTop":"Top","dlgAttributeFilterAddAnother":"Add another value","reportLegendTooLarge":"The multi-chart legend is too large to fit in this space.  Please hide the legend or position it at the top or bottom of this report.","btnClearSelections":"Clear Selections","ReportErrorTopBottomUnsupportedFilter":"Oops! You have built a report that this version of Pentaho is unable to run due to the Top 10 filter on {0} and the level {1}. Your last change will be undone.","actionAddLevel":"Adding Level %{0}","dropZoneLabels_TREEMAP_SIZE":"Size By","filterSummMetricIS_NOT_EMPTY":"<b>%{METRIC}<\/b> is not empty for each %{ATTR}","disableAutoRefresh":"Disable auto refresh","filterConditionOperators_GREATER_THAN":"Greater Than","chartTooltipFooterSelectedSingle":"<hr/>%{0} item selected","FilterSummMetricBETWEEN":"{0} is between {2} and {3} for each {1}","actionExcludeSelectedItems":"Exclude Selection Items","btnLabelDone":"Done","dropZoneLabels_GRID_HORIZONTAL_BAR_ROW":"X-axis","dlgChartPropsLabelStyleTypeItalic":"Italic","QueryCancelledException":"The report refresh has been cancelled because it has run forover 10 minutes. If your report contains many fields,filters, and calculations, then try and make the reportsimpler, or try again later.","actionShowChart":"Showing as Chart","filterHintForFind":"<i>For more values, use \"Find\" ...<\/i>","dlgSharedAggTypeDistinctCountLabel":"Distinct Count","filterPresetTIME_QUARTER_n1a0":"Current & Previous Qtr","VIZ_PCT_STACKED_HORIZONTAL_BAR":"100% Stacked Bar","HelpGeneratorLevelInvalidCharDoubleQuote":"Level names containing double quotes are not supported in Analyzer: {0}","dropZoneLabels_5_STEP":"5 Steps","dlgAttributePropertiesType":"Type","RendererExcelTableTooBig":"Unable to render report table. The table may not contain more than {0} columns or more than {1} rows.","RendererRankAcrossCol":"across column fields","filterSelectionSummaryAll":"%{0} values selected","fieldTypes_TIME_YEAR":"Time - Year","dlgReportPropsLocation":"Folder Location","dlgAttributeFilterRemoveAll":"Remove All","dlgSummaryEditRSUMRows":"Sum Across All Rows","filterSummMetricBETWEEN":"<b>%{METRIC}<\/b> is between %{OP1} and %{OP2} for each %{ATTR}","dlgPageSetupExcelTitle":"Export to Excel","dlgChartPropsEmptyCellModeTitleSubText":"(Line and area charts only)","toolbarSaveAs":"Save current report as","measureNoNumber":"No Measure Field","dlgRemoveMeasureTitle":"Remove Measure","popupMenuHideField":"Set Hidden","filterPresetTIME_DATE_n1":"yesterday","dlgSharedAggTypeAverageLabel":"Average","ropZoneLabels_GRAD_RYB":"Red, Yellow, Blue","selectSchemaDeleteDSMessage":"Are you sure you want to permanently delete {0}?","btnTitleShowFields":"Add more fields onto the report (Ctrl+Alt+F)","popupMenuExportPDF":"To PDF...","FilterSummDATE_NEXT":"tomorrow","dropZoneLabels_VERTICAL_BAR_LINE_NUMCOL":"Measures - Column","metricRANK":"Rank by %{0}","dlgNumericFilterFilterOn":"Filter on","dlgAttributeFilterAddSelected":"Add Selected","dropZoneLabels_SCATTER_NUM":"X, Y and Size","dropZoneLabels_HORIZONTAL_BAR_COL":"Series","dlgEditColumnOrigName":"Original Name","dlgDatePickerGetDateError":"An error occurred getting date from member %{0}. For more details, contact your system administrator.","dlgPropertiesHiddenDuplicateNameError":"This name is already in use by hidden measure.","dlgNumericFilterBottom":"Bottom","HelpGeneratorMeasureInvalidCharDoubleQuote":"Measure names containing double quotes are not supported in Analyzer: {0}","popupMenuHyperlink":"Hyperlink...","OpenMondrianConnection":"Opening Mondrian connection: {0}","dlgAlertTitle":"Alert","fieldTypes_TIME_WEEK":"Time - Week","promptUsedByFilter":"If you remove <b>%{0}<\/b>, then the Numeric Filter (Greater/Less Than, Top 10, etc.) will also be removed.","dlgDrillthroughSelectAll":"Select All","filterSummMetricLESS_THAN":"<b>%{METRIC}<\/b> is less than %{OP1} for each %{ATTR}","dlgTrendNumberPct":"% of change from previous period","dlgTitleRenameReport":"Rename Report","FilterPresetTIME_WEEK0":"Current Week","dlgChartPropsLabelStyleTypeBold":"Bold","refreshPanelCancelMsg":"Operation was canceled.","FilterPresetTIME_WEEK1":"Next Week","filterMatchesSummarySingle":"Showing %{0} match","refreshPanelCompleteMsg":"Report is ready.","FilterSummBEFORE":"is before {0}","actionRptFilter":"In-Table Filtering","filterSummBETWEEN":"is between (and includes) %{0} and %{1}","dlgReportOptionsNonVisual":"Totals with filtered values","popupMenuNumberColNameFormat":"Column Name and Format...","dlgPageSetupPageFormat":"Page Format","dropZoneLabels_GRID_VERTICAL_BAR_ROW":"X-axis","dlgAttributeFilterAnd":"and","dlgEditColumnOrigPluralName":"Original Plural Name","FilterSummTIME_AGO":"{0} {1} ago","actionHideGrandTotal":"Hiding Grand Total","dlgChartPropsShowLegend":"Show legend","dropZoneLabels_SUNBURST_SIZE":"Size By","VIZ_PCT_STACKED_HORIZONTAL_BAR_DESC":"100% Stacked Bar Chart","dlgNumericFilterBy":"by","dlgNumberSubtotalAggregate":"Aggregate","dlgAttributeFilterNumericFilterLabel":"Greater / Less Than, Between, etc.","fieldTypes_TIME_DATE":"Time - Date","popupMenuAttributeShowSubtotals":"Show Subtotals","VIZ_MULTIPLE_PIE_DESC":"Pie Chart","errorColumnSelectionFilters":"Levels cannot be added to the Columns zone when the report contains selection filters.  Please remove the Custom Selection Items or add the Level to the Rows zone.","dlgAttributeFilterShowAllValues":"Showing all values","dropZoneLabels_CHART_OPTIONS":"Chart Options...","dlgDatePickerDateBegin":"Begin Date","fieldTypeLabels_NUMBER":"Measure","actionSort":"Sorting by %{0}","LicenseErrorTitle":"Sorry, something went wrong.","ttHelpOnFilters":"Help on Filters","dlgTrendNumberNote":"Note","fieldListFind":"Find","btnLabelBack":"Back","actionKEEP_AND_DRILL":"Keeping only %{0} and showing %{1}","dlgChartPropsMaxChartsPerRow":"Charts per row","dlgAttributeFilterExcluded":"Excluded","dropZoneLabels_SORT_TYPE_BYSIZEDESCENDING":"Sort Descending","ANALYZER_EXPORT_BY":"\nBy","dlgReportOptionsFreezeRows":"Row labels","chartTooltipHyperlinkDefaultTitle":"open hyperlink","dlgChartPropsAxisAutoRange":"Auto range","dlgNumericFilterTop":"Top","dlgSharedNumDecimalPlaces":"Decimal Places","popupMenuNumberUserDefNumber":"User Defined Measure","dlgErrFilterConditionOp2LTOp1":"<span class='dlgError'>The value of the 2nd operand should be larger than that of the first operand.<\/span>","errorNoFieldForTrend":"A Level or Time Field is required to be present on the report in order to create a Trend Measure.","Launcher.ANALYZER_TOOLTIP":"New Analyzer Report","dlgReportPropsCube":"Based on Cube","dropZoneLabels_GRID_AREA_NUM":"Measures","RendererPDFTooManyCols":"Unable to render report table.  The table contains more than {0} columns.","FilterSummNUMERIC_LESS_THAN_EQUAL":"is less than or equal to {0}","popupMenuViewerShowRowGrand":"Grand totals for rows","dlgPageSetupPdfPageFormatLetter":"Letter","dropZoneLabels_LINE_NUM":"Measures","actionSHOW_ALL":"Showing all %{0}","filterSummNOT_EQUAL":"excludes %{0}","dlgAboutFieldRenamed":"NOTE: Renamed to \"%{0}\" in this report.","dlgInfoFilterOnParent":"<span class='dlgInfo'>The list of values has been reduced due to your filter on %{0}.<\/span>","dlgAttributeFilterTitle":"Filter on %{0}","actionHide":"Hiding %{0}","dlgPageSetupExcelPageFormatA4":"A4","dlgPageSetupExcelPageFormatA5":"A5","popupMenuFilterAdd":"Add Filter...","VIZ_PIVOT_DESC":"Table","RendererTrendAhead":"Ahead","filterPresetTIME_DATE_n1a0":"today & yesterday","dlgAttributeFilterExcludes":"Excludes","dlgTrendNumberNumPeriods":"Number of Periods","infoMergeFilter":"The report already has a filter of type \"%{0}\" on %{1}. The two filters have been combined into one filter.","FilterPresetTIME_MONTH0_1_2_3":"Current and Next 3 Months","dlgChartPropsLabelStyleTypeNormal":"Normal","dlgChartPropsBackgroundTitle":"Background","btnSelectionExclude":"Exclude","FilterSummNUMERIC_GREATER_THAN":"is greater than {0}","RendererNoValue":"None","DrillRowCountWarning":"- Warning:  Only showing the first {0} of {1} rows.","metricNewSummary":"New %{0}","dropZoneLabels_HORIZONTAL_BAR_ROW":"Y-Axis","FilterSummTIME_NEXT":"next {0}","dlgChartPropsDomainTitle":"Domain Limit","dlgTrendNumberMovingAvg":"Average of previous periods","dropZoneLabels_SORT_TYPE_BYSIZEASCENDING":"Sort Ascending","dlgSharedErrorPositiveInteger":"Please specify a positive numeric value with no decimals","dlgSummaryEditPctRSUMCols":"Sum Across All Columns","RelativeTimeFilterError":"Unable to create relative date member on level: {0}.  Please verify that this level has defined the AnalyzerDateFormat annotation.","attributeNullValue":"Not Available","dropZoneLabels_VERTICAL_BAR_LINE_NUMLINE":"Measures - Line","dlgAttributeFilterNext":"Next","ttChartType":"Choose chart type to show report","dlgTrendNumberDelta":"Delta from previous period","dropZoneLabels_BOXPLOT_PCT75":"75% Percentil","dropZonePlaceholder_number":"Drop Measure Here","ReportErrorPCTSummaryRestriction":"Oops! You have built a report that this version of Pentaho is unable to run due to the {0} measure based on a {1} measure. Your last change will be undone.","selectSchemaEditDS":"Edit Data Source","dlgPageSetupExcelPageFormatLegal":"Legal","dlgNumericFilterWhereValue":"where value is","VIZ_LINE":"Line","dlgEditColumnPluralName":"Plural Name used in this report","filterSummMetricNOT_EQUAL":"<b>%{METRIC}<\/b> is not equal to %{OP1} for each %{ATTR}","FilterSummDATE_CURRENT":"today","dlgAboutFieldTitle":"About %{0}","dropZoneLabels_VALUE_POSITION":"Data Labels","dlgChartPropsEmptyCellMode_GAP":"Show Gap","fieldListAvailableFieldFor":"for","dlgPageSetupCancelTitle":"Discard all changes and close dialog","menuHideFromChart":"Hide from Chart","RendererPDFFontException":"Unable to load custom font for rendering Analyzer PDF report.  Please check the font path: {0}","toolbarBack":"Return to previous page","dlgAttributeFilterTimeLabel":"Choose a commonly used time period","dlgSummaryEditRankRows":"Rank Across Rows","dlgSummaryNewTitle":"New % of, Rank, Running Sum, etc.","errorInvalidAnalysisArea":"This report cannot be opened since it was built on an Analysis Area that is currently unavailable. Please contact your Administrator.","errorEmailNewReport":"You must save the report first before emailing it.","actionEdit":"Editing %{0}","dlgChartPropsEmptyCellMode_LINEAR":"Connect with Dotted Line","fieldTypeLabels_ATTRIBUTE":"Level (Names, Categories, etc.)","metricPCTRSUM":"% of Running Sum of %{0}","actionOpenReport":"Opening Report","dropZoneLabels_BOXPLOT_PCT95":"95% Percentil","dlgSaveModelNewButtonLabel":"New","dropZoneLabels_COLUMN_LABEL_ANCHOR_NONE":"None","popupMenuExportCSV":"To CSV...","dlgAttributeFilterAgo":"ago","dropZoneLabels_GRID_HORIZONTAL_BAR_NUM":"Measures","fieldTooltipMoreLink":"Tell me more...","dlgCalcNumApplyDataSourceDesc":"Apply to data source","actionMoveMeasure":"Moving Measure %{0}","dlgNumberSubtotalsLabel":"For <b>%{0}<\/b>, show these <b>types of totals","dlgReportOptionsFreezeColumns":"Column headers","linkFileRemoved":"The previously selected Pentaho Solution Repository file no longer exists and has been removed from this link.","FilterPresetTIME_DATE__1":"Yesterday","popupMenuAttributeAlsoShow":"Also Show","fieldTypeLabels_TIME":"Time","FilterPresetTIME_QUARTER__4_0":"Current and Same Qtr Year Ago","dlgChartPropsDomainMaxValues":"Max number of plot values","toolbarNew":"Create a new report","ttSwitchToTable":"Switch to table format (Ctrl+Alt+C)","ReportErrorLookup":"Your data does not contain any {0} values on or near {1}","dlgPageSetupExportTitle":"Save settings to report, generate export and then close this dialog","dlgPropertiesTitle":"%{0} Properties","filterValuesSummaryAll":"Showing all %{0} values","dlgMemberProperties":"Member Properties","dlgPropertiesDuplicateNameRenamedError":"The name {0} is already being used. The measure {1} was previously named {0} and can't be reused.","ttEditFilder":"Edit filter","dlgChartPropsBackgroundFillTypeNone":"None","dlgPageSetupPdfPageFormatLegal":"Legal","btnLabelShowLayout":"Show Field Layout","FilterSummTIME_CURRENT":"current {0}","KioskModeSaveError":"Report saving has been disabled in this hosted demo.","filterSummMetricBOTTOM":"<b>Bottom %{COUNT}<\/b> %{ATTR} by %{METRIC}","dlgAttributeFilterContains":"Contains","CANNOT_PRINT_VIZ":"Exports of this visualization type are currently not supported. Would you still like to export the Data Table only?","VIZ_HORIZONTAL_BAR_DESC":"Bar Chart","ReportErrorTrendAboveNonVisualFilter":"A report cannot contain a non visual filter at a level ({0}) lower than the trend level({1}). The filter or the trend shall be removed.","MISSING_VISUAL_MODEL_ERROR_TITLE":"Missing visualization","btnLabelApply":"Apply","transTruncate":"The cell limit has been reached. We are only showing a subset of your data.","dropZoneLabels_REPORT_OPTIONS":"Report Options...","filterPresetTIME_MONTH_n12a0":"Current & Same Month Year Ago","filterSummTIME_AGO":"includes %{0} %{1} ago","FilterPresetTIME_YEAR0":"Current Year","FilterPresetTIME_YEAR1":"Next Year","linkDlgParmName":"Destination Parameter","menuMembEXCLUDE":"Exclude <b>%{0}<\/b>","errorBreakFieldHierarchy":"<b>%{0}<\/b> has to be on the same axis as <b>%{1}<\/b>.","errorSaveReport":"Error in saving report.","dropZoneLabels_GRID_VERTICAL_BAR_NUM":"Measures","dlgSaveModelOverwriteLabel":"Do you want to save a new model, or overwrite the original?","missingFieldLabel":"(Field Missing!)","popupMenuNumberShowOnChart":"Show on Chart","dropZoneLabels_GRADIENT":"Gradient","filterSummZoneNone":"<div class='filterPaneHint'>No filter has been defined.<\/div>","dlgReportOptionsShowMeasuresLabel":"Measure data","dropZoneLabels_VERTICAL_BAR_COL":"Series","FilterPresetTIME_DATE0_1":"Today and Tomorrow","filterSummCONTAIN":"contains %{0}","FilterSummMetricLESS_THAN":"{0} is less than {2} for each {1}","FilterPresetTIME_MONTH__12_0":"Current and Same Month Year Ago","FilterSummTIME_YAGO":"same {0} last year","dlgSharedAggTypeCountLabel":"Count","dlgPageSetupExcelPageFormatEnvelopeMonarch":"Envelope Monarch","FilterPresetTIME_WEEK0_1_2_3":"Current and Next 3 Weeks","dlgChartPropsMultiChartTitle":"Multi-Charts","dlgErrGeneric":"<span class='dlgError'>Oops. There was an error. Please try again, or contact your administrator.<\/span>","dropZoneLabels_VALUE_COLUMN_ANCHOR":"Column Data Labels","dlgCSVDownloadDescription":"Please select your export options","ttFilterLocked":"Filter locked","dlgSharedErrorValidNumber":"Please specify a valid numeric value.","VIZ_STACKED_VERTICAL_BAR":"Stacked Column","dlgSummaryEditPctOfRowGrand":"Row (Grand Total Row is 100%)","dlgPageSetupAdjustTo":"Adjust to:","VIZ_VERTICAL_BAR_LINE":"Column-Line Combo","dlgPageSetupExcelPageFormatEnvelopeDL":"Envelope DL","filterPresetTIME_MONTH_0a1":"Current & Next Month","dlgChartPropsAxisTitleBar":"Axis","dlgAboutFieldDescription":"Description","MissingCubeHelp":"Unable to find cube: {0} in Mondrian schema: {1}","dropZoneLabels_HEATGRID_SIZE":"Size By","btnTitleHelp":"Get help on this topic","RendererDataExported":"Date Exported:","infoExceededMaxSelectionItems":"You have selected too many values, only the first %{0} have been selected.","metricEXPRESSION":"Calculated Measure %{0}","parameterUiExcel":"Excel","actionRemoveCondFormat":"Removing Conditional Formatting on %{0}","popupMenuCondFormatDataBarGreen":"Data Bar: Green","dlgPageSetupExcelPageFormatEnvelopeCS":"Envelope CS","dlgAttributeFilterBefore":"Before","btnTitleHideFields":"Hide list of available fields (Ctrl+Alt+F)","filterSummSimple":"<a id='F_%{0}_%{1}' onclick=\"cv.getActiveReport().filterDlg.showAttrSelection('%{0}','%{1}','%{2}')\">%{2} values<\/a>","dlgPageSetupExcelPageFormatExecutive":"Executive","ttDeleteCondition":"Delete condition","filterPresetTIME_DATE_0a1":"today & tomorrow","dlgNumberSubtotalTotal":"Total","dlgPageSetupPdfPageFormatLedger":"Ledger","RendererTrendBack":"Back","filterMetricSubtitle":"Filter on <b>%{0}<\/b> where value is:","dlgDatePickerNearbyInfo":"Your data does not contain any %{0} values on %{1} so the nearest %{0} %{2} on %{3} was selected.","actionSwapMeasure":"Swapping with %{0}","dropZoneLabels_PCT_STACKED_VERTICAL_BAR_ROW":"X-Axis","dlgAttributeFilterAddAll":"Add All","popupMenuNumberEdit":"Edit","chartTooltipFooterSelectedMany":"<hr/>%{0} items selected","fieldTypes_PROPERTY":"Member Property","dropZoneLabels_NONE":"None","dlgAttributeFilterLoadingShort":"Loading...","filterSummEQUAL":"includes %{0}","dlgReportOptionsDrillThroughColumns":"Select drill-through columns","dlgChartPropsBulletNone":"None","errorLoadReport":"There was an error refreshing your report.","dropZoneLabels_SCATTER_ROW":"Points","filterSummNULL":"is null","VIZ_PIVOT":"Table","dlgDatePickerDateEnd":"End Date","Launcher.NEW_ANALYZER_REPORT":"New<br/>Analyzer Report","actionUpdateMeasure":"Update measure %{0}","errorSavingModelChanges":"Sorry, there was a problem saving the model. Report save aborted. Please check the server log for details.","fieldTypes_NUMBER":"Measure","dlgNumberSubtotalAverage":"Average","dlgTrendNumberPeriodType":"Period Type","selectSchemaDataSource":"Data Sources","dropZoneLabels_HORIZONTAL_BAR_NUM":"Measures","filterPresetTIME_WEEK_0a1a2a3":"Current & Next 3 Weeks","actionShow":"Showing %{0}","dropZoneLabels_VALUE_POSITION_INSIDE":"Inside","dropZoneLabels_SORT_TYPE_NONE":"Sort by Layout","filterSummNUMERIC_GREATER_THAN_EQUAL":"is greater than or equal to %{0}","VIZ_STACKED_AREA":"Area","dlgRemoveMeasureWarningLabel":"This will remove the selected measure from the model. Are you sure?","dlgSummaryEditPctOfEachTotal":"Column/Row Subtotal (Subtotal is 100%)","dropZoneLabels_VALUE_ANCHOR_DOTS_TOP":"Above","MISSING_VISUAL_MODEL_ERROR":"The {0} visualization is missing. This report will default to the pivot table.<br><br>If you want to continue using reports with {0} contact your administrator to add the visualization to the system.","dlgPageSetupExcelPageFormatEnvelope10":"Envelope #10","popupMenuNumberSummary":"% of, Rank, Running Sum...","ResultLimitExceeded":"This report is too big to display. Please add more filters or remove some fields.","FilterSummNOT_EQUAL":"excludes {0}","FilterSummTIME_RANGE_PREV":"previous {0} {1}","dlgErrFilterMaxMembers":"<span class='dlgError'>There can be at most %{0} values in a filter.<\/span>","popupMenuAddToDataSource":"Add to Data Source","FilterSummMetricLESS_THAN_EQUAL":"{0} is less than or equal to {2} for each {1}","ttReset":"Go back to the last saved version of the report (CTRL+Q)","dlgSharedAggTypeSumLabel":"Sum","RendererAcrossColFields":"across column fields (Grand Total Column is 100%)","dlgDrillthroughNoFieldsError":"Please select at least one measure or level.","dropZoneLabels_PROPERTIES":"Properties","toolbarOpen":"Open existing report","dlgReportPropsModifiedBy":"Modified By","dlgChartLegendBackgroundColor":"Background color","dropZoneLabels_VALUE_ANCHOR":"Data Labels","filterConditionOperators_NOT_EQUAL":"Not Equal to","colTruncate":"Showing %{0} columns. Add more filters to reduce the number of columns.<br>To see all columns, download the report to Excel or PDF files.","filterConditionOperators_LESS_THAN_EQUAL":"Less Than or Equals","errorSessionTimeout":"Your session has expired, and you will be redirected to the login page.\"","FilterPresetTIME_WEEK__1":"Previous Week","actionMoveLevel":"Moving Level %{0}","popupMenuCalculatedMeasureProperties":"Calculated Measure Properties...","ttSwitchToChart":"Switch to chart format (Ctrl+Alt+C)","dropZoneLabels_SCATTER_COL":"Color By","dropZoneLabels_WATERFALL_COL":"Series","popupMenuCreateCalculatedMeasure":"Create Calculated Measure...","filterSummNUMERIC_GREATER_THAN":"is greater than %{0}","dlgChartPropsEmptyCellModeTitle":"Empty cell treatment","dropZoneLabels_LINE_COL":"Series","FilterSummTIME_AHEAD":"{0} {1} ahead","dropZoneLabels_COLORSET_REVERSE":"Reverse Colors","popupMenuTotalsNonVisual":"Display Totals that Includes Filtered Out Values","FilterSummDATE_PREVIOUS":"yesterday","reportTableCount":"Rows: %{0}&nbsp;&nbsp;Cols: %{1}","actionHideField":"Hide field %{0}","dropZoneLabels_TREEMAP_ROW":"Data Points","dlgPageSetupFitTo":"Fit to:","chartTooltipFooterHyperlink":"Double-click to %{0}","popupMenuNumberSortHighLow":"Sort %{0} High&#8594;Low","successSaveReport":"Report saved successfully.","dropZoneLabels_STACKED_HORIZONTAL_BAR_NUM":"Measures","filterSummBEFORE":"is before (and includes) %{0}","popupMenuActionAdmin":"Administration","filterSummMetricGREATER_THAN":"<b>%{METRIC}<\/b> is greater than %{OP1} for each %{ATTR}","linkDlgURL":"URL","dlgChartPropsLabelsFontColor":"Color","dlgChartPropsOtherTitle":"Other","dlgReportOptionsEmptyCellsOption":"Show rows or columns with","dropZoneLabels_SCATTER_Z":"Size By","actionUpdateAttribute":"Update Attribute %{0}","popupMenuRemoveMeasure":"Remove measure...","dropZoneLabels_SCATTER_X":"X-Axis","dropZoneLabels_SCATTER_Y":"Y-Axis","fieldTypes_CALCULATED_NUMBER":"Calculated Measure","dropZoneLabels_PIVOT_ROW":"Rows","dlgChartPropsBackDefaultGradient":"Default Gradient","actionEditFilter":"Editing Filter","reportDashboardActions":"Actions","fieldTypes_TIME_HOUR":"Time - Hour","dropZoneLabels_GRID_AREA_COL":"Add'l Charts","linkDlgTitle":"Link on %{0}","filterOpString_NOT_CONTAIN":"Not Contain","VIZ_PCT_STACKED_VERTICAL_BAR":"100% Stacked Column","dlgReportXMLDesc":"Copy or edit the report definition XML document below","RendererDescription":"Description:","popupMenuNumberCalculated":"Calculated Measure...","dlgAttributeFilterDatePickerTitle":"Select %{0} using dates","dlgChartPropsLegendTitle":"Legend","reportNoDataMsg":"This report has no data.","dlgReportPropsCreated":"Date Created","ttDisableAutoRefresh":"Disable auto refresh","actionNonVisual":"Toggling Non-Visual Grand Total","dlgNumberSubtotalCount":"Count","refreshButton":"Refresh Report","dlgPageSetupDoneTitle":"Save settings to report and close this dialog","filterNoData.ViewHelp":"View Help","RendererCalculatedBasedOn":"This measure is calculated based on the following formula: {0}.","dropZoneLabels_WATERFALL_ROW":"X-Axis","FilterPresetTIME_MONTH__1_0":"Current and Previous Month","chartTooltipGemInterp_zero":"(empty treated as zero)","actionSelectionFilterDisabledTooltip":"Chart selections have been disabled because this report contains more than one field in the Columns zone.","dlgCreateMeasureMinLabel":"Min","popupMenuActionAbout":"About this Report...","dropZoneLabels_PCT_STACKED_VERTICAL_BAR_COL":"Color Stack","dropZoneLabels_TREND_NAME":"Name","VIZ_HORIZONTAL_BAR":"Bar","filterPresetTIME_MONTH_n1a0":"Current & Previous Month","popupMenuCondFormatColorScaleRYG":"Color Scale: Red-Yellow-Green","dropZoneLabels_GRID_AREA_ROW":"X-axis","linkDlgOpenIn":"Open In:","popupMenuCondFormatColorScaleRYB":"Color Scale: Red-Yellow-Blue","FilterPresetTIME_WEEK0_1":"Current and Next Week","dlgSharedNumFormatExp":"Expression","dropZoneLabels_LINE_ROW":"X-Axis","filterOpString_NOT_EQUAL":"Exclude","filterNoData.Fields":"Fields","filterConditionOperators_IS_NOT_EMPTY":"Is Not Empty","dlgChartPropsLegendPos":"Position","actionRemove":"Removing %{0}","dlgChartPropsSizeByNegativesMode_NEG_LOWEST":"Smallest Value","linkDlgHelp":"Show a hyperlink on %{0} values that opens a Pentaho Repository File or URL.  To dynamically substitute the current %{0} value into a parameter or URL, use the string: <b>{%{0}}<\/b>","dlgSummaryEditRSUMCols":"Sum Across All Columns","dlgCalcNumSubtotalCalcDesc":"Calculate subtotals using measure formula","filterSummAFTER":"is after (and includes) %{0}","FilterSummTIME_RANGE_NEXT":"next {0} {1}","dropZoneLabels_VERTICAL_BAR_LINE_COL":"Series","openNewAnalyzerReport":"Analysis Report","filterAttrViewer":"Values","popupMenuNumberTrend":"Trend Measure...","actionImport":"Importing Report","errorNoAttributeInReport":"To create a numeric filter, the report first needs at least one level field (Time Periods, Names, Categories, etc.).","dlgCalcNumClear":"Clear","errorBadReport":"Cannot load the report: %{0}","reportHelpGettingStarted":"Need help getting started?","dlgPageSetupPdfPageFormatPostcard":"Postcard","RendererBreakBy":"breaking by {0}","dropZoneLabels_VALUE_ANCHOR_DOTS_CENTER":"Center","fieldTooltipNone":"No description available.","emptyVizArea":"Drag an available field to the required layout zones.","VIZ_VERTICAL_BAR_DESC":"Column Bar  Chart","dlgPageSetupLandscape":"Landscape","RendererGrand":"Grand","filterSummNOT_NULL":"is not null","errprFilterMaxMembers":"You have reached the limit of %{0} values in the filter.","metricPCTOF":"% of %{0}","dropZoneLabels_PCT_STACKED_HORIZONTAL_BAR_COL":"Color Stack","errorModelingNotAuthorized":"You do not have permission to modify the model.","ttGeneral":"General","dlgInfoNonvisualTotal":"<span class='dlgInfo'>Totals include items excluded from the report by filters.<\/span>","filterPresetTIME_DATE_0":"today","filterPresetTIME_DATE_1":"tomorrow","linkDlgType":"Link To","VIZ_SCATTER_DESC":"Scatter Chart","RendererAboutReport":"About this Report","fieldTypes_TIME_MONTH":"Time - Month","dropZoneLabels_TREND_NAME_LINEAR":"Linear Trend","RendererAcrossRowFields":"across row fields (Grand Total Row is 100%)","dlgSummaryEditPctOfEach":"Each","summaryMetricTitle":"New % of, Rank, Running Sum, etc.","dlgPropertiesMDX":"MDX","dropZoneLabels_PIVOT_COL":"Columns","transformationReportFieldsNoData":"The selections did not generate any data.","linkDlgBrowseButton":"Browse...","dlgAttributeFilterLoading":"Loading values for %{0} ...","filterMatchesSummaryAll":"Showing all %{0} matches","filterOpString_CONTAIN":"Contain","dlgCalcMeasureType":"Calculated Measure","dropZoneLabels_VERTICAL_BAR_LINE_ROW":"X-Axis","selectSchemaDesc":"Specify which data source you want to analyze.  Each data source consists of a schema and a cube in the schema.  This will determine which fields you will have available.","dropZoneLabels_STACKED_AREA_NUM":"Measures","dlgChartPropsLineBullet":"Bullet Style","actionAdd":"Adding %{0}","dlgPropertiesHiddenDuplicateNameRenamedError":"The name {0} is already being used. The hidden measure {1} was previously named {0} and can't be reused.","filterTemplateNone":"not defined","popupMenuActionResetColSize":"Reset Column Sizes","dlgSharedAggTypeMaxLabel":"Max","VIZ_BOXPLOT":"Box plot","filterSummTIME_AHEAD":"includes %{0} %{1} ahead","filterSummTIME_YAGO":"includes same %{0} last year","warnBadFilters":"Some filters in this report are corrupted. The report will open up without these filters.","dlgChartPropsAxisUnits":"Scale","Launcher.ANALYZER_REPORT":"Analyzer Report","dlgChartPropsTitle":"Chart Options","fieldTypes_ATTRIBUTE":"Level (Names, Categories, etc.)","popupMenuNumberCondFormat":"Conditional Formatting","dlgMeasurePropertiesFormatToggleTitle":"Click here to enter a custom format.","FilterSummMetricNOT_EQUAL":"{0} is not equal to {2} for each {1}","dlgTrendNumberMovingSum":"Sum of previous periods","popupMenuViewerShowReport":"Show Report as Table/Chart","filterNoData.Undo":"Undo","dlgPageSetupOrientation":"Orientation","dlgPropertiesDuplicateNameError":"This name is already in use.","dlgSummaryNewChooseType":"Choose the measure field that you want to create","btnTitleShowLayout":"Rearrange fields on the report (Ctrl+Alt+Y)","dropZoneLabels_PCT_STACKED_HORIZONTAL_BAR_ROW":"Y-axis","dlgAttributeFilterCurrently":"Currently","btnLabelContinue":"Continue","errorGenerateReport":"There was an error refreshing your report. Your last change has been undone.","FilterPresetTIME_DATE1":"Tomorrow","chartAxisTitleMultipleDimText":"%{0} and %{1}","FilterPresetTIME_DATE0":"Today","RendererNoDataWarning":"This report has no data.","filterConditionOperators_EQUAL":"Equals","popupMenuCondFormatColorScaleGYR":"Color Scale: Green-Yellow-Red","FilterSummNUMERIC_LESS_THAN":"is less than {0}","ReportLimitException":"Oops. There is too much number crunching required to run your report. If you are using an \"Excludes\" or \"Doesn''t Contain\" filter, try removing or flipping them to \"Include\" or \"Contains\" filter. You can also try turning off subtotals, grand totals and empty cells.","chartTooltipFooterContentlink":"Double-click to update linked content","popupMenuAttributeTop10":"Top 10, etc...","errorModelingCalcMeasureValidationReportMeasure":"Unable to apply to data source because the measure expression contains user defined numbers.","dropZoneLabels_DIAMOND":"Diamond","dropZoneLabels_COLUMN_LABEL_ANCHOR_CENTER":"Center","dropZoneLabels_STACKED_VERTICAL_BAR_NUM":"Measures","fieldGroupNoValue":"Not yet classified","dlgChartPropsAxisStop":"Stop","menuShowOnChart":"Show on Chart","dlgAttributeFilterMatchLabel":"Match a specific string","filterPresetTIME_QUARTER_0a1":"Current & Next Qtr","ropZoneLabels_GRAD_BLUE":"Blue Scale","RendererPDFTooManyRows":"Unable to render report table.  The table contains more than {0} rows.","actionShowSubtotal":"Showing Subtotal for %{0}","btnLabelShowFilters":"Show Filters","dlgErrTrendNumberAmountNumberExpected":"<span class='dlgError'>Please provide a positive number for the lead or lag amount.<\/span>","VIZ_STACKED_AREA_DESC":"Area Chart","VIZ_VERTICAL_BAR":"Column","dlgEditColumnMDXFormatExp":"MDX Format Expression","metricRSUM":"Running Sum of %{0}","fieldTypes_TIME_MINUTE":"Time - Minute","linkRequiredURL":"URL is a required field.","FilterSummSimple":"{0} values","successRenameReport":"Report was renamed.","titleSwitchChartTypeTT":"Choose another chart type","actionCancel":"Canceling Report","dlgErrFilterRequiredExpression":"<span class='dlgError'>Please enter at least one value.<\/span>","filterSummNOT_CONTAIN":"contains no %{0}","popupMenuAttributeShowProps":"Show Properties","dropZoneLabels_GRID_VERTICAL_BAR_COL":"Add'l Charts","dlgChartPropsBulletDiamond":"Diamond","ReportErrorTrendOnSummary":"A trend measure can not be built directly or indirectly on summary metric: % of, Rank, Running sum etc. The trend being added is based on summary metrics. This trend measure will be removed.","dropZoneLabels_GRAD_RYG":"Red, Yellow, Green","dlgChartPropsLineWidth":"Line Width","popupMenuEditField":"Create measure...","RendererLocation":"Report Location:","errorDlgLoad":"Failed to open dialog.","ReportErrorSortOnRSUM":"Sorting on a Running Sum measure or measure derived from a Running Sum is not supported. Your last change has been undone.","filterPresetTIME_WEEK_n1a0":"Current & Previous Week","FilterPresetTIME_MONTH0":"Current Month","FilterPresetTIME_MONTH1":"Next Month","dlgSummaryEditRSUMBreakBy":"Break by","memberPropertiesAddProps":"All Properties","RendererCreatedOn":"Created on:","dlgReportOptionsShowBlankMeasuresLabel":"Show all even blank measures","editColumn":"Edit Column","popupMenuCondFormatDataTrendArrowRG":"Trend Arrow: Red-Green","btnTitleHideFilters":"Hide filters (Ctrl+Alt+T)","summaryMetricEditTitle":"Edit % of, Rank, Running Sum","metricTREND":"Trend of %{0}","dlgAttributeFilterIncluded":"Included","FilterPresetTIME_QUARTER__1_0":"Current and Previous Qtr","errorDisabledSort":"Reports that contain Running Sums or % Running Sums cannot be sorted.","dlgSelectionValues":"Selection Items","reportErrorTicket":"Oops. There was an error. If this happens again, please contact your Administrator (Message Id: %{1})","dlgAttributeFilterSelectDatePicker":"(Select from date picker)","filterConditionOperators_GREATER_THAN_EQUAL":"Greater Than or Equals","actionRemoveSelectionFilters":"Remove Filters on Selection Items","actionChartProps":"Updating Chart Options","menuMembKEEP_AND_DRILL":"Keep Only <b>%{0}<\/b> And Show <b>%{1}<\/b>","dlgTrendNumberNoteText":"To trend, use time attributes only (e.g. Year, Quarter, Month).<br>To select a time attribute, you need to include one in the report.","dropZoneLabels_PIVOT_FULL_NUM":"Measures","actionChartResize":"Resizing Chart Report","linkFileOpenError":"Unable to open Pentaho solution repository file","dlgSelectionFilterTitleINCLUDE":"Keep Only Selection Items","dropZoneLabels_SHOW_AS_GAPS":"Show as Gaps","actionAddCondFormat":"Adding Conditional Formatting on %{0}","dlgSharedNumFormatPct":"Percentage (%)","actionChartType":"Changing Chart Type","dlgFilterListChooseFilter2":"click here","dlgFilterListChooseFilter3":"to add a new filter","dlgFilterListChooseFilter1":"Choose which filter to edit (below), or","FilterPresetTIME_MONTH__1":"Previous Month","dlgAttributeFilterAfter":"After","dlgTrendNumberTrendOn":"Trended Measure","filterSummR_3_0":"current %{0}","ExceededMaxChartValues":"Your chart contains too many values, only the first {0} have been displayed.  You can increase this limit by updating Max Number of Plot Values in Chart Options.","dropZoneLabels_STACKED_HORIZONTAL_BAR_ROW":"Y-Axis","filterPresetTIME_QUARTER_1":"Next Qtr","exceptionGenerateReport":"Failed to refresh report. Please see report area below for more information.","filterPresetTIME_QUARTER_0":"Current Qtr","filterSummR_3_1":"next %{0}","btnLabelShowFields":"Show Field List","filterPresetTIME_MONTH_n1":"Previous Month","errorDuplicateItemInReport":"<b>%{0}<\/b> is already used in the report.","FilterTIME_NEXT":"Next {0}","filterMatchesSummaryPartial":"Showing %{0} of %{1} matches","FilterSummAFTER":"is after {0}","dropZoneLabels_VALUE_ANCHOR_DOTS_NONE":"None","warnSortMetric":"<b>%{0}<\/b> is sorted by <b>%{1}<\/b> within each <b>%{2}<\/b>.","actionRename":"Renaming Field","dlgSummaryEditPctOfReportGrand":"Grand Total (Table Grand Total is 100%)","dlgErrFilterNoSelection":"<span class='dlgError'>Please select at least one item from the list.<\/span>","HelpGeneratorNotDateFormatAnnotation":"Relative date filter on {0} of type {1} disabled because no AnalyzerDateFormat or AnalyzerFiscalDateFormat annotation found in Mondrian schema","parameterUiCSV":"CSV","dlgChartPropsAxisTitle":"Primary Axis","ReportException":"An exception occured in processing your report. Please try again later.","FilterSummNone":"None","FilterSummCONTAIN":"contains {0}","popupMenuNumberSwapMeasure":"Swap Chart Measure","dlgCalcNumTitle":"Create Calculated Measure","actionUndo":"Undo %{0} (Ctrl+Z)","dropZoneLabels_MULTIPLE_PIE_COL":"Multi-Pie","dlgNumberSubtotalsTitle":"Average, Max, Min, etc.","dlgNumericFilterCondition":"Greater / Less Than, Equal to, etc.","filterSummTIME_RANGE_PREV":"includes previous %{0} %{1}","dlgAttributeFilterIncludes":"Includes","ttRefreshReport":"Refresh report","dropZoneLabels_WATERFALL_NUM":"Measures","dropZoneLabels_EMPTY_SLICES":"Empty Slices","linkDlgFileLabel":"File","FilterSummNUMERIC_BETWEEN":"is between {0} and {1}","dlgSummaryEditRank":"Rank by","actionCreateCalculatedMeasure":"Create calculated member %{0}","HelpGeneratorMeasureInvalidCharBackslash":"Measure names containing backslashes are not supported in Analyzer: {0}","dlgChartPropsLegendPosRight":"Right","fieldListCount":"Matching %{0} fields","FilterSummMetricTOP":"Top {2} {1} by {0}","filterSummMetricEQUAL":"<b>%{METRIC}<\/b> is equal to %{OP1} for each %{ATTR}","FilterSummMetricBOTTOM":"Bottom {2} {1} by {0}","dropZoneLabels_MULTIPLE_PIE_ROW":"Slices","dlgChartOption_UNITS_2":"Hundreds","actionCreateMeasure":"Create measure %{0}","dlgChartOption_UNITS_0":"None","dlgChartOption_UNITS_5":"100000","dlgChartOption_UNITS_6":"Millions","dlgCreateMeasureMaxLabel":"Max","dlgChartOption_UNITS_3":"Thousands","notificationModelChange":"Your last change has modified the data source. Changes to the data source will be saved when this report is saved.","dlgChartOption_UNITS_4":"10000","dlgTitleInfo":"Info","errorAddFilterWithTrendOnAncestor":"This report includes a trend measure <b>%{2}<\/b> over <b>%{1}<\/b>. To filter on <b>%{0}<\/b> in this report, please add <b>%{0}<\/b> to the report first.","FilterTIME_CURRENT":"Current {0}","dropZoneLabels_STACKED_HORIZONTAL_BAR_COL":"Color Stack","filterPresetTIME_WEEK_0a1":"Current & Next Week","dropZoneLabels_TREND_LINEWIDTH":"Trend Line Width","dlgCreateMeasureSumLabel":"Sum","dlgCalcNumPropTitle":"Calculated Measure Properties","btnLabelReset":"Reset Report","dlgMeasurePropertiesAggregationFieldLabel":"Aggregation:","popupMenuNumberHideFromChart":"Hide from Chart","FilterPresetTIME_MONTH0_1":"Current and Next Month","dlgChartPropsSizeByNegativesMode_USE_ABS":"Absolute","chartTooltipFooterDrillDown":"Double-click to show %{0}","dropZoneLabels_VALUE_ANCHOR_DOTS_RIGHT":"Right","dlgPageSetupPdfPageFormatB4":"B4","rowTruncate":"Showing %{0} rows. Add more filters to reduce the number of rows.<br>To see all rows, download the report to Excel or PDF files.","dropZoneLabels_GRID_LINE_ROW":"X-axis","dlgPageSetupPdfPageFormatB5":"B5","dlgAttributeFilterTooManyValues":"Due to large number of values, only the first %{0} have been shown.","dlgReportOptionsDrillThroughDesc":"Drill-through links on measures","transformationReportErrorMsg":"For more details, return to the transformation and check the logs.","popupMenuNumberSubtotals":"Subtotals (Sums, Averages, etc.)","chartTooltipGemTrend_linear":"(linear trend)","popupMenuNumberSortLowHigh":"Sort %{0} Low&#8594;High","dlgAttributeFilterPrevious":"Previous","linkDlgParamValue":"Value to Use","dropZoneLabels_GRID_LINE_COL":"Add'l Charts","dlgSharedNumFormatCurrency":"Currency","dlgSummaryEditRSUM":"Running Sum of","dlgErrFilterRankRequiredFields":"<span class='dlgError'>All fields are required for \"Top 10, etc.\".<\/span>","dlgCreateMeasureDistinctCountLabel":"Distinct Count","dlgAttributeFilterRemoveSelected":"Remove Selected","dlgErrEmptyReportName":"<span class='dlgError'>Report name cannot be empty.<\/span>","dlgSharedNumFormatGeneral":"General Number","dlgReportOptionsFreezePanes":"Freeze","filterPresetTIME_QUARTER_0a1a2a3":"Current & Next 3 Qtrs","dlgAttributeFilterAhead":"ahead","FilterSummMetricGREATER_THAN":"{0} is greater than {2} for each {1}","dropZoneLabels_COLUMN_LABEL_ANCHOR_OUTSIDE_END":"Outside End","dlgSharedNumFormatDefault":"Default","dropZoneLabels_VALUE_ANCHOR_DOTS_BOTTOM":"Below","dlgOopsTitle":"Sorry, something went wrong.","dlgSummaryEditRankWithin":"Rank within","btnTitleShowFilters":"Show all filters in use and add new filters (Ctrl+Alt+T)","btnLabelHideFields":"Hide Field List","dlgPageSetupFitTall":"tall","infoAddNumberField":"Drag a measure field to see report data","dlgNumericFilterTopLabel":"Top 10, etc.","dropZoneLabels_PCT_STACKED_VERTICAL_BAR_NUM":"Measures","FilterPresetTIME_WEEK__1_0":"Current and Previous Week","HelpGeneratorExtendedMetadataNotSupported":"Extended metadata not supported for this OlapConnection: {0}","calculatedEditTitle":"Edit Calculated Measure","dlgSelectionFilterTitleEXCLUDE":"Exclude Selection Items","dlgCreateMeasureAggTypeLabel":"Aggregation Type","ttShowHideFields":"","RendererTrendShowing":"This measure is a trend measure showing {0} {1} from {2} {3}.","chartTooltipGemInterp_linear":"(linear interpolation)","popupMenuCondFormatDataBarBlue":"Data Bar: Blue","selectSchemaAutoRefresh":"Auto Refresh Report","DisabledClearViewSorting":"Your report may have been re-sorted due to Running Sum or % of Running Sum.","ReportErrorMissingAggregator":"Your last operation involves a calculated measure that uses an unsupported total type.  Try changing the total type from Aggregate to Sum for the calculated measure.  Your last change has been undone.","RendererCreator":"Report Creator:","VIZ_SUNBURST":"Sunburst","dlgNumberSubtotalMax":"Max","dlgAttributePropertiesDisplayName":"Display Name","dropZonePlaceholder_string,number":"Drop Level or Measure Here","dropZoneLabels_LAYOUT":"Layout","dlgMeasurePropertiesDisplayNameFieldLabel":"Display Name:","adminExecuteMDX":"Execute MDX","SchemaOptionNewDataSource":"Create New Data Source","filterPresetTIME_WEEK_n1":"Previous Week","filterValuesSummarySingle":"Showing %{0} value","filterSummTIME_RANGE_NEXT":"includes next %{0} %{1}","dlgErrFilterMetricEmpty":"<span class='dlgError'>Filter has to have at least one condition.<\/span>","chartSunburstRootCategoryLabel":"Root","filterPresetTIME_MONTH_1":"Next Month","filterPresetTIME_MONTH_0":"Current Month","popupMenuByCategory":"by Category","RendererDrilldown":"- Double-click to show {0}","RendererCube":"Cube:","actionRedo":"Redo %{0} (Ctrl+Y)","dlgChartPropsLabelsFont":"Font","dlgCalcNumSubtotalCalc":"Subtotal Calculation","VIZ_STACKED_HORIZONTAL_BAR":"Stacked Bar","dropZoneLabels_PCT_STACKED_HORIZONTAL_BAR_NUM":"Measures","dlgReportXMLTitle":"Report Definition","dropZoneLabels_STACKED_AREA_COL":"Series","filterPresetTIME_QUARTER_n4a0":"Current & Same Qtr Year Ago","dlgTrendNumberShowAs":"Show Trend as","promptDirtyReportForEmail":"There are unsaved changes for this report. If you leave this page, the unsaved changes will be lost. Any email you send will reflect only the most recently saved changes.","reportTableCountValue":"%{0} out of %{1}","dlgAttributePropertiesDisplayNameFieldLabel":"Display Name","dlgPageSetupPdfPageFormatA3":"A3","dlgSaveModelTitle":"Save Model","FilterPresetTIME_YEAR__1_0":"Current and Previous Year","dlgChartPropsLabelsTitle":"Labels","dlgPageSetupPdfPageFormatA4":"A4","dropZonePlaceholder_string":"Drop Level Here","dlgPageSetupPdfPageFormatA5":"A5","dlgAlertWarning":"Don't show this message again for this report viewing session.","errorLoadFolderList":"Cannot save report because no folder has been loaded from the server.","filterMetric":"Numeric Filter","dropZoneLabels_VALUE_POSITION_NONE":"None","errorOutdatedReport":"Oops! It looks like some of your report fields are out of sync with the current analysis area. Please remove the field: %{0}.","infoCacheCleared":"Analyzer and Mondrian caches have been cleared.","actionReportOptions":"Updating Report Options","VIZ_LEGACY":"Legacy","reportAdminEmptyLog":"<h1>The query log is empty. Please note that only the last report executed by a system user will be logged.<\/h1>","loadingReportEditor":"Opening report, please wait...","dlgErrFilterInvalidValue":"<span class='dlgError'>Invalid filter options.<\/span>","fieldListView":"View","dropZoneLabels_HEATGRID_COLOR":"Color By","RendererFieldsUsed":"Fields Used","filterSummarySelectionItems":"Custom Selection Items","dropZoneLabels_PIVOT_NUM":"Measures","dlgSummaryEditPctRSUM":"% of Running Sum of","dlgChartPropsAxisLimitError":"Numeric values are expected for Start and Stop.","dlgNumericFilterAddCondition":"Add Condition","dropZoneLabels_VALUE_ANCHOR_DOTS_LEFT":"Left","dropZoneLabels_TREND_TYPE_NONE":"None","dlgChartPropsMultiChartRangeScopeTitle":"Axis Auto Range for Charts","popupMenuNumberSortValue":"Values","dropZoneLabels_HEATGRID_ROW":"X-axis","dlgCreateMeasureAverageLabel":"Average","dlgSorryTitle":"Sorry, something went wrong.","popupMenuAttributeEdit":"Edit...","linkDlgOpenNew":"New Window","dlgChartPropsSizeByNegativesModeTitle":"Treat negative values as","ReportErrorCalculatedNumberInvalidFormula":"Invalid formula definition. Details: {0}","titleShowChartTypeTT":"Choose chart type to show report","dropZoneLabels_COLORSET":"Color","popupMenuMeasureProperties":"Measure Properties...","actionRemoveNumericFilter":"Removing Numeric Filter","dropZoneLabels_SUNBURST_ROW":"Slices","popupMenuActionOptions":"Report Options...","emptyVizHelp":"(Marked with an asterisk in the layout panel.)","actionRemoveMeasure":"Remove measure %{0}","dlgChartPropsBackgroundColorEnd":"End color","toolbarSave":"Save current report","dlgNullSelection":"-Select-","fieldListAvailableField":"Available fields","INCOMPATIBLE_STOCK_VIZ_ERROR_TITLE":"Upgrade visualization","dlgReportOptionsTitle":"Report Options","FilterSummBETWEEN":"is from {0} To {1}","filterSummNUMERIC_LESS_THAN_EQUAL":"is less than or equal to %{0}","emptyDropZone":"","RendererNoDescription":"No Description","reportErrorMsg":"For more details, contact your system administrator.","menuAddFilter":"Add Filter on %{0}...","dlgEditColumnSymbol":"Symbol","dlgPageSetupExcelPageFormatLetter":"Letter","filterTitleSingular":"%{0} Filter","fieldListAll":"Showing All Fields","actionHideSubtotal":"Hiding Subtotal for %{0}","dropZoneLabels_STACKED_VERTICAL_BAR_COL":"Color Stack","filterConditionOperators_BETWEEN":"Between","popupMenuBySchema":"Schema","linkDlgFile":"Pentaho Repository File","dropZoneLabels_3_STEP":"3 Steps","RendererAcrossAllRows":"across all rows","linkDlgTooltip":"Tool Tip:","dlgAttributeFilterSameLastYear":"Same %{0} last year","popupMenuTotalsHide":"Hide Grand Total","popupMenuExportXLSX":"To Excel Workbook...","filterPresetTIME_YEAR_n1a0":"Current & Previous Year","RendererFiltersUsed":"Filters Used:","dropZoneLabels_STACKED_VERTICAL_BAR_ROW":"X-Axis","actionRemoveFilter":"Removing Filter on %{0}","ropZoneLabels_GRAD_GRAY":"Gray Scale","errorModelingCalcMeasureValidationMissingCubeParam":"parameter is missing: cube","transformationReportNoDataMsg":"No data available","errorOpenReport":"Failed to open report definition.","dropZoneLabels_TREND_TYPE_LINEAR":"Linear","VIZ_LINE_DESC":"Line Chart","dlgPageSetupPDFTitle":"Export to PDF","dlgSummaryEditPctOf":"% of","adminOpenLog":"Open Log","filterSummNUMERIC_LESS_THAN":"is less than %{0}","dropZoneLabels_VALUE_LINE_ANCHOR":"Line Data Labels","errorModelingCalcMeasureValidationMissingSchema":"schema is null","INCOMPATIBLE_STOCK_VIZ_ERROR":"This report was created with a newer version of the visualization and will default to the pivot table.<br><br>Contact your administrator to upgrade to the latest version.","dlgSummaryEditPctRSUMRows":"Sum Across All Rows","dropZoneLabels_STACKED_AREA_ROW":"X-Axis","dlgChartPropsMultiChartRangeScope_CELL":"Independent","FilterSummMetricIS_NOT_EMPTY":"{0} is not empty for each {1}","dlgChartPropsLegendPosBottom":"Bottom","RendererPDFWidthTooWide":"Unable to render report because the total width of the row field headers exceeds the page width.","filterValuesSummaryPartialFirst":"Showing first %{0} values","popupMenuAddToReport":"Add to Report","filterPresetTIME_YEAR_n1":"Previous Year","refreshing":"Refreshing","dlgAttributeFilterChooseValueLabel":"Choose values from list","selectSchemaTooltip":"Help on selecting data sources","ttUndo":"Undo (Ctrl+Z)","linkDlgSampleURL":"E.g. http://search.yahoo.com/search?p={%{0}}","dlgNumericFilterTitle":"Numeric Filter","dlgChartPropsBackColor":"Specify Color","btnLabelSave":"Save"};
+      cv.analyzerProperties = {"report.mdx.default.total.type":"SUM","chart.options.keepLevelOnDrilldown":true,"viz.ccc_line.args.lineWidth":1,"viz.ccc_heatgrid.args.shape":"square","renderer.currency.symbol":"$","filter.selection.max.count":500,"chart.series.colors":["#0045a1","#5f9e00","#ffc20f","#ff6600","#3c008f","#007a99","#a10067","#002255","#e03a00","#006644","#ba0025","#660088","#4d7dbd","#8fbb4d","#ffd457","#ff944d","#774db1","#4da2b8","#bd4d95","#4d6488","#e9754d","#4d947c","#cf4d66","#944dac","#99b5d9","#bfd899","#ffe79f","#ffc299","#b199d2","#99cad6","#d999c2","#99a7bb","#f3b099","#99c2b4","#e399a8","#c299cf"],"report.mdx.ui.logging":true,"viz.ccc_line.args.shape":"circle","report.field.list.collapse":false,"filter.include.exclude.max.count":200,"report.viewer.edit.disable":false};
+      cv.vizApiVersion = 3.0;
+
+      var isRunningIFrameInSameOrigin;
+      try {
+        var ignoredCheckCanReachOutToParent = window.parent.mantle_initialized;
+        isRunningIFrameInSameOrigin = true;
+      } catch(e) {  // Ignore "Same-origin policy" violation in embedded IFrame
+        isRunningIFrameInSameOrigin = false;
+      }
+
+      var console_enabled = false;
+      if(isRunningIFrameInSameOrigin) {
+        // check to see if this page is running inside the user console
+        console_enabled = window.parent.mantle_initialized == true;
+      }
+
+      // Load web context with the desired application id.
+      (function() {
+        var apiSpec = {
+          applicationId: "pentaho-analyzer"
+        };
+
+        if(isRunningIFrameInSameOrigin) {
+          if(window.parent.beforeAnalyzerLoad) {
+            window.parent.beforeAnalyzerLoad(apiSpec, window.frameElement.id);
+          }
+        }
+
+        var src = "webcontext.js?context=analyzer&application=" + encodeURIComponent(apiSpec.applicationId);
+        document.write("<script language='javascript' type='text/javascript' src='" + src + "'></scr"+"ipt>");
+      })();
+    </script><script language="javascript" type="text/javascript" src="viewer_data_003/webcontext.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/reporting-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/pir-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/geo-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/cde-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/cdf-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/client-config-enabler-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/dashboards-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/common-ui-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/analyzer-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/admin-plugin-require-js-cfg.js"></script><script type="text/javascript" src="require.js"></script><script type="text/javascript" src="require-cfg.js"></script><script type="text/javascript" src="require-init.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/themes.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/jquery.js"></script><link rel="stylesheet" type="text/css" href="viewer_data_003/datasourceEditorDialog.css"><link rel="stylesheet" type="text/css" href="viewer_data_003/datasourceAdminDialog.css"><link rel="stylesheet" type="text/css" href="viewer_data_003/angular-directives.css"><script language="javascript" type="text/javascript" src="viewer_data_003/djConfig.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/cache-service.js"></script><link rel="stylesheet" type="text/css" href="globalRuby.css"><link rel="stylesheet" type="text/css" href="bootstrap-namespaced.css"><link rel="stylesheet" type="text/css" href="viewer_data_003/anaRuby.css"><script language="javascript" type="text/javascript" src="viewer_data_003/jquery.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/themeUtils.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/URLEncoder.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/SessionExpiryCheckStartingPoint.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/lang" src="lang.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/array" src="array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/io-query" src="io-query.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/geo_analyzer_plugin_loader.js"></script><link rel="stylesheet" type="text/css" href="viewer_data_003/openlayers_style.css"><link rel="stylesheet" type="text/css" href="viewer_data_003/style.css"><script language="javascript" type="text/javascript" src="viewer_data_003/OpenLayers.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/baselayers.js"></script><script language="javascript" type="text/javascript" src="viewer_data_003/analyzer-require-js-bundles-cfg.js"></script>
+
+  <script type="text/javascript">
+    // Needs to be on a separate script tag, so that the previous document.write has taken effect.
+    require(["analyzer/analyzer-viewer"]);
+  </script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/analyzer-viewer" src="viewer_data_003/analyzer-viewer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/kernel" src="kernel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/has" src="has.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/sniff" src="sniff_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/ready" src="viewer_data_003/oss-module.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/i18n/serverService" src="viewer_data_003/serverService.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/cv_api" src="viewer_data_003/cv_api.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/type/Simple" src="prpt_data/platformBundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/API" src="viewer_data_003/API.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/viz-plugins" src="viewer_data_003/viz-plugins.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="geo/geo_analyzer_plugin" src="viewer_data_003/geo_analyzer_plugin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/config" src="config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/type/themes/ruby/model" src="viewer_data_003/model_003.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/vizApi.conf" src="viewer_data_003/analyzer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cdf/components/ccc/config/cdf.vizApi.conf" src="viewer_data_003/cdf.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/config/deploy/config" src="viewer_data_003/config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/visual/config/vizApi.conf" src="viewer_data_003/vizApi.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common-ui/util/require-css/css" src="css.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/i18n/MessageBundle" src="viewer_data_003/MessageBundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="json" src="viewer_data_003/json.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="geo/openlayers_wrapper" src="viewer_data_003/openlayers_wrapper.js"></script><style type="text/css">/*!
+ * Copyright 2002 - 2018 Webdetails, a Hitachi Vantara company.  All rights reserved.
+ *
+ * This software was developed by Webdetails and is provided under the terms
+ * of the Mozilla Public License, Version 2.0, or any later version. You may not use
+ * this file except in compliance with the license. If you need a copy of the license,
+ * please go to  http://mozilla.org/MPL/2.0/. The Initial Developer is Webdetails.
+ *
+ * Software distributed under the Mozilla Public License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or  implied. Please refer to
+ * the license for the specific language governing your rights and limitations.
+ */
+
+
+.tipsy{pointer-events:none;padding:5px;font-size:10px;font-family:Arial,Helvetica,sans-serif;position:absolute;z-index:100000;}.tipsy-inner{padding:5px 8px 4px 8px;background-color:black;color:white;max-width:200px;text-align:center;}.tipsy-inner{border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}.tipsy-arrow{position:absolute;width:0;height:0;line-height:0;border:5px dashed #000;}.tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-nw .tipsy-arrow{top:0;left:10px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-ne .tipsy-arrow{top:0;right:10px;border-bottom-style:solid;border-top:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-s .tipsy-arrow{bottom:0;left:50%;margin-left:-5px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-sw .tipsy-arrow{bottom:0;left:10px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-se .tipsy-arrow{bottom:0;right:10px;border-top-style:solid;border-bottom:none;border-left-color:transparent;border-right-color:transparent;}.tipsy-e .tipsy-arrow{right:0;top:50%;margin-top:-5px;border-left-style:solid;border-right:none;border-top-color:transparent;border-bottom-color:transparent;}.tipsy-w .tipsy-arrow{left:0;top:50%;margin-top:-5px;border-right-style:solid;border-left:none;border-top-color:transparent;border-bottom-color:transparent;}.ccc-tt{overflow:hidden;}.ccc-tt-ds{border-collapse:collapse;border-spacing:0;text-align:left;line-height:1.5em;}.ccc-tt-ds tr{vertical-align:baseline;}.ccc-tt-ds tr td{padding:0;}.ccc-tt-ds .ccc-tt-dimLabel{font-weight:600;color:darkgray;padding-right:0.3em;white-space:nowrap;}.ccc-tt-ds .ccc-tt-dimAgg-sum .ccc-tt-dimLabel span:before{content:"\03a3\00a0";font-weight:normal;font-style:normal;font-size:1.1em;}.ccc-tt-ds .ccc-tt-dimAgg-list .ccc-tt-dimLabel span:before{content:"\22c3\00a0";font-weight:normal;font-style:normal;font-size:1.2em;}.ccc-tt-ds .ccc-tt-datumCount span:before{content:"\0023\00a0";color:darkgray;font-weight:normal;font-size:1.1em;}.ccc-tt-ds .ccc-tt-trendLabel{font-size:1.2em;font-weight:bold;}.ccc-tt-ds .ccc-tt-trendLabel td{padding-bottom:0.2em;}.ccc-tt-ds .ccc-tt-dimRoles{text-align:center;padding-left:0.3em;padding-right:0.3em;}.ccc-tt-ds .ccc-tt-roleLabel{display:none;}.ccc-tt-ds.ccc-tt-chartOrient-v .ccc-tt-role-x .ccc-tt-roleIcon:after,.ccc-tt-ds.ccc-tt-chartOrient-h .ccc-tt-role-y .ccc-tt-roleIcon:after,.ccc-tt-ds.ccc-tt-chartOrient-h .ccc-tt-role-value .ccc-tt-roleIcon:after{content:"\2194";font-size:1.2em;}.ccc-tt-ds.ccc-tt-chartOrient-v .ccc-tt-role-y .ccc-tt-roleIcon:after,.ccc-tt-ds.ccc-tt-chartOrient-h .ccc-tt-role-x .ccc-tt-roleIcon:after,.ccc-tt-ds.ccc-tt-chartOrient-v .ccc-tt-role-value .ccc-tt-roleIcon:after{content:"\2195";font-size:1.2em;}.ccc-tt-ds.ccc-tt-plot-pie .ccc-tt-role-value .ccc-tt-roleIcon:after,.ccc-tt-ds.ccc-tt-plot-sunburst .ccc-tt-role-size .ccc-tt-roleIcon:after{content:"\2220";font-size:1.5em;}.ccc-tt-ds .ccc-tt-role-multiChart .ccc-tt-roleIcon:after{content:"\229e";font-size:1.2em;}.ccc-tt-ds .ccc-tt-dimValue{padding-left:0.3em;text-align:left;}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-valuePct{color:darkgray;font-size:0.9em;}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-valuePct:before{padding-left:0.7em;content:'(';}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-valuePct:after{content:')';}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-interp{color:darkgray;font-size:0.9em;}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-interp:before{padding-left:0.7em;content:'(';}.ccc-tt-ds .ccc-tt-dimValue .ccc-tt-interp:after{content:')';}</style><link type="text/css" rel="stylesheet" href="viewer_data_003/model_002.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="viewer_data_003/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="geo/featureTypes" src="viewer_data_003/featureTypes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="geo/pentahogeoclient" src="viewer_data_003/pentahogeoclient.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/selector/lite" src="lite.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/nls/loading" src="prpt_data/loading.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cldr/nls/gregorian" src="gregorian_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/nls/validate" src="validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/nls/common" src="prpt_data/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/nls/colors" src="viewer_data_003/colors.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/nls/ComboBox" src="viewer_data_003/ComboBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cldr/nls/en/gregorian" src="gregorian.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/visual/models/themes/ruby/model" src="viewer_data_003/model.js"></script><link type="text/css" rel="stylesheet" href="viewer_data_003/model.css"><link type="text/css" rel="stylesheet" href="viewer_data_003/tipsy.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/visual/samples/calc/Model" src="viewer_data_003/Model.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pentaho/visual/samples/calc/themes/ruby/model" src="viewer_data_003/model_002.js"></script><link type="text/css" rel="stylesheet" href="viewer_data_003/model_003.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analyzer/vizApi.conf.helper" src="viewer_data_003/vizApi_002.js"></script></head>
+
+<body class="viewer tundra pentaho-page-background">
+
+<iframe id="downloadIframe" style="position:absolute; left:-999; display:none; height:0px; width: 0px;" width="0" height="0"></iframe>
+
+<div class="hidden">
+  <input type="hidden" id="REPORT_catalog" value="EmployeDS">
+  <input type="hidden" id="REPORT_cube" value="EmployeDS">
+  <input type="hidden" id="fieldHelpXML" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;fieldHelp xmlns=&quot;http://www.pentaho.com&quot;&gt;
+    &lt;attributeHelp presentationFieldName=&quot;5&quot; formula=&quot;[Commation].[Commation]&quot; hierarchy=&quot;[Commation]&quot; level=&quot;Commation&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;Numeric&quot; duration=&quot;ordinal&quot; dimension=&quot;[Commation]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;5&quot; displayLabel=&quot;Commation&quot; businessGroup=&quot;Commation&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Commation&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;6&quot; formula=&quot;[Department ID].[Department ID]&quot; hierarchy=&quot;[Department ID]&quot; level=&quot;Department ID&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;Numeric&quot; duration=&quot;ordinal&quot; dimension=&quot;[Department ID]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;6&quot; displayLabel=&quot;Department ID&quot; businessGroup=&quot;Department ID&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Department_ID&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;7&quot; formula=&quot;[Department Location].[Department Location]&quot; hierarchy=&quot;[Department Location]&quot; level=&quot;Department Location&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;String&quot; dimension=&quot;[Department Location]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;7&quot; displayLabel=&quot;Department Location&quot; businessGroup=&quot;Department Location&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Department_Location&quot; dataType=&quot;String&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;8&quot; formula=&quot;[Department Name].[Department Name]&quot; hierarchy=&quot;[Department Name]&quot; level=&quot;Department Name&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;String&quot; dimension=&quot;[Department Name]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;8&quot; displayLabel=&quot;Department Name&quot; businessGroup=&quot;Department Name&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Department_Name&quot; dataType=&quot;String&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;9&quot; formula=&quot;[Id].[Id]&quot; hierarchy=&quot;[Id]&quot; level=&quot;Id&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;Numeric&quot; duration=&quot;ordinal&quot; dimension=&quot;[Id]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;9&quot; displayLabel=&quot;Id&quot; businessGroup=&quot;Id&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;id&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;10&quot; formula=&quot;[Job].[Job]&quot; hierarchy=&quot;[Job]&quot; level=&quot;Job&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;String&quot; dimension=&quot;[Job]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;10&quot; displayLabel=&quot;Job&quot; businessGroup=&quot;Job&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Job&quot; dataType=&quot;String&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;11&quot; formula=&quot;[Join Date].[Join Date]&quot; hierarchy=&quot;[Join Date]&quot; level=&quot;Join Date&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;String&quot; dimension=&quot;[Join Date]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;11&quot; displayLabel=&quot;Join Date&quot; businessGroup=&quot;Join Date&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Join_Date&quot; dataType=&quot;String&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;12&quot; formula=&quot;[Name].[Name]&quot; hierarchy=&quot;[Name]&quot; level=&quot;Name&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;String&quot; dimension=&quot;[Name]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;12&quot; displayLabel=&quot;Name&quot; businessGroup=&quot;Name&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Name&quot; dataType=&quot;String&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;attributeHelp presentationFieldName=&quot;13&quot; formula=&quot;[Salary].[Salary]&quot; hierarchy=&quot;[Salary]&quot; level=&quot;Salary&quot; type=&quot;ATTRIBUTE&quot; dataType=&quot;Numeric&quot; duration=&quot;ordinal&quot; dimension=&quot;[Salary]&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;13&quot; displayLabel=&quot;Salary&quot; businessGroup=&quot;Salary&quot; hidden=&quot;false&quot; type=&quot;ATTRIBUTE&quot;&gt;
+            &lt;dbColumn name=&quot;Salary&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/attributeHelp&gt;
+    &lt;measureHelp presentationFieldName=&quot;1&quot; formula=&quot;[Measures].[Commation]&quot; measureName=&quot;Commation&quot; calculated=&quot;false&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;1&quot; displayLabel=&quot;Commation&quot; isDefaultFavorite=&quot;false&quot; businessGroup=&quot;Measures&quot; hidden=&quot;false&quot; aggregationType=&quot;SUM&quot;&gt;
+            &lt;dbColumn name=&quot;Commation&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/measureHelp&gt;
+    &lt;measureHelp presentationFieldName=&quot;2&quot; formula=&quot;[Measures].[Department ID]&quot; measureName=&quot;Department ID&quot; calculated=&quot;false&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;2&quot; displayLabel=&quot;Department ID&quot; isDefaultFavorite=&quot;false&quot; businessGroup=&quot;Measures&quot; hidden=&quot;false&quot; aggregationType=&quot;SUM&quot;&gt;
+            &lt;dbColumn name=&quot;Department_ID&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/measureHelp&gt;
+    &lt;measureHelp presentationFieldName=&quot;3&quot; formula=&quot;[Measures].[Id]&quot; measureName=&quot;Id&quot; calculated=&quot;false&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;3&quot; displayLabel=&quot;Id&quot; isDefaultFavorite=&quot;false&quot; businessGroup=&quot;Measures&quot; hidden=&quot;false&quot; aggregationType=&quot;SUM&quot;&gt;
+            &lt;dbColumn name=&quot;id&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/measureHelp&gt;
+    &lt;measureHelp presentationFieldName=&quot;4&quot; formula=&quot;[Measures].[Salary]&quot; measureName=&quot;Salary&quot; calculated=&quot;false&quot;&gt;
+        &lt;presentationFieldHelp name=&quot;4&quot; displayLabel=&quot;Salary&quot; isDefaultFavorite=&quot;false&quot; businessGroup=&quot;Measures&quot; hidden=&quot;false&quot; aggregationType=&quot;SUM&quot;&gt;
+            &lt;dbColumn name=&quot;Salary&quot; dataType=&quot;Numeric&quot;&gt;
+                &lt;table name=&quot;employeds&quot; tableType=&quot;FACT_TABLE&quot;/&gt;
+            &lt;/dbColumn&gt;
+        &lt;/presentationFieldHelp&gt;
+    &lt;/measureHelp&gt;
+    &lt;hierarchyInfo formula=&quot;[Commation]&quot;&gt;
+        &lt;levelInfo display=&quot;Commation&quot; formula=&quot;[Commation].[Commation]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Department ID]&quot;&gt;
+        &lt;levelInfo display=&quot;Department ID&quot; formula=&quot;[Department ID].[Department ID]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Department Location]&quot;&gt;
+        &lt;levelInfo display=&quot;Department Location&quot; formula=&quot;[Department Location].[Department Location]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Department Name]&quot;&gt;
+        &lt;levelInfo display=&quot;Department Name&quot; formula=&quot;[Department Name].[Department Name]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Id]&quot;&gt;
+        &lt;levelInfo display=&quot;Id&quot; formula=&quot;[Id].[Id]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Job]&quot;&gt;
+        &lt;levelInfo display=&quot;Job&quot; formula=&quot;[Job].[Job]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Join Date]&quot;&gt;
+        &lt;levelInfo display=&quot;Join Date&quot; formula=&quot;[Join Date].[Join Date]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Name]&quot;&gt;
+        &lt;levelInfo display=&quot;Name&quot; formula=&quot;[Name].[Name]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+    &lt;hierarchyInfo formula=&quot;[Salary]&quot;&gt;
+        &lt;levelInfo display=&quot;Salary&quot; formula=&quot;[Salary].[Salary]&quot;/&gt;
+    &lt;/hierarchyInfo&gt;
+&lt;/fieldHelp&gt;
+">
+  <input type="hidden" id="reportXML" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;reportRecord xmlns=&quot;http://www.pentaho.com&quot;&gt;
+    &lt;commonStorageAttributes createdBy=&quot;admin&quot; updatedBy=&quot;admin&quot; created=&quot;2019-01-28T13:57:57.543+02:00&quot; update=&quot;2019-01-28T16:36:35.248+02:00&quot;&gt;
+        &lt;path name=&quot;Employe 2&quot; folder=&quot;/public/Steel Wheels/Employe 2.xanalyzer&quot;/&gt;
+    &lt;/commonStorageAttributes&gt;
+    &lt;report catalog=&quot;EmployeDS&quot; cube=&quot;EmployeDS&quot; reportTypeEnum=&quot;PIVOT&quot; showRowGrandTotal=&quot;false&quot; showColumnGrandTotal=&quot;true&quot; useNonVisualTotals=&quot;false&quot; showEmptyEnum=&quot;SHOW_CALCULATED_MEASURE&quot; emptyCellDisplay=&quot;-&quot; showDrillLinks=&quot;false&quot; version=&quot;12&quot; autoRefresh=&quot;true&quot; freezeColumns=&quot;true&quot; freezeRows=&quot;true&quot;&gt;
+        &lt;measures&gt;
+            &lt;measure formula=&quot;[Measures].[Salary]&quot; showSum=&quot;false&quot; showAggregate=&quot;false&quot; showAverage=&quot;true&quot; showCount=&quot;false&quot; showMax=&quot;true&quot; showMin=&quot;true&quot; measureTypeEnum=&quot;VALUE&quot; sortOrderEnum=&quot;DESC&quot; id=&quot;[MEASURE:0]&quot; gembarId=&quot;measures&quot; gembarOrdinal=&quot;0&quot;/&gt;
+        &lt;/measures&gt;
+        &lt;columnAttributes/&gt;
+        &lt;rowAttributes&gt;
+            &lt;attribute formula=&quot;[Department Name].[Department Name]&quot; showSubtotal=&quot;false&quot; sortOrderEnum=&quot;DESC&quot; gembarId=&quot;rows&quot; gembarOrdinal=&quot;0&quot;/&gt;
+            &lt;attribute formula=&quot;[Job].[Job]&quot; showSubtotal=&quot;false&quot; sortOrderEnum=&quot;ASC&quot; gembarId=&quot;columns&quot; gembarOrdinal=&quot;0&quot;/&gt;
+        &lt;/rowAttributes&gt;
+        &lt;filters/&gt;
+        &lt;chartOptions vizApiVersion=&quot;2.0&quot; chartType=&quot;CUSTOM&quot; customChartType=&quot;pentaho/visual/models/BarStacked&quot; legendPosition=&quot;TOP&quot; showLegend=&quot;true&quot; autoRange=&quot;true&quot; displayUnits=&quot;UNITS_0&quot; autoRangeSecondary=&quot;true&quot; displayUnitsSecondary=&quot;UNITS_0&quot; lineWidth=&quot;2&quot; lineShape=&quot;CIRCLE&quot; maxValues=&quot;250&quot; backgroundColor=&quot;#ffffff&quot; labelColor=&quot;#000000&quot; labelSize=&quot;12&quot; backgroundFill=&quot;NONE&quot; maxChartsPerRow=&quot;3&quot; multiChartRangeScope=&quot;GLOBAL&quot; emptyCellMode=&quot;GAP&quot; sizeByNegativesMode=&quot;NEG_LOWEST&quot; backgroundColorEnd=&quot;#ffffff&quot; labelStyle=&quot;PLAIN&quot; legendBackgroundColor=&quot;#ffffff&quot; legendSize=&quot;12&quot; legendColor=&quot;#000000&quot; legendStyle=&quot;PLAIN&quot; labelFontFamily=&quot;Default&quot; legendFontFamily=&quot;Default&quot;/&gt;
+        &lt;selectionFilters/&gt;
+        &lt;selectionItems/&gt;
+        &lt;pageSetup excelPageSize=&quot;LETTER&quot; pdfPageSize=&quot;LETTER&quot; excelOrientation=&quot;LANDSCAPE&quot; pdfOrientation=&quot;LANDSCAPE&quot; excelScalingType=&quot;PERCENT&quot; excelScalingPercent=&quot;100&quot; excelScalingPageWide=&quot;1&quot; excelScalingPageTall=&quot;1&quot; csvIncludeSubtotals=&quot;true&quot; csvFormatNumbers=&quot;true&quot;/&gt;
+        &lt;drillColumns/&gt;
+    &lt;/report&gt;
+    &lt;uiAttributes showFieldList=&quot;true&quot; showFieldLayout=&quot;true&quot; showFilterPanel=&quot;false&quot; fieldListView=&quot;CMDVIEWCATEGORY&quot;&gt;
+        &lt;rowFieldWidths actualWidths=&quot;101,80&quot;&gt;
+            &lt;labelWidth index=&quot;0&quot;&gt;
+                &lt;width&gt;-16&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;9&quot;&gt;
+                &lt;width&gt;-22&lt;/width&gt;
+            &lt;/labelWidth&gt;
+        &lt;/rowFieldWidths&gt;
+        &lt;columnDataFieldWidths actualWidths=&quot;81&quot;&gt;
+            &lt;labelWidth index=&quot;0&quot;&gt;
+                &lt;width&gt;39&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;1&quot;&gt;
+                &lt;width&gt;37&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;3&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;4&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;5&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;6&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;7&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;8&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;9&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;10&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;11&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;12&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;13&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;14&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;15&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;16&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;17&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;18&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;19&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;20&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;21&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;22&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;23&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;24&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;25&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;26&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;27&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;28&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;29&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;30&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;31&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;32&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;33&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;34&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;35&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;36&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;37&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;38&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;39&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;40&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;41&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;42&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;43&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;44&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;45&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;46&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;47&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;48&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;49&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;50&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;51&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;52&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;53&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;54&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;55&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;56&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;57&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;58&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;59&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;60&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;61&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;62&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;63&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;64&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;65&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;66&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;67&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;68&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;69&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;70&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;71&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;72&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;73&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;74&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;75&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;76&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;77&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;78&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;79&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+            &lt;labelWidth index=&quot;80&quot;&gt;
+                &lt;width&gt;0&lt;/width&gt;
+            &lt;/labelWidth&gt;
+        &lt;/columnDataFieldWidths&gt;
+        &lt;pluginData&gt;[]&lt;/pluginData&gt;
+    &lt;/uiAttributes&gt;
+&lt;/reportRecord&gt;
+">
+</div>
+
+<!-- start of ReportContent -->
+<div id="reportContent" class="dijitBorderContainerNoGutter dijitContainer dijitLayoutContainer" data-dojo-type="dijit.layout.BorderContainer" style="width: 100%; height: 100%; padding: 0px;" data-dojo-props="gutters:false" widgetid="reportContent">
+  <!-- The report container -->
+  <div class="dijitContentPane reportContainer dijitBorderContainerNoGutter-child dijitBorderContainerNoGutter-dijitContentPane dijitBorderContainerNoGutterPane dijitAlignCenter" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region: 'center'" id="dijit_layout_ContentPane_0" widgetid="dijit_layout_ContentPane_0" style="left: 0px; top: 0px; position: absolute; width: 520px; height: 356px;"><div id="RPT1548695541170ReportMain" class="reportMain pentaho-panel-insetglow VIEW" style="border: medium none; width: 520px; height: 356px;"><div id="RPT1548695541170ReportTitle" class="pentaho-titled-toolbar" style="display: none;"><div class="titleLink reportName" id="RPT1548695541170ReportName" style="left: 0px;">Employe 2</div></div><div id="RPT1548695541170ReportSummary" class="reportSummary clearfix pentaho-titled-toolbar"><div id="RPT1548695541170ReportFormatCmdDiv" class="reportFormatShowDiv" style="height:23px;"><div title="Report Actions" id="RPT1548695541170CmdActions" class="cmdActionsBtn"><span>Actions</span></div></div><div class="filterSummary dojoDndContainer dojoDndTarget" id="RPT1548695541170FilterPaneTitle"><div id="RPT1548695541170FilterPaneToggle" class="filterPaneToggle" title="Click to show/hide filters (Ctrl+Alt+T)">&nbsp;</div><span id="RPT1548695541170FilterCountLabel" title="Click to show/hide filters (Ctrl+Alt+T)">No Filters</span></div><div id="refreshSummary"><div id="RPT1548695541170StatusBar" class="statusBar">Rows: 9&nbsp;&nbsp;Cols: 1</div><div id="progressPane" class="progressPaneDiv"></div></div></div><div id="RPT1548695541170Filter" class="reportFilter clearfix hidden dojoDndContainer dojoDndTarget"><span id="RPT1548695541170HideFilterPane" class="closeBox pentaho-closebutton pentaho-imagebutton-hover" style="float:right;" title="Hide filter pane"></span><span id="RPT1548695541170HelpFilterPane" class="helpIcon pull-right" title="Help on Filters" "=""></span><div id="RPT1548695541170filters" class="filters dojoDndItem"><div class="filterPaneHint">No filter has been defined.</div></div></div><div id="RPT1548695541170RowTruncateInfo" class="rowTruncate hidden"><span class="button-close pull-right" id="closeRowTruncate"></span><br><span class="info-icon"></span>&nbsp;Showing <span id="RPT1548695541170RowTruncateMsg"></span> rows. Add more filters to reduce the number of rows.<br>To see all rows, download the report to Excel or PDF files.</div><div id="RPT1548695541170ColTruncateInfo" class="colTruncate hidden"><span class="button-close pull-right" id="closeColTruncate"></span><br><span class="info-icon"></span>&nbsp;Showing <span id="RPT1548695541170ColTruncateMsg"></span> columns. Add more filters to reduce the number of columns.<br>To see all columns, download the report to Excel or PDF files.</div><div id="RPT1548695541170TransTruncateInfo" class="transTruncate hidden"><span class="button-close pull-right" id="closeTransTruncate"></span><br><span class="info-icon"></span>The cell limit has been reached. We are only showing a subset of your data.</div><div id="RPT1548695541170ReportRefresh" class="reportRefresh hidden"><div class="pull-left"><span class="warn-icon vertical-align-middle"></span>Report definition has been modified.</div><button id="cmdRefreshBtn" style="margin-right: 10px;padding: 2px 5px 4px;" class="pentaho-button pull-right">Refresh Report</button></div><div id="RPT1548695541170ReportArea" class="reportArea dojoDndTarget dojoDndContainer" style="width: 520px; height: 330px;"><!--  --><div style="width: 510px; height: 320px;" class="pivotTable" id="pivotTable" filterctx="{}" columncount="1" rowcount="9"><div class="pivotTableScrollbars" style="height: 320px; width: 510px;"><div style="height: 286.71px; width: 310px;">&nbsp;</div></div>
+<div class="pivotTableContent" style="margin-top: -320px; width: 493px; height: 303px;"><table cellspacing="0"><tbody><tr><td class="pivotTableRowLabelHeaderSection" width="181" height="24"><table><tbody><tr><td class="pivotTableRowLabelHeaderContainer" style="width: 181px; height: 24px;"><table class="ZONE_rowAttributes rowLabelHeaders" style="table-layout: fixed; width: 0px;"><colgroup><col width="101px"><col width="80px"></colgroup><tbody><tr valign="top"><td title="Department Name" type="attribute" formula="[Department Name].[Department Name]" class="sortActiveDesc" style="height: 21px;"><div class="resize" resizeindex="0" id="resizeHandle_0" style="position: relative; white-space: normal;"><div class="sort" id="sortHandle_0">Department Name</div><div class="resizeHandle" style="right: 0" id="CVResizeHandle_0" widgetid="uniqName_1_0"><div></div></div></div></td><td title="Job" type="attribute" formula="[Job].[Job]" class="sortInactive" style="height: 21px;"><div class="resize" resizeindex="1" id="resizeHandle_1" style="position: relative; white-space: normal;"><div class="resizeHandle" style="left: 0" id="CVResizeHandle_1" widgetid="analyzer_BeforeResizeHandle_0"><div></div></div><div class="sort" id="sortHandle_1">Job</div><div class="resizeHandle" style="right: 0" id="CVResizeHandle_2" widgetid="uniqName_1_1"><div></div></div></div></td></tr></tbody></table></td></tr></tbody></table></td><td class="pivotTableColumnHeaderSection" style="width: 81px;" width="81" height="24"><div class="columnHeaders pivotTableColumnHeaderContainer" style="width: 81px;" width="81"><table class="ZONE_columnAttributes" style="width: 81px; left: 0px;" width="120px"><colgroup><col width="81"></colgroup><tbody><tr class="ZONE_measures" valign="top"><td type="measure" metrictype="VALUE" formula="[Measures].[Salary]" sortctx="{}" class="metric sortActiveDesc last" ctx="{&quot;[Measures].[MeasuresLevel]&quot;:&quot;[Measures].[Salary]&quot;}" colspan="1" rowspan="1" title="Salary" enabledeventtitle="Salary" disabledeventtitle="Salary" style="height: 21px;"><div class="resize" resizeindex="0" id="resizeHandle_2" style="position: relative;"><div class="resizeHandle" style="left: 0" id="CVResizeHandle_3" widgetid="analyzer_BeforeResizeHandle_1"><div></div></div><div class="sort" id="sortHandle_2">Salary</div><div class="resizeHandle" style="right: 0" id="CVResizeHandle_4" widgetid="uniqName_1_2"><div></div></div></div></td></tr>
+</tbody></table></div></td></tr><tr><td class="pivotTableRowLabelSection" width="181"><div class="rowHeaders pivotTableRowLabelContainer"><table style="table-layout: fixed; width: 0px; top: 0px;"><colgroup><col width="101px"><col width="80px"></colgroup><tbody><tr><td type="member" formula="[Department Name].[Department Name]" member="[Department Name].[SALES]" class="outer" ctx="{&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[SALES]&quot;}" colspan="1" rowspan="3"><div title="SALES" enabledeventtitle="SALES" disabledeventtitle="SALES">SALES</div></td><td type="member" formula="[Job].[Job]" member="[Job].[SALESMAN]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[SALESMAN]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[SALES]&quot;}" colspan="1" rowspan="1"><div title="SALESMAN" enabledeventtitle="SALESMAN" disabledeventtitle="SALESMAN">SALESMAN</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[MANAGER]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[MANAGER]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[SALES]&quot;}" colspan="1" rowspan="1"><div title="MANAGER" enabledeventtitle="MANAGER" disabledeventtitle="MANAGER">MANAGER</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[CLERK]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[CLERK]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[SALES]&quot;}" colspan="1" rowspan="1"><div title="CLERK" enabledeventtitle="CLERK" disabledeventtitle="CLERK">CLERK</div></td></tr>
+<tr><td type="member" formula="[Department Name].[Department Name]" member="[Department Name].[RESEARCH]" class="outer" ctx="{&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[RESEARCH]&quot;}" colspan="1" rowspan="3"><div title="RESEARCH" enabledeventtitle="RESEARCH" disabledeventtitle="RESEARCH">RESEARCH</div></td><td type="member" formula="[Job].[Job]" member="[Job].[ANALYST]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[ANALYST]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[RESEARCH]&quot;}" colspan="1" rowspan="1"><div title="ANALYST" enabledeventtitle="ANALYST" disabledeventtitle="ANALYST">ANALYST</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[MANAGER]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[MANAGER]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[RESEARCH]&quot;}" colspan="1" rowspan="1"><div title="MANAGER" enabledeventtitle="MANAGER" disabledeventtitle="MANAGER">MANAGER</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[CLERK]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[CLERK]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[RESEARCH]&quot;}" colspan="1" rowspan="1"><div title="CLERK" enabledeventtitle="CLERK" disabledeventtitle="CLERK">CLERK</div></td></tr>
+<tr><td type="member" formula="[Department Name].[Department Name]" member="[Department Name].[ACCOUNTING]" class="outer" ctx="{&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[ACCOUNTING]&quot;}" colspan="1" rowspan="3"><div title="ACCOUNTING" enabledeventtitle="ACCOUNTING" disabledeventtitle="ACCOUNTING">ACCOUNTING</div></td><td type="member" formula="[Job].[Job]" member="[Job].[PRESIDENT]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[PRESIDENT]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[ACCOUNTING]&quot;}" colspan="1" rowspan="1"><div title="PRESIDENT" enabledeventtitle="PRESIDENT" disabledeventtitle="PRESIDENT">PRESIDENT</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[MANAGER]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[MANAGER]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[ACCOUNTING]&quot;}" colspan="1" rowspan="1"><div title="MANAGER" enabledeventtitle="MANAGER" disabledeventtitle="MANAGER">MANAGER</div></td></tr>
+<tr><td type="member" formula="[Job].[Job]" member="[Job].[CLERK]" class="inner" ctx="{&quot;[Job].[Job]&quot;:&quot;[Job].[CLERK]&quot;,&quot;[Department Name].[Department Name]&quot;:&quot;[Department Name].[ACCOUNTING]&quot;}" colspan="1" rowspan="1"><div title="CLERK" enabledeventtitle="CLERK" disabledeventtitle="CLERK">CLERK</div></td></tr>
+<tr><td type="grandTotal" class="subTotal" colspan="2" rowspan="1"><div title="Grand Average" enabledeventtitle="Grand Average" disabledeventtitle="Grand Average">Grand Average</div></td></tr>
+<tr><td type="grandTotal" class="subTotal" colspan="2" rowspan="1"><div title="Grand Max" enabledeventtitle="Grand Max" disabledeventtitle="Grand Max">Grand Max</div></td></tr>
+<tr><td type="grandTotal" class="subTotal" colspan="2" rowspan="1"><div title="Grand Min" enabledeventtitle="Grand Min" disabledeventtitle="Grand Min">Grand Min</div></td></tr>
+</tbody></table></div></td><td class="pivotTableDataSection"><div class="cells pivotTableDataContainer" width="81" style="width: 81px;"><table style="left: 0px; top: 0px;" width="81"><colgroup><col width="81"></colgroup><tbody><tr><td type="cell" colindex="0" rowindex="0"><div align="right">5,600</div></td></tr><tr><td type="cell" colindex="0" rowindex="1"><div align="right">2,850</div></td></tr><tr><td type="cell" colindex="0" rowindex="2"><div align="right">950</div></td></tr><tr><td type="cell" colindex="0" rowindex="3"><div align="right">6,000</div></td></tr><tr><td type="cell" colindex="0" rowindex="4"><div align="right">2,975</div></td></tr><tr><td type="cell" colindex="0" rowindex="5"><div align="right">1,900</div></td></tr><tr><td type="cell" colindex="0" rowindex="6"><div align="right">5,000</div></td></tr><tr><td type="cell" colindex="0" rowindex="7"><div align="right">2,450</div></td></tr><tr><td type="cell" colindex="0" rowindex="8"><div align="right">1,300</div></td></tr><tr><td type="cell" colindex="0" rowindex="9" class="rowSubTotal"><div align="right">3,225</div></td></tr><tr><td type="cell" colindex="0" rowindex="10" class="rowSubTotal"><div align="right">6,000</div></td></tr><tr><td type="cell" colindex="0" rowindex="11" class="rowSubTotal"><div align="right">950</div></td></tr></tbody></table></div></td></tr></tbody></table></div></div>
+<!--?xml version="1.0" encoding="UTF-8" standalone="yes"?-->
+<message id="successGenerateReport" type="success" rows="9" cols="1" truncate="NONE" xmlns="http://www.pentaho.com">
+</message></div><div id="RPT1548695541170Trashcan" class="trashcan hidden dojoDndContainer dojoDndTarget" style="top: 216px; left: 390px;"></div></div></div>
+</div> <!-- end of ReportContent -->
+
+<div parsewidgets="true"> <!-- Start of Dojo Widgets -->
+
+  <div dojotype="clearview.widget.CVTooltipRefresh" id="refreshTooltip" connectid="" toggle="fade" toggleduration="200" style="position: absolute; z-index: 1002;" class="dijitTooltipData" widgetid="refreshTooltip">
+    <div id="refreshHeader" class="progressPaneUp"><div class="progressPaneHeaderLabel"><span class="refresh-icon vertical-align-middle"></span>&nbsp;&nbsp;<b>Refreshing</b></div></div>
+    <div id="refreshAction" class="progressPaneContent"><div style="font-size:11px;width:210px;">Opening Report</div></div>
+    <div id="refreshFooter" class="progressPaneDown"></div>
+  </div>
+
+  
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="attributePopMenu" style="display: none;" widgetid="attributePopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Also Show " id="PM:addHier" widgetid="PM:addHier" aria-haspopup="true">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:addHier_text">Also Show</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:addHier_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Show Properties " id="PM:addProp" widgetid="PM:addProp" aria-haspopup="true">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:addProp_text">Show Properties</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:addProp_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+
+
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_0" widgetid="dijit_MenuSeparator_0" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Sort A→Z " id="PM:attrSortAZ" widgetid="PM:attrSortAZ">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:attrSortAZ_text">Sort A→Z</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:attrSortAZ_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Sort Z→A " id="PM:attrSortZA" widgetid="PM:attrSortZA">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:attrSortZA_text">Sort Z→A</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:attrSortZA_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_1" widgetid="dijit_MenuSeparator_1" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Show Subtotals " id="PM:attrShowSub" widgetid="PM:attrShowSub">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:attrShowSub_text">Show Subtotals</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:attrShowSub_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="PM:sprBeforeRemove" widgetid="PM:sprBeforeRemove" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Remove from Report " id="PM:removeAttr" widgetid="PM:removeAttr">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:removeAttr_text">Remove from Report</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:removeAttr_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="propPopMenu" style="display: none;" widgetid="propPopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Remove from Report " id="PM:removeProp" widgetid="PM:removeProp">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:removeProp_text">Remove from Report</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:removeProp_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="memberPopMenu" style="display: none; z-index: 1002;" widgetid="memberPopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="cellPopMenu" style="display: none;" widgetid="cellPopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="measurePopMenu" style="display: none;" widgetid="measurePopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Conditional Formatting " id="dijit_PopupMenuItem_0" widgetid="dijit_PopupMenuItem_0" aria-haspopup="true">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="dijit_PopupMenuItem_0_text">Conditional Formatting</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_PopupMenuItem_0_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_4" widgetid="dijit_MenuSeparator_4" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Sort %0 Low→High " id="PM:measSortLowHi" widgetid="PM:measSortLowHi">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:measSortLowHi_text">Sort %<span class="dijitMenuItemShortcutKey">0</span> Low→High</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:measSortLowHi_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Sort %0 High→Low " id="PM:measSortHiLow" widgetid="PM:measSortHiLow">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:measSortHiLow_text">Sort %<span class="dijitMenuItemShortcutKey">0</span> High→Low</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:measSortHiLow_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_5" widgetid="dijit_MenuSeparator_5" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Hide from Chart " id="PM:inChartHideMetric" widgetid="PM:inChartHideMetric">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:inChartHideMetric_text">Hide from Chart</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:inChartHideMetric_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Remove from Report " id="PM:removeMetric" widgetid="PM:removeMetric">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:removeMetric_text">Remove from Report</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:removeMetric_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="filterPopMenu" style="display: none;" widgetid="filterPopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Remove from Report " id="PM:removeFilter" widgetid="PM:removeFilter">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:removeFilter_text">Remove from Report</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:removeFilter_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="grandTotalPopMenu" style="display: none;" widgetid="grandTotalPopMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Hide Grand Total " id="PM:totalHide" widgetid="PM:totalHide">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:totalHide_text">Hide Grand Total</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:totalHide_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Display Totals that Includes Filtered Out Values " id="PM:totalNonVisual" widgetid="PM:totalNonVisual">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:totalNonVisual_text">Display Totals that Includes Filtered Out Values</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:totalNonVisual_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+  <table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="actionsMenu" style="display: none;" widgetid="actionsMenu" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Show Report as Table/Chart " id="dijit_PopupMenuItem_1" widgetid="dijit_PopupMenuItem_1" aria-haspopup="true">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="dijit_PopupMenuItem_1_text">Show Report as Table/Chart</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="dijit_PopupMenuItem_1_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_6" widgetid="dijit_MenuSeparator_6" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Grand totals for rows " id="cmdGrandTotalRow" widgetid="cmdGrandTotalRow">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="cmdGrandTotalRow_text">Grand totals for rows</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="cmdGrandTotalRow_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Grand totals for columns " id="cmdGrandTotalCol" widgetid="cmdGrandTotalCol">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="cmdGrandTotalCol_text">Grand totals for columns</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="cmdGrandTotalCol_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_7" widgetid="dijit_MenuSeparator_7" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Export to PDF " id="cmdPDF" widgetid="cmdPDF">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="cmdPDF_text">Export to PDF</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="cmdPDF_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+    <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Export to Excel " id="cmdExcel" widgetid="cmdExcel">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="cmdExcel_text">Export to Excel</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="cmdExcel_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+  </tbody>
+</table>
+
+</div> <!-- End of Dojo Widgets -->
+
+
+<form id="drillForm" method="post">
+  <input type="hidden" name="reportXML" id="drillForm_reportXML">
+  <input type="hidden" name="colIndex" id="drillForm_colIndex">
+  <input type="hidden" name="rowIndex" id="drillForm_rowIndex">
+</form>
+
+
+
+
+<div class="dijitDialog pentaho-dialog" role="dialog" aria-labelledby="theDialog_title" id="theDialog" style="display: none; position: absolute;" widgetid="theDialog">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar Caption">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="theDialog_title" role="heading" level="1"></span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="0">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+  </div>
+</div><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="hierarchyPopMenu" widgetid="hierarchyPopMenu" aria-labelledby="PM:addHier_text" style="display: none;" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" id="PM:dummy" widgetid="PM:dummy">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:dummy_text"></td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:dummy_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+      </tbody>
+</table><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="propertiesPopMenu" widgetid="propertiesPopMenu" aria-labelledby="PM:addProp_text" style="display: none;" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" id="PM:dummy2" widgetid="PM:dummy2">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:dummy2_text"></td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:dummy2_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+      </tbody>
+</table><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="condFormatMenu" widgetid="condFormatMenu" aria-labelledby="dijit_PopupMenuItem_0_text" style="display: none;" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Color Scale: Green-Yellow-Red " id="PM:condFormat_COLOR_SCALE_G_Y_R" widgetid="PM:condFormat_COLOR_SCALE_G_Y_R">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_COLOR_SCALE_G_Y_R_text">Color Scale: Green-Yellow-Red</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_COLOR_SCALE_G_Y_R_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Color Scale: Red-Yellow-Green " id="PM:condFormat_COLOR_SCALE_R_Y_G" widgetid="PM:condFormat_COLOR_SCALE_R_Y_G">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_COLOR_SCALE_R_Y_G_text">Color Scale: Red-Yellow-Green</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_COLOR_SCALE_R_Y_G_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Color Scale: Blue-Yellow-Red " id="PM:condFormat_COLOR_SCALE_B_Y_R" widgetid="PM:condFormat_COLOR_SCALE_B_Y_R">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_COLOR_SCALE_B_Y_R_text">Color Scale: Blue-Yellow-Red</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_COLOR_SCALE_B_Y_R_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Color Scale: Red-Yellow-Blue " id="PM:condFormat_COLOR_SCALE_R_Y_B" widgetid="PM:condFormat_COLOR_SCALE_R_Y_B">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_COLOR_SCALE_R_Y_B_text">Color Scale: Red-Yellow-Blue</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_COLOR_SCALE_R_Y_B_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_2" widgetid="dijit_MenuSeparator_2" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Data Bar: Red " id="PM:condFormat_DATA_BAR_RED" widgetid="PM:condFormat_DATA_BAR_RED">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_DATA_BAR_RED_text">Data Bar: Red</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_DATA_BAR_RED_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Data Bar: Green " id="PM:condFormat_DATA_BAR_GREEN" widgetid="PM:condFormat_DATA_BAR_GREEN">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_DATA_BAR_GREEN_text">Data Bar: Green</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_DATA_BAR_GREEN_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Data Bar: Blue " id="PM:condFormat_DATA_BAR_BLUE" widgetid="PM:condFormat_DATA_BAR_BLUE">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_DATA_BAR_BLUE_text">Data Bar: Blue</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_DATA_BAR_BLUE_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitMenuSeparator" role="separator" style="-moz-user-select: none;" id="dijit_MenuSeparator_3" widgetid="dijit_MenuSeparator_3" tabindex="-1">
+	<td class="dijitMenuSeparatorIconCell">
+		<div class="dijitMenuSeparatorTop"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+	<td colspan="3" class="dijitMenuSeparatorLabelCell">
+		<div class="dijitMenuSeparatorTop dijitMenuSeparatorLabel"></div>
+		<div class="dijitMenuSeparatorBottom"></div>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Trend Arrow: Green-Red " id="PM:condFormat_TREND_ARROW_GR" widgetid="PM:condFormat_TREND_ARROW_GR">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_TREND_ARROW_GR_text">Trend Arrow: Green-Red</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_TREND_ARROW_GR_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+        <tr class="dijitReset dijitMenuItem pentaho-menuitem" data-dojo-attach-point="focusNode" role="menuitem" tabindex="-1" style="-moz-user-select: none;" aria-label="Trend Arrow: Red-Green " id="PM:condFormat_TREND_ARROW_RG" widgetid="PM:condFormat_TREND_ARROW_RG">
+	<td class="dijitReset dijitMenuItemIconCell" role="presentation">
+		<span role="presentation" class="dijitInline dijitIcon dijitMenuItemIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span>
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" data-dojo-attach-point="containerNode,textDirNode" id="PM:condFormat_TREND_ARROW_RG_text">Trend Arrow: Red-Green</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" data-dojo-attach-point="accelKeyNode" id="PM:condFormat_TREND_ARROW_RG_accel"></td>
+	<td class="dijitReset dijitMenuArrowCell" role="presentation">
+		<span data-dojo-attach-point="arrowWrapper" style="visibility: hidden">
+			<span class="dijitInline dijitIcon dijitMenuExpand"></span>
+			<span class="dijitMenuExpandA11y">+</span>
+		</span>
+	</td>
+</tr>
+      </tbody>
+</table><table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable pentaho-menu-outer pentaho-menu" role="menu" tabindex="0" id="reportFormatMenu" widgetid="reportFormatMenu" aria-labelledby="dijit_PopupMenuItem_1_text" style="display: none;" cellspacing="0">
+	<tbody class="dijitReset" data-dojo-attach-point="containerNode">
+      </tbody>
+</table><div class="dndDropIndicator hidden"></div></body></html>

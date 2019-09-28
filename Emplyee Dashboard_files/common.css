@@ -1,0 +1,178 @@
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+
+.panel-contentarea{
+  color: black;
+}
+
+#tooltip h3{
+  font-weight: normal;
+  font-family:Tahoma,Arial,Helvetica,sans-serif;
+  font-size: 13px;
+}
+
+#tooltip {
+  background-color: #FAFAFA;
+  border: 1px solid #666;
+  padding: 5px;
+  color: #444;
+  opacity: 1.0;
+}
+
+.x-grid3-row table{
+  table-layout: fixed;
+}
+
+li.horizontal > label {
+  margin-right: 10px;
+}
+
+
+
+
+div#FilterPanel .vertical{
+  float:left;
+  clear:both;
+}
+
+div#FilterPanel .horizontal{
+float: left;
+display: inline;
+}
+
+div#FilterPanel .pentaho-toggle-button-horizontal{
+display: inline;
+/* For IE 7 */
+zoom: 1;
+}
+div#FilterPanel .pentaho-toggle-button-vertical{
+  padding: 2px 14px;
+}
+/*Firefox hack to remove the dotted border from around the selected button*/
+button::-moz-focus-inner { border: 0; }
+
+
+#FilterPanel .content-area-FilterPanel .vbox-body:first-child{
+  height: 20px;
+}
+
+#wgtHead-FilterPanel{
+  cursor: default !important; /*defeat attempts to make the filter panel look draggable.*/
+}
+
+.x-panel-bwrap {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+}
+
+.x-grid-panel {
+  position: relative;
+}
+
+/* fix for PDB-976 - Filter controls move when clicked in IE. the 100% height was causing the issue, setting to auto fixes for IE */
+html>body #content-area-FilterPanel .hbox-td > .vbox {
+  height: auto;
+}
+
+.pageTitle {
+  font-size: 13px;
+  margin: 0;
+  padding: 2px;
+}
+
+.widget h1 {
+  font-size: 13px;
+  margin:0px;
+  /* rpb: added the following rules to "truncate" widget titles that grow too long. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  right: 70px;
+  left: 0px;
+  /* removing select text capability PDB-1754 */
+  -moz-binding:url('mozilla-bindings.xml#ellipsis');
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  cursor: pointer;
+}
+
+/* rpb: added this to allow room for the filter panel toggle button.
+ * This falls behind the text after due to the position being absolute (which was done to allow "truncating" of too long titles)  */
+#panel-title-FilterPanel {
+   left: 12px;
+}
+
+.widget p {
+  font-size: 13px;
+}
+
+.widget pre {
+ font-size:12px;
+}
+
+/* rpb: PDB 33 button to print out individual widget. */
+.widget-tools {
+    color: black;
+    float:right;
+    padding-right: 5px;
+    padding-top:3px;
+    cursor: pointer;
+    zoom: 1;
+    position: relative;
+}
+
+.widget-tools img { 
+  display: inline;
+  float: left;
+}
+
+.print-btn {
+  height: 16px;
+  width: 16px;
+  background-image: url("images/print_16.png");
+  display: inline;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+}
+
+/* Point Of View / Parameters Prompt */
+.povContainer .panelTitleIcon {
+	/* non-collapsed style */
+	background-image: url("images/arrow_down.png");
+	height: 16px;
+	width:  16px;
+	float:  left;
+	margin-top:2px;
+	cursor:pointer;
+}
+
+.povContainer .panelTitleIcon.collapsed {
+	background-image: url("images/arrow_right.png");
+}

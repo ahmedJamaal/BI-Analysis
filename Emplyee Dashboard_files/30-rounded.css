@@ -1,0 +1,301 @@
+@charset "utf-8";
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+/* CSS Document */
+html,body{margin:0;padding:0}
+body{background-color:#e2e2e2;}
+p{}
+a{}
+
+.wrapper {
+height: 100%;
+}
+
+.pageTitle {
+padding-top: 3px;
+color: #666;
+text-align: center;
+  line-height: 18px;
+}
+
+.title{
+margin: 0;
+padding: 0px;
+background: #FFF;
+height: 15px;
+width:auto;
+}
+
+div#FilterPanel{
+height: 12px;
+border: 0px solid #848484;
+background-color: transparent;
+}
+
+div#FilterPanel .panel-contentarea{
+  overflow: auto;
+  height: 100%;
+}
+
+
+div#FilterPanel .widget .dataContainer .rightCorner .wgtData {
+background: transparent;
+}
+
+div#FilterPanel #filterArrow {
+  position: absolute;
+  left: 5px;
+}
+
+div#FilterPanel .widget {
+	width: auto;
+}
+
+.widget .dataContainer  {
+  background : #FFF;
+  margin-left : 2px;
+  border-left : 1px solid #666;
+  margin-right : 2px;
+  border-right : 1px solid #666;
+}
+
+div.panel-contentarea {
+	margin-left: 6px;
+}
+
+
+div#FilterPanel #content-area-FilterPanel {
+  margin-left : 6px;
+}
+
+
+div#FilterPanel ul{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel ul li{
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel table table {
+  margin-right: 10px;
+}
+
+.hbox {
+ border: 0px solid #eeeeee;
+ background: transparent; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hboxHighlight {
+ border: 0px solid red;
+ background: red; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hbox-td {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.hbox-tr {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.vbox {
+ height:100%;
+ padding: 0px;
+ margin: 0px;
+ background: transparent; 
+}
+
+.vboxHighlight {
+ width:100%;
+ background: red;
+ padding: 0px;
+ margin: 0px;
+}
+
+.vbox-td {
+ padding: 0px;
+}
+
+.vbox-tr {
+ padding: 0px;
+}
+
+/*
+.widgetContainer{ 
+ width:100%;
+ margin: 0px; 
+ padding: 0px;  
+ background: #FFF; 
+ border: 0px solid #bbbbbb;
+ height: auto;
+}*/
+
+.widgetContainerHighlight{ 
+ width:100%;
+ margin: 0px; 
+ padding: 0px;  
+ background: blue; 
+ border: 0px solid blue;
+}
+
+.widget {
+ width:100%;
+ margin:0px auto;
+ min-width:2em;
+ color:#fff;
+ height: auto;
+}
+
+.wgtFooter .rightCorner {
+  display: block;
+}
+
+.widget .wgtHead .rightCorner,
+.widget .wgtFooter .rightCorner {
+ font-size:1px; /* ensure minimum height */
+ height:8px;
+}
+
+.widget .wgtHead .rightCorner {
+ font-size:1px;
+ height:10px;
+}
+
+.widget .wgtFooter .rightCorner {
+ font-size:1px;
+ height:12px;
+}
+
+.widget .wgtHead {
+ border-bottom:0px solid #fff;
+ color: #666;
+ height: 20px;
+ background:transparent url(tl_content.gif) no-repeat left top;
+ padding-left: 5px;
+}
+.widget .wgtHead H1 {
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  padding-left: 5px;
+}
+
+.widget .wgtHead .rightCorner {
+ background:transparent url(tr_content.gif) no-repeat right top;
+ height: 100%;
+ display: block;
+}
+
+.widget .dataContainer {
+ height: auto;
+}
+
+.widget .dataContainer .rightCorner {
+ background:transparent;
+}
+
+.widget .dataContainer .rightCorner .wgtData {
+ /*margin:0px 8px 0px 4px;*/
+ background:transparent  repeat-x 0px 0px;
+ padding:2px 0px 4px 0px;
+ width: 100%;
+ height: 100%;
+}
+
+.wgtData{
+background-color: #FFF;
+}
+
+.widget .wgtFooter {
+ background:transparent url(bl_content.gif) no-repeat left top;
+ padding-left: 5px;
+}
+
+.widget .wgtFooter .rightCorner {
+ background:transparent url(br_content.gif) no-repeat right top;
+ display block
+}
+
+/* data */
+
+.widget h1 {
+ /* header */
+ padding:2px 0 0 10px;
+ zoom: 1;
+ position: relative;
+ float:left;
+}
+
+.widget p {
+ margin:0.5em 0px 0px 0px;
+ padding:0px 4px 0 4px;
+ color:#000;
+}
+
+.widget-area {
+ position:absolute;
+ top:45px;
+ left:0px;
+ width:800px;
+ height:500px;
+ padding:0px;
+ margin:0px;
+ border:0px solid red;
+}
+
+.widgetContainerIFrame {
+    border: 0px solid green;
+    top:0px;
+    left:0px;
+    xwidth:0px;
+    xheight:0px;
+    xposition:absolute;
+}
+.widgetContainerDiv {
+    border: 0px solid green;
+    top:16px;
+    left:2px;
+    width:100px;
+    height:100px;
+    position:absolute;
+}
+.editLabel{
+    color: black;
+    float:right;
+    padding-right: 5px;
+    padding-top:3px;
+    cursor: pointer;
+    zoom: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

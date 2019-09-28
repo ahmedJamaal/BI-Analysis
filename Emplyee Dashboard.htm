@@ -1,0 +1,3613 @@
+<!DOCTYPE html>
+<html xmlns:pho="http:/www.pentaho.com" class="ext-strict dj_gecko dj_ff64 dj_contentbox"><head><style>.GK40RFKDG{cursor:move;user-select:none;-khtml-user-select:none;-moz-user-select:none;}.GK40RFKDB{zoom:1;}.GK40RFKDC{zoom:normal;}.GK40RFKDI{border:1px dashed #1e90ff;margin:0 !important;zoom:1;z-index:100;}.GK40RFKDF{color:#1e90ff;display:inline;text-align:center;vertical-align:middle;}.GK40RFKDJ{background-color:#7af;}.dragdrop-selected,.GK40RFKDC,.GK40RFKDJ{filter:alpha(opacity \= 30);opacity:0.3;}.GK40RFKDH{z-index:200;margin:0 !important;border:none !important;}</style><style>.GK40RFKDG{cursor:move;user-select:none;-khtml-user-select:none;-moz-user-select:none;}.GK40RFKDB{zoom:1;}.GK40RFKDC{zoom:normal;}.GK40RFKDI{border:1px dashed #1e90ff;margin:0 !important;zoom:1;z-index:100;}.GK40RFKDF{color:#1e90ff;display:inline;text-align:center;vertical-align:middle;}.GK40RFKDJ{background-color:#7af;}.dragdrop-selected,.GK40RFKDC,.GK40RFKDJ{filter:alpha(opacity \= 30);opacity:0.3;}.GK40RFKDH{z-index:200;margin:0 !important;border:none !important;}</style>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Emplyee Dashboard</title>
+  <meta name="viewport" content="initial-scale=1, minimum-scale = 1, maximum-scale = 1, user-scalable=no">
+
+  <!-- Theme Css -->
+  <link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/editor.css">
+  <link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/common.css">
+  <link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/pentaho.css">
+
+  <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- PDB-1604 - Load stylesheets via @imports for any thing IE9 or under due to a max limit of 31 link tags -->
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/IE_imports.css">
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="../dashboards/resources/gwt/dashboarddesigner/FilterPanel_ie.css">
+<![endif]-->
+
+
+  <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/jquery_002.css" type="text/css">
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/jquery.css" type="text/css">
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/jquery-impromptu.css" type="text/css">
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/cdf.css" type="text/css">
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/jquery-ui-1.css" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/ext-all.css">
+<link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/xtheme-gray.css">
+<style type="text/css">
+  .reorderIcon{background-image: url("../dashboards/resources/images/dash_panel.png");}
+  .reorderIconSwap{background-image: url("../dashboards/resources/images/dash_panel_swap.png");}
+  .resizeHandle{
+	  background-color:#5ED95E;
+    border: 1px solid #006600;
+    position: absolute;
+    z-index: 1600;
+  }
+  .dragHint{cursor: move}
+  .resizex{cursor: ew-resize}
+  .resizey{cursor: ns-resize}
+</style>
+<!--[if IE]>
+<style type="text/css">
+  .resizex{cursor: e-resize}
+  .resizey{cursor: n-resize}
+</style>
+<![endif]-->
+
+
+  <script type="text/javascript" src="Emplyee%20Dashboard_files/themeResources.js"></script><script language="javascript" type="text/javascript">
+    //<![CDATA[
+    // functions to be call on load of dashboard. Used instead of window.onload listeners to ensure proper order of execution.
+    window.delayedFunctions = [];
+    //]]>
+  </script>
+
+
+  <script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/webcontext.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/reporting-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/pir-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/geo-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/cde-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/cdf-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/client-config-enabler-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/dashboards-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/common-ui-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/analyzer-require-js-cfg.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/admin-plugin-require-js-cfg.js"></script><script type="text/javascript" src="Emplyee%20Dashboard_files/require.js"></script><script type="text/javascript" src="Emplyee%20Dashboard_files/require-cfg.js"></script><script type="text/javascript" src="Emplyee%20Dashboard_files/require-init.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/themes.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/jquery.js"></script><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/datasourceEditorDialog.css"><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/datasourceAdminDialog.css"><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/angular-directives.css"><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/djConfig.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/cache-service.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/jquery.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/themeUtils.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/URLEncoder.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/SessionExpiryCheckStartingPoint.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/lang" src="Emplyee%20Dashboard_files/lang.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/array" src="Emplyee%20Dashboard_files/array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/io-query" src="Emplyee%20Dashboard_files/io-query.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/kernel" src="Emplyee%20Dashboard_files/kernel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/has" src="Emplyee%20Dashboard_files/has.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/config" src="Emplyee%20Dashboard_files/config.js"></script><script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/AnalyzerDashboardWidget.js"></script>
+
+  <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<script type="text/javascript">
+
+pen.require(["local!Ext"], function(){
+  pen.require(["dashboards/oss-module", "dashboards/dashboard-module"], function(){
+  var __pho__cachedDashboardDesigner = window.dashboarddesigner;
+
+  // variable that keeps track of number of times we have attempted to call __pho__maybeGwtOnLoad__()
+  var __pho__maybeGwtOnLoadCount__ = 0;
+
+  function __pho__maybeGwtOnLoad__() {
+    __pho__maybeGwtOnLoadCount__++;
+    // pho is a global JavaScript variable defined during onModuleLoad; if it is defined, then we assume onModuleLoad ran;
+    // otherwise, we need to retry it
+    if (typeof(pho) == "undefined") {
+      var iframe = document.getElementById('dashboarddesigner');
+      // iframe might be null; if it is, just set the timeout and try again
+      if (iframe != null) {
+        var frameWnd = iframe.contentWindow;
+        // trigger gwtOnLoad (indirectly)
+        if (frameWnd.gwtOnLoad) {
+          __pho__cachedDashboardDesigner.onScriptLoad();
+          __pho__cachedDashboardDesigner.onInjectionDone();
+        }
+      }
+      // quit trying after a certain amount of time
+      if (__pho__maybeGwtOnLoadCount__ < 20) {
+        setTimeout('__pho__maybeGwtOnLoad__()', 200);
+      } else {
+        // Internet Explorer 6 is falling into this block even though the application does load.
+        // alert('Application could not be loaded.');
+      }
+    }
+  }
+
+  // check to see if we need to load the editor
+  if(/\/editor/.test(window.location.href)){
+    pen.require(["local", "dashboards/pentaho-dashboard-editor"], function(local){
+      local.define('dashboards');
+      __pho__maybeGwtOnLoad__();
+      PentahoDashboardController.onload();
+    });
+  } else {
+    __pho__maybeGwtOnLoad__();
+    PentahoDashboardController.onload();
+  }
+
+  });
+});
+</script>
+<script type="text/javascript" src="Emplyee%20Dashboard_files/combined_compressed.js"></script>
+<script language="javascript" type="text/javascript" src="Emplyee%20Dashboard_files/resourceBundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="local" src="Emplyee%20Dashboard_files/local.js"></script><script defer="defer">resourceBundle.onInjectionDone('resourceBundle')</script>
+<script language="javascript" src="Emplyee%20Dashboard_files/dashboardviewer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cdf/components/BaseComponent" src="Emplyee%20Dashboard_files/BaseComponent.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboards/oss-module" src="Emplyee%20Dashboard_files/oss-module.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboards/dashboard-module" src="Emplyee%20Dashboard_files/dashboard-module.js"></script><script defer="defer">dashboardviewer.onInjectionDone('dashboardviewer')</script>
+
+
+  
+
+
+  <script language="javascript">
+    //<![CDATA[
+    // maybeStartModule assigns null to dashboarddesigner; we need to save it under another name so we can call it later
+    pen.require(["dashboards/dashboard-module"], function(){
+      var __pho__cachedDashboardDesigner = window.dashboarddesigner;
+
+      // variable that keeps track of number of times we have attempted to call __pho__maybeGwtOnLoad__()
+      var __pho__maybeGwtOnLoadCount__ = 0;
+
+      function __pho__maybeGwtOnLoad__() {
+        __pho__maybeGwtOnLoadCount__++;
+        // pho is a global JavaScript variable defined during onModuleLoad; if it is defined, then we assume onModuleLoad ran;
+        // otherwise, we need to retry it
+        if (typeof(pho) == "undefined") {
+          var iframe = document.getElementById('dashboarddesigner');
+          // iframe might be null; if it is, just set the timeout and try again
+          if (iframe != null) {
+            var frameWnd = iframe.contentWindow;
+            // trigger gwtOnLoad (indirectly)
+            if (frameWnd.gwtOnLoad) {
+              __pho__cachedDashboardDesigner.onScriptLoad();
+              __pho__cachedDashboardDesigner.onInjectionDone();
+            }
+          }
+          // quit trying after a certain amount of time
+          if (__pho__maybeGwtOnLoadCount__ < 20) {
+            setTimeout('__pho__maybeGwtOnLoad__()', 200);
+          } else {
+            // Internet Explorer 6 is falling into this block even though the application does load.
+            // alert('Application could not be loaded.');
+          }
+        }
+      }
+      __pho__maybeGwtOnLoad__();
+    });
+
+    // called by pentaho mobile so we can hide our content and be resized properly
+    window.resizing = function(flag){
+      flag ? $("#wrapper").hide() : $("#wrapper").show();
+    }
+    //]]>
+  </script>
+
+  <script language="javascript" type="text/javascript">
+    //<![CDATA[
+    var dojoConfig = {
+      parseOnLoad : false,
+      isDebug : true,
+      disableFlashStorage : true
+    };
+
+    if (SESSION_LOCALE && SESSION_LOCALE != 'en_US') {
+      dojoConfig.locale = SESSION_LOCALE;
+    }
+    //]]>
+  </script>
+
+  <script language="javascript" src="Emplyee%20Dashboard_files/0-Sapphire.js"></script>
+
+  
+<!-- start theme stylesheet inserts -->
+<link rel="stylesheet" type="text/css" title="Sapphire" href="Emplyee%20Dashboard_files/0-Sapphire.css">
+<link rel="alternate stylesheet" type="text/css" title="Ruby" href="Emplyee%20Dashboard_files/0-Ruby.css">
+<link rel="alternate stylesheet" type="text/css" title="Crystal" href="Emplyee%20Dashboard_files/0-Crystal.css">
+<link rel="alternate stylesheet" type="text/css" title="Slate" href="Emplyee%20Dashboard_files/10-Slate.css">
+<link rel="alternate stylesheet" type="text/css" title="Simple" href="Emplyee%20Dashboard_files/20-default.css">
+<link rel="alternate stylesheet" type="text/css" title="Rounded" href="Emplyee%20Dashboard_files/30-rounded.css">
+<link rel="alternate stylesheet" type="text/css" title="Cool Blue" href="Emplyee%20Dashboard_files/40-CoolBlue.css">
+<link rel="alternate stylesheet" type="text/css" title="Gradient" href="Emplyee%20Dashboard_files/50-gradient.css">
+<link rel="alternate stylesheet" type="text/css" title="Subtle" href="Emplyee%20Dashboard_files/60-subtle.css">
+<!-- end theme stylesheet inserts -->
+
+
+  <script type="text/javascript">
+var templatesJson = {
+  "Templates" : { 
+    "type" : "array",
+    "properties" : {
+    }
+    ,
+    "items" : [
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/01-2-by-2.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/01-2-by-2.png",
+          "name" : "2 by 2"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/02-2-then-1.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/02-2-then-1.png",
+          "name" : "2 and 1"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/03-2-over-1.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/03-2-over-1.png",
+          "name" : "2 over 1"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/04-1-then-2.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/04-1-then-2.png",
+          "name" : "1 and 2"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/05-1-over-2.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/05-1-over-2.png",
+          "name" : "1 over 2"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/06-top-bot.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/06-top-bot.png",
+          "name" : "1 over 1"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/07-2-col.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/07-2-col.png",
+          "name" : "2 Column"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/08-3-col.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/08-3-col.png",
+          "name" : "3 Column"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/09-3-over-1.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/09-3-over-1.png",
+          "name" : "3 over 1"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/10-3-by-3.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/10-3-by-3.png",
+          "name" : "3 by 3"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/11-1-by-1.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/11-1-by-1.png",
+          "name" : "Single"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/12-3-over-3.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/12-3-over-3.png",
+          "name" : "3 over 3"
+        }
+      }
+    }
+    ,
+    {
+      "Template" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "xul\/13-3-over-2.xul",
+          "thumbnail" : "..\/dashboards\/templates\/xul\/13-3-over-2.png",
+          "name" : "3 over 2"
+        }
+      }
+    }
+    ] 
+  }
+}
+;
+
+var themesJson = {
+  "Themes" : { 
+    "type" : "array",
+    "properties" : {
+    }
+    ,
+    "items" : [
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "0-Ruby",
+          "thumbnail" : "..\/dashboards\/service\/themes\/0-Ruby\/preview.png",
+          "name" : "Ruby"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "0-Sapphire",
+          "thumbnail" : "..\/dashboards\/service\/themes\/0-Sapphire\/preview.png",
+          "name" : "Sapphire"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "0-Crystal",
+          "thumbnail" : "..\/dashboards\/service\/themes\/0-Crystal\/preview.png",
+          "name" : "Crystal"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "10-Slate",
+          "thumbnail" : "..\/dashboards\/service\/themes\/10-Slate\/preview.png",
+          "name" : "Slate"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "20-default",
+          "thumbnail" : "..\/dashboards\/service\/themes\/20-default\/preview.png",
+          "name" : "Simple"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "30-rounded",
+          "thumbnail" : "..\/dashboards\/service\/themes\/30-rounded\/preview.png",
+          "name" : "Rounded"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "40-CoolBlue",
+          "thumbnail" : "..\/dashboards\/service\/themes\/40-CoolBlue\/preview.png",
+          "name" : "Cool Blue"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "50-gradient",
+          "thumbnail" : "..\/dashboards\/service\/themes\/50-gradient\/preview.png",
+          "name" : "Gradient"
+        }
+      }
+    }
+    ,
+    {
+      "Theme" : { 
+        "type" : "object",
+        "properties" : {
+          "path" : "60-subtle",
+          "thumbnail" : "..\/dashboards\/service\/themes\/60-subtle\/preview.png",
+          "name" : "Subtle"
+        }
+      }
+    }
+    ] 
+  }
+}
+;
+
+var templateFragment = "<!-- \/*!\n * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL\n *\n * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.\n *\n * NOTICE: All information including source code contained herein is, and\n * remains the sole property of Hitachi Vantara and its licensors. The intellectual\n * and technical concepts contained herein are proprietary and confidential\n * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign\n * patents, or patents in process, and are protected by trade secret and\n * copyright laws. The receipt or possession of this source code and\/or related\n * information does not convey or imply any rights to reproduce, disclose or\n * distribute its contents, or to manufacture, use, or sell anything that it\n * may describe, in whole or in part. Any reproduction, modification, distribution,\n * or public display of this information without the express written authorization\n * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and\n * international treaties. Access to the source code contained herein is strictly\n * prohibited to anyone except those individuals and entities who have executed\n * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,\n * explicitly covering such access.\n *\/ -->\n\n<div id=\"template{id}-table\"\n    class=\"pickBox\"\n    onclick=\"pentahoDashboardEditor.selectTemplate(\'{id}\', \'template{id}-table\');\"\n    ondblclick=\"pentahoDashboardEditor.templateChange()\"\n    onmouseover=\"pentahoDashboardEditor.changePickTemplateState(\'template{id}-table\', \'{id}\', \'hover\')\"\n    onmouseout=\"pentahoDashboardEditor.changePickTemplateState(\'template{id}-table\', \'{id}\', \'unhover\')\">\n   <div class=\"pickBox_img\" style=\"background-image:url({thumbnail})\">&nbsp;<\/div>\n   <div class=\"pickBox_txt\">{name}<\/div>\n<\/div>";
+
+var themeFragment = "<!-- \/*!\n * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL\n *\n * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.\n *\n * NOTICE: All information including source code contained herein is, and\n * remains the sole property of Hitachi Vantara and its licensors. The intellectual\n * and technical concepts contained herein are proprietary and confidential\n * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign\n * patents, or patents in process, and are protected by trade secret and\n * copyright laws. The receipt or possession of this source code and\/or related\n * information does not convey or imply any rights to reproduce, disclose or\n * distribute its contents, or to manufacture, use, or sell anything that it\n * may describe, in whole or in part. Any reproduction, modification, distribution,\n * or public display of this information without the express written authorization\n * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and\n * international treaties. Access to the source code contained herein is strictly\n * prohibited to anyone except those individuals and entities who have executed\n * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,\n * explicitly covering such access.\n *\/ -->\n\n<div id=\"theme{id}-table\"\n    class=\"pickBox\"\n    onclick=\"pentahoDashboardEditor.selectTheme(\'{id}\', \'theme{id}-table\');\"\n    ondblclick=\"pentahoDashboardEditor.themeChange()\"\n    onmouseover=\"pentahoDashboardEditor.changePickThemeState(\'theme{id}-table\', \'{id}\', \'hover\')\"\n    onmouseout=\"pentahoDashboardEditor.changePickThemeState(\'theme{id}-table\', \'{id}\', \'unhover\')\">\n   <div class=\"pickBox_img\" style=\"background-image:url({thumbnail})\">&nbsp;<\/div>\n   <div class=\"pickBox_txt\">{name}<\/div>\n<\/div>";
+
+</script><meta name="gwt:property" content="locale=en_us">
+
+
+
+
+<link rel="stylesheet" href="Emplyee%20Dashboard_files/xul.css"><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/globalRuby.css"><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/bootstrap-namespaced.css"><link rel="stylesheet" type="text/css" href="Emplyee%20Dashboard_files/ddRuby.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/sniff" src="Emplyee%20Dashboard_files/sniff_002.js"></script><style type="text/css">/*! jQuery-Impromptu - v5.2.4 - 2014-05-26
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+.jqifade{
+	position: absolute; 
+	background-color: #777777; 
+}
+div.jqi{ 
+	width: 400px; 
+	max-width:90%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	position: absolute; 
+	background-color: #ffffff; 
+	font-size: 11px; 
+	text-align: left; 
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 7px;
+}
+div.jqi .jqicontainer{ 
+}
+div.jqi .jqiclose{ 
+	position: absolute;
+	top: 4px; right: -2px; 
+	width: 18px; 
+	cursor: default; 
+	color: #bbbbbb; 
+	font-weight: bold; 
+}
+div.jqi .jqistate{
+	background-color: #fff;
+}
+div.jqi .jqititle{
+	padding: 5px 10px;
+	font-size: 16px; 
+	line-height: 20px; 
+	border-bottom: solid 1px #eeeeee;
+}
+div.jqi .jqimessage{ 
+	padding: 10px; 
+	line-height: 20px; 
+	color: #444444; 
+}
+div.jqi .jqibuttons{ 
+	text-align: right; 
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4; 
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+div.jqi .jqibuttons button{ 
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal; 
+	border: none;
+	border-left: solid 1px #e4e4e4; 
+	color: #777; 
+	font-weight: bold; 
+	font-size: 12px; 
+}
+div.jqi .jqibuttons button.jqidefaultbutton{
+	color: #489afe;
+}
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus{
+	color: #287ade;
+	outline: none;
+}
+.jqiwarning .jqi .jqibuttons{ 
+	background-color: #b95656;
+}
+
+/* sub states */
+div.jqi .jqiparentstate::after{ 
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div.jqi .jqisubstate{
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+div.jqi .jqisubstate .jqibuttons button{
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+.jqi .jqiarrow{ position: absolute; height: 0; width:0; line-height: 0; font-size: 0; border: solid 10px transparent;}
+
+.jqi .jqiarrowtl{ left: 10px; top: -20px; border-bottom-color: #ffffff; }
+.jqi .jqiarrowtc{ left: 50%; top: -20px; border-bottom-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowtr{ right: 10px; top: -20px; border-bottom-color: #ffffff; }
+
+.jqi .jqiarrowbl{ left: 10px; bottom: -20px; border-top-color: #ffffff; }
+.jqi .jqiarrowbc{ left: 50%; bottom: -20px; border-top-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowbr{ right: 10px; bottom: -20px; border-top-color: #ffffff; }
+
+.jqi .jqiarrowlt{ left: -20px; top: 10px; border-right-color: #ffffff; }
+.jqi .jqiarrowlm{ left: -20px; top: 50%; border-right-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowlb{ left: -20px; bottom: 10px; border-right-color: #ffffff; }
+
+.jqi .jqiarrowrt{ right: -20px; top: 10px; border-left-color: #ffffff; }
+.jqi .jqiarrowrm{ right: -20px; top: 50%; border-left-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
+
+/*!
+ * Copyright 2002 - 2017 Webdetails, a Hitachi Vantara company. All rights reserved.
+ *
+ * This software was developed by Webdetails and is provided under the terms
+ * of the Mozilla Public License, Version 2.0, or any later version. You may not use
+ * this file except in compliance with the license. If you need a copy of the license,
+ * please go to http://mozilla.org/MPL/2.0/. The Initial Developer is Webdetails.
+ *
+ * Software distributed under the Mozilla Public License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Please refer to
+ * the license for the specific language governing your rights and limitations.
+ */
+
+.errorMessageTable .errorIcon {
+  background-image: url('cdf/js/lib/images/error.png');
+  height:16px;
+  width:16px;
+  display:inline-block;
+}
+/*! jQuery UI - v1.10.4 - 2014-06-19
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css, jquery.ui.theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Lucida%20Grande%2CLucida%20Sans%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=6px&bgColorHeader=deedf7&bgTextureHeader=highlight_soft&bgImgOpacityHeader=100&borderColorHeader=aed0ea&fcHeader=222222&iconColorHeader=72a7cf&bgColorContent=f2f5f7&bgTextureContent=highlight_hard&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=362b36&iconColorContent=72a7cf&bgColorDefault=d7ebf9&bgTextureDefault=glass&bgImgOpacityDefault=80&borderColorDefault=aed0ea&fcDefault=2779aa&iconColorDefault=3d80b3&bgColorHover=e4f1fb&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=74b2e2&fcHover=0070a3&iconColorHover=2694e8&bgColorActive=3baae3&bgTextureActive=glass&bgImgOpacityActive=50&borderColorActive=2694e8&fcActive=ffffff&iconColorActive=ffffff&bgColorHighlight=ffef8f&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=25&borderColorHighlight=f9dd34&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=cd0a0a&bgTextureError=flat&bgImgOpacityError=15&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffffff&bgColorOverlay=eeeeee&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=90&opacityOverlay=80&bgColorShadow=000000&bgTextureShadow=highlight_hard&bgImgOpacityShadow=70&opacityShadow=30&thicknessShadow=7px&offsetTopShadow=-7px&offsetLeftShadow=-7px&cornerRadiusShadow=8px
+* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-button {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible; /* removes extra width in IE */
+}
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+	width: 2.4em;
+}
+.ui-button-icons-only {
+	width: 3.4em;
+}
+button.ui-button-icons-only {
+	width: 3.7em;
+}
+
+/* button text element */
+.ui-button .ui-button-text {
+	display: block;
+	line-height: normal;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em 1em;
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+	padding: .4em;
+	text-indent: -9999999px;
+}
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 1em .4em 2.1em;
+}
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 2.1em .4em 1em;
+}
+.ui-button-text-icons .ui-button-text {
+	padding-left: 2.1em;
+	padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+	padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-button-icon-only .ui-icon {
+	left: 50%;
+	margin-left: -8px;
+}
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+	left: .5em;
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+	right: .5em;
+}
+
+/* button sets */
+.ui-buttonset {
+	margin-right: 7px;
+}
+.ui-buttonset .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.ui-dialog {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* support: IE10, see #8844 */
+	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px -2px 5px -2px;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: 2px .4em;
+	line-height: 1.5;
+	min-height: 0; /* support: IE7 */
+	font-weight: normal;
+}
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+
+.ui-menu .ui-state-disabled {
+	font-weight: normal;
+	margin: .4em 0 .2em;
+	line-height: 1.5;
+}
+.ui-menu .ui-state-disabled a {
+	cursor: default;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item a {
+	position: relative;
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: .2em;
+	left: .2em;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	position: static;
+	float: right;
+}
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+	background: url("cdf/js/lib/theme/cupertino/images/animated-overlay.gif");
+	height: 100%;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 22px;
+}
+.ui-spinner-button {
+	width: 16px;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to override default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+/* vertically center icon */
+.ui-spinner .ui-icon {
+	position: absolute;
+	margin-top: -8px;
+	top: 50%;
+	left: 0;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position: -65px -16px;
+}
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #f2f5f7 url("cdf/js/lib/theme/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png") 50% top repeat-x;
+	color: #362b36;
+}
+.ui-widget-content a {
+	color: #362b36;
+}
+.ui-widget-header {
+	border: 1px solid #aed0ea;
+	background: #deedf7 url("cdf/js/lib/theme/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png") 50% 50% repeat-x;
+	color: #222222;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #222222;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #aed0ea;
+	background: #d7ebf9 url("cdf/js/lib/theme/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #2779aa;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #2779aa;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #74b2e2;
+	background: #e4f1fb url("cdf/js/lib/theme/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #0070a3;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	color: #0070a3;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #2694e8;
+	background: #3baae3 url("cdf/js/lib/theme/cupertino/images/ui-bg_glass_50_3baae3_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #ffffff;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #f9dd34;
+	background: #ffef8f url("cdf/js/lib/theme/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png") 50% top repeat-x;
+	color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #cd0a0a url("cdf/js/lib/theme/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png") 50% 50% repeat-x;
+	color: #ffffff;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_72a7cf_256x240.png");
+}
+.ui-widget-header .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_72a7cf_256x240.png");
+}
+.ui-state-default .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_3d80b3_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_2694e8_256x240.png");
+}
+.ui-state-active .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_2e83ff_256x240.png");
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url("cdf/js/lib/theme/cupertino/images/ui-icons_ffffff_256x240.png");
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 6px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #eeeeee url("cdf/js/lib/theme/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png") 50% 50% repeat;
+	opacity: .8;
+	filter: Alpha(Opacity=80);
+}
+.ui-widget-shadow {
+	margin: -7px 0 0 -7px;
+	padding: 7px;
+	background: #000000 url("cdf/js/lib/theme/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png") 50% top repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+	border-radius: 8px;
+}
+/*!
+ * Copyright 2002 - 2017 Webdetails, a Hitachi Vantara company. All rights reserved.
+ *
+ * This software was developed by Webdetails and is provided under the terms
+ * of the Mozilla Public License, Version 2.0, or any later version. You may not use
+ * this file except in compliance with the license. If you need a copy of the license,
+ * please go to http://mozilla.org/MPL/2.0/. The Initial Developer is Webdetails.
+ *
+ * Software distributed under the Mozilla Public License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Please refer to
+ * the license for the specific language governing your rights and limitations.
+ */
+
+.cdfNotification.component * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.cdfNotification.component {
+  text-align:center;
+  padding:10px;
+  min-height:100%;
+}
+.cdfNotificationBody{
+  display:inline-block;
+  padding-left:33px;
+  text-align: left;
+  max-width:100%;
+  position:relative;
+  min-height:30px;
+}
+.cdfNotificationImg {
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+.cdfNotificationTitle {
+  font-size:14px;
+  line-height:1.2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.cdfNotificationDesc {
+  font-size:11px;
+  line-height:1.2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.cdfNotification.small {
+  padding:5px;
+}
+
+.cdfNotification.small .cdfNotificationBody{
+  display:inline-block;
+  padding-left:17px;
+  text-align: left;
+  min-height:15px;
+}
+
+.cdfNotification.small .cdfNotificationImg {
+  height:15px;
+  width:15px;
+}
+
+.cdfNotification.small .cdfNotificationTitle {
+  font-size:11px;
+  line-height:1.1;
+  white-space:nowrap;}
+
+.cdfNotification.small .cdfNotificationDesc {
+  font-size:9px;
+  line-height:1.1;
+  white-space:nowrap;
+}
+
+.cdfNotificationContainer {
+  z-index:2100;
+  position:fixed;
+  top:0px;
+  right:0px;
+  width:100%;
+}
+
+.cdfNotificationContainer .cdfNotification.growl {
+  float: right;
+}
+
+.img {
+  /* img class for divs posing as img ( TODO: use an alt-text replacement? ) */
+  display:inline-block;
+}
+
+
+
+.cdfPopupContainer * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+}
+.cdfPopupContainer {
+  position:fixed;
+  top: 30%;
+  left:50%;
+  z-index:2000;
+}
+.cdfPopup {
+  width: 390px;
+  margin-left: -195px;
+  background: #D0D0D1;
+  border:solid 2px #000000;
+  overflow:hidden;
+}
+.cdfPopupHeader {
+  height:42px;
+  line-height:42px;
+  width:100%;
+  text-align:center;
+  cursor:default;
+  font-size: 14px;
+  font-weight:bold;
+}
+.cdfPopupBody {
+  height:150px;
+  font-size:12px;
+}
+.cdfPopupDesc {
+  height: 90px;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:center;
+  cursor:default;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:pre;
+  margin-bottom:10px;
+}
+.cdfPopupButton {
+  height:35px;
+  line-height:35px;
+  border: solid 1px #000000;
+  border-radius: 2px;
+  margin-left:27px;
+  margin-right:27px;
+  text-align:center;
+  cursor:pointer;
+}
+.cdfPopupButton:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/*!
+ * Copyright 2002 - 2017 Webdetails, a Hitachi Vantara company. All rights reserved.
+ *
+ * This software was developed by Webdetails and is provided under the terms
+ * of the Mozilla Public License, Version 2.0, or any later version. You may not use
+ * this file except in compliance with the license. If you need a copy of the license,
+ * please go to http://mozilla.org/MPL/2.0/. The Initial Developer is Webdetails.
+ *
+ * Software distributed under the Mozilla Public License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Please refer to
+ * the license for the specific language governing your rights and limitations.
+ */
+
+.blockUIDefaultImg {
+  background-image: url('cdf/js/lib/blockUI/images/processing_transparent.gif');
+  padding: 0px;
+  height:32px;
+  width:32px;
+  display:inline-block;
+}
+/* @group Base */
+.chzn-container {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.chzn-container .chzn-drop {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+  -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+  -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
+  box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+  z-index: 999;
+}
+/* @end */
+
+/* @group Single Chosen */
+.chzn-container-single .chzn-single {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, white));
+  background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image: -moz-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+  background-image: linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  border-radius        : 4px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  border: 1px solid #aaa;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 0 0 8px;
+  color: #444;
+  text-decoration: none;
+}
+.chzn-container-single .chzn-single span {
+  margin-right: 26px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.chzn-container-single .chzn-single div {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius   : 0 4px 4px 0;
+  border-radius        : 0 4px 4px 0;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background: #ccc;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
+  background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+  background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+  background-image: -o-linear-gradient(bottom, #ccc 0%, #eee 60%);
+  background-image: -ms-linear-gradient(top, #cccccc 0%,#eeeeee 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #cccccc 0%,#eeeeee 60%);
+  border-left: 1px solid #aaa;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 18px;
+}
+.chzn-container-single .chzn-single div b {
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 0 1px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.chzn-container-single .chzn-search {
+  padding: 3px 4px;
+  margin: 0;
+  white-space: nowrap;
+}
+.chzn-container-single .chzn-search input {
+  background: #fff url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px;
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat 100% -20px, linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  outline: 0;
+  border: 1px solid #aaa;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+.chzn-container-single .chzn-drop {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius   : 0 0 4px 4px;
+  border-radius        : 0 0 4px 4px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+}
+/* @end */
+
+/* @group Multi Chosen */
+.chzn-container-multi .chzn-choices {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background-image: -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  border: 1px solid #aaa;
+  margin: 0;
+  padding: 0;
+  cursor: text;
+  overflow: hidden;
+  height: auto !important;
+  height: 1%;
+  position: relative;
+}
+.chzn-container-multi .chzn-choices li {
+  float: left;
+  list-style: none;
+}
+.chzn-container-multi .chzn-choices .search-field {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.chzn-container-multi .chzn-choices .search-field input {
+  color: #666;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 5px;
+  margin: 1px 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  -o-box-shadow     : none;
+  box-shadow        : none;
+}
+.chzn-container-multi .chzn-choices .search-field .default {
+  color: #999;
+}
+.chzn-container-multi .chzn-choices .search-choice {
+  -webkit-border-radius: 3px;
+  -moz-border-radius   : 3px;
+  border-radius        : 3px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e4e4e4), color-stop(0.7, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -moz-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -o-linear-gradient(bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -ms-linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  color: #333;
+  border: 1px solid #b4b4b4;
+  line-height: 13px;
+  padding: 3px 19px 3px 6px;
+  margin: 3px 0 3px 5px;
+  position: relative;
+}
+.chzn-container-multi .chzn-choices .search-choice span {
+  cursor: default;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus {
+  background: #d4d4d4;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 8px;
+  height: 9px;
+  font-size: 1px;
+  background: url(cdf/js/lib/chosen/chosen-sprite.png) right top no-repeat;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+  background-position: right -9px;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+  background-position: right -9px;
+}
+/* @end */
+
+/* @group Results */
+.chzn-container .chzn-results {
+  margin: 0 4px 4px 0;
+  max-height: 190px;
+  padding: 0 0 0 4px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.chzn-container-multi .chzn-results {
+  margin: -1px 0 0;
+  padding: 0;
+}
+.chzn-container .chzn-results li {
+  line-height: 80%;
+  padding: 7px 7px 8px;
+  margin: 0;
+  list-style: none;
+}
+.chzn-container .chzn-results .active-result {
+  cursor: pointer;
+}
+.chzn-container .chzn-results .highlighted {
+  background: #3875d7;
+  color: #fff;
+}
+.chzn-container .chzn-results li em {
+  background: #feffde;
+  font-style: normal;
+}
+.chzn-container .chzn-results .highlighted em {
+  background: transparent;
+}
+.chzn-container .chzn-results .no-results {
+  background: #f4f4f4;
+}
+.chzn-container .chzn-results .group-result {
+  cursor: default;
+  color: #999;
+  font-weight: bold;
+}
+.chzn-container .chzn-results .group-option {
+  padding-left: 20px;
+}
+.chzn-container-multi .chzn-drop .result-selected {
+  display: none;
+}
+/* @end */
+
+/* @group Active  */
+.chzn-container-active .chzn-single {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-single-with-drop {
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0 1px 0 #fff inset;
+  -moz-box-shadow   : 0 1px 0 #fff inset;
+  -o-box-shadow     : 0 1px 0 #fff inset;
+  box-shadow        : 0 1px 0 #fff inset;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(0.5, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 0%, #eeeeee 50%);
+  background-image: -moz-linear-gradient(center bottom, white 0%, #eeeeee 50%);
+  background-image: -o-linear-gradient(bottom, white 0%, #eeeeee 50%);
+  background-image: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #ffffff 0%,#eeeeee 50%);
+  -webkit-border-bottom-left-radius : 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft : 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-left-radius : 0;
+  border-bottom-right-radius: 0;
+}
+.chzn-container-active .chzn-single-with-drop div {
+  background: transparent;
+  border-left: none;
+}
+.chzn-container-active .chzn-single-with-drop div b {
+  background-position: -18px 1px;
+}
+.chzn-container-active .chzn-choices {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.chzn-container-active .chzn-choices .search-field input {
+  color: #111 !important;
+}
+/* @end */
+
+/* @group Right to Left */
+.chzn-rtl { direction:rtl;text-align: right; }
+.chzn-rtl .chzn-single { padding-left: 0; padding-right: 8px; }
+.chzn-rtl .chzn-single span { margin-left: 26px; margin-right: 0; }
+.chzn-rtl .chzn-single div { 
+  left: 0; right: auto; 
+  border-left: none; border-right: 1px solid #aaaaaa;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius   : 4px 0 0 4px;
+  border-radius        : 4px 0 0 4px; 
+}
+.chzn-rtl .chzn-choices li { float: right; }
+.chzn-rtl .chzn-choices .search-choice { padding: 3px 6px 3px 19px; margin: 3px 5px 3px 0; }
+.chzn-rtl .chzn-choices .search-choice .search-choice-close { left: 5px; right: auto; background-position: right top;}
+.chzn-rtl.chzn-container-single .chzn-results { margin-left: 4px; margin-right: 0; padding-left: 0; padding-right: 4px; }
+.chzn-rtl .chzn-results .group-option { padding-left: 0; padding-right: 20px; }
+.chzn-rtl.chzn-container-active .chzn-single-with-drop div { border-right: none; }
+.chzn-rtl .chzn-search input {
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, #ffffff;
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);  
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('cdf/js/lib/chosen/chosen-sprite.png') no-repeat -38px -20px, linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  padding: 4px 5px 4px 20px;
+}
+/* @end */.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px !important }
+
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000 }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle; }
+  .select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none; }
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      display: block;
+      padding-left: 8px;
+      padding-right: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .select2-container .select2-selection--single .select2-selection__clear {
+      position: relative; }
+  .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+    padding-right: 8px;
+    padding-left: 20px; }
+  .select2-container .select2-selection--multiple {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    min-height: 32px;
+    user-select: none;
+    -webkit-user-select: none; }
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+      display: inline-block;
+      overflow: hidden;
+      padding-left: 8px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .select2-container .select2-search--inline {
+    float: left; }
+    .select2-container .select2-search--inline .select2-search__field {
+      box-sizing: border-box;
+      border: none;
+      font-size: 100%;
+      margin-top: 5px;
+      padding: 0; }
+      .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+        -webkit-appearance: none; }
+
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051; }
+
+.select2-results {
+  display: block; }
+
+.select2-results__options {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.select2-results__option {
+  padding: 6px;
+  user-select: none;
+  -webkit-user-select: none; }
+  .select2-results__option[aria-selected] {
+    cursor: pointer; }
+
+.select2-container--open .select2-dropdown {
+  left: 0; }
+
+.select2-container--open .select2-dropdown--above {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.select2-container--open .select2-dropdown--below {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.select2-search--dropdown {
+  display: block;
+  padding: 4px; }
+  .select2-search--dropdown .select2-search__field {
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box; }
+    .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+      -webkit-appearance: none; }
+  .select2-search--dropdown.select2-search--hide {
+    display: none; }
+
+.select2-close-mask {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 99;
+  background-color: #fff;
+  filter: alpha(opacity=0); }
+
+.select2-hidden-accessible {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px; }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px; }
+  .select2-container--default .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold; }
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #999; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px; }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+      border-color: #888 transparent transparent transparent;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      height: 0;
+      left: 50%;
+      margin-left: -4px;
+      margin-top: -2px;
+      position: absolute;
+      top: 50%;
+      width: 0; }
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
+  float: left; }
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  left: 1px;
+  right: auto; }
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+  background-color: #eee;
+  cursor: default; }
+  .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+    display: none; }
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #888 transparent;
+  border-width: 0 4px 5px 4px; }
+
+.select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text; }
+  .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+    width: 100%; }
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+      list-style: none; }
+  .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    color: #999;
+    margin-top: 5px;
+    float: left; }
+  .select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 10px; }
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px; }
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px; }
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+      color: #333; }
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
+  float: right; }
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  margin-left: 5px;
+  margin-right: auto; }
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto; }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid black 1px;
+  outline: 0; }
+
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+  background-color: #eee;
+  cursor: default; }
+
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+  display: none; }
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa; }
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: textfield; }
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto; }
+
+.select2-container--default .select2-results__option[role=group] {
+  padding: 0; }
+
+.select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #999; }
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: #ddd; }
+
+.select2-container--default .select2-results__option .select2-results__option {
+  padding-left: 1em; }
+  .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+    padding-left: 0; }
+  .select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -1em;
+    padding-left: 2em; }
+    .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+      margin-left: -2em;
+      padding-left: 3em; }
+      .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+        margin-left: -3em;
+        padding-left: 4em; }
+        .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+          margin-left: -4em;
+          padding-left: 5em; }
+          .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+            margin-left: -5em;
+            padding-left: 6em; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #5897fb;
+  color: white; }
+
+.select2-container--default .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px; }
+
+.select2-container--classic .select2-selection--single {
+  background-color: #f7f7f7;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0;
+  background-image: -webkit-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, white 50%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0); }
+  .select2-container--classic .select2-selection--single:focus {
+    border: 1px solid #5897fb; }
+  .select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px; }
+  .select2-container--classic .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-right: 10px; }
+  .select2-container--classic .select2-selection--single .select2-selection__placeholder {
+    color: #999; }
+  .select2-container--classic .select2-selection--single .select2-selection__arrow {
+    background-color: #ddd;
+    border: none;
+    border-left: 1px solid #aaa;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    background-image: -webkit-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+    background-image: -o-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+    background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0); }
+    .select2-container--classic .select2-selection--single .select2-selection__arrow b {
+      border-color: #888 transparent transparent transparent;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      height: 0;
+      left: 50%;
+      margin-left: -4px;
+      margin-top: -2px;
+      position: absolute;
+      top: 50%;
+      width: 0; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {
+  float: left; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  border: none;
+  border-right: 1px solid #aaa;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  left: 1px;
+  right: auto; }
+
+.select2-container--classic.select2-container--open .select2-selection--single {
+  border: 1px solid #5897fb; }
+  .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+    background: transparent;
+    border: none; }
+    .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+      border-color: transparent transparent #888 transparent;
+      border-width: 0 4px 5px 4px; }
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: -o-linear-gradient(top, white 0%, #eeeeee 50%);
+  background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0); }
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: -webkit-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 50%, white 100%);
+  background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0); }
+
+.select2-container--classic .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+  outline: 0; }
+  .select2-container--classic .select2-selection--multiple:focus {
+    border: 1px solid #5897fb; }
+  .select2-container--classic .select2-selection--multiple .select2-selection__rendered {
+    list-style: none;
+    margin: 0;
+    padding: 0 5px; }
+  .select2-container--classic .select2-selection--multiple .select2-selection__clear {
+    display: none; }
+  .select2-container--classic .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px; }
+  .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+    color: #888;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px; }
+    .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+      color: #555; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  float: right; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  margin-left: 5px;
+  margin-right: auto; }
+
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+  margin-left: 2px;
+  margin-right: auto; }
+
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+  border: 1px solid #5897fb; }
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: 0; }
+
+.select2-container--classic .select2-search--inline .select2-search__field {
+  outline: 0;
+  box-shadow: none; }
+
+.select2-container--classic .select2-dropdown {
+  background-color: white;
+  border: 1px solid transparent; }
+
+.select2-container--classic .select2-dropdown--above {
+  border-bottom: none; }
+
+.select2-container--classic .select2-dropdown--below {
+  border-top: none; }
+
+.select2-container--classic .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto; }
+
+.select2-container--classic .select2-results__option[role=group] {
+  padding: 0; }
+
+.select2-container--classic .select2-results__option[aria-disabled=true] {
+  color: grey; }
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+  background-color: #3875d7;
+  color: white; }
+
+.select2-container--classic .select2-results__group {
+  cursor: default;
+  display: block;
+  padding: 6px; }
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+  border-color: #5897fb; }
+/*!
+ * Copyright 2002 - 2017 Webdetails, a Hitachi Vantara company. All rights reserved.
+ *
+ * This software was developed by Webdetails and is provided under the terms
+ * of the Mozilla Public License, Version 2.0, or any later version. You may not use
+ * this file except in compliance with the license. If you need a copy of the license,
+ * please go to http://mozilla.org/MPL/2.0/. The Initial Developer is Webdetails.
+ *
+ * Software distributed under the Mozilla Public License is distributed on an "AS IS"
+ * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. Please refer to
+ * the license for the specific language governing your rights and limitations.
+ */
+
+.pentaho-toggle-button-up button {
+  background: #eee;
+  border: 1px outset white;
+}
+
+.pentaho-toggle-button-down button {
+  background: silver;
+  border: 1px inset gray;
+}
+
+
+.boxshadow .pentaho-toggle-button-up button {
+  background: #eee;
+  border: 1px solid gray;
+  box-shadow: inset 1px 1px 4px white,
+  inset -1px -1px 3px silver;
+  -webkit-box-shadow: inset 1px 1px 4px white,
+  inset -1px -1px 3px silver;
+  -moz-box-shadow: inset 1px 1px 4px white,
+  inset -1px -1px 3px silver;
+  -o-box-shadow: inset 1px 1px 4px white,
+  inset -1px -1px 3px silver;
+  -ms-box-shadow: inset 1px 1px 4px white,
+  inset -1px -1px 3px silver;
+}
+
+.boxshadow .pentaho-toggle-button-down button {
+  background: silver;
+  border: 1px solid black;
+  box-shadow: inset 1px 1px 1px gray;
+  -webkit-box-shadow: inset 1px 1px 1px gray;
+  -moz-box-shadow: inset 1px 1px 1px gray;
+  -o-box-shadow: inset 1px 1px 1px gray;
+  -ms-box-shadow: inset 1px 1px 1px gray;
+}
+.tundra input.dijitArrowButtonInner {
+  width: 16px;
+  margin: 0;
+}
+
+.dialog-content .dijitComboBox .dijitArrowButton,
+div.dijitDateTextBox.dijitComboBox .dijitArrowButton {
+  /* fallback color */
+  background: transparent;
+  /* Safari/Chrome */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #AAA), color-stop(0.10, #888), color-stop(0.50, #3f3f3f), color-stop(0.55, #000), color-stop(0.90, #121212));
+  /* Firefox */
+  background: -moz-linear-gradient(#AAAAAA, #888888 10%, #3F3F3F 50%, #000000 55%, #121212 90%) repeat scroll 0 0 transparent;
+}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common-ui/util/require-css/css" src="Emplyee%20Dashboard_files/css.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/date/locale" src="Emplyee%20Dashboard_files/locale.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/DateTextBox" src="Emplyee%20Dashboard_files/DateTextBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboards/widget-table" src="Emplyee%20Dashboard_files/widget-table.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/declare" src="Emplyee%20Dashboard_files/declare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/Calendar" src="Emplyee%20Dashboard_files/Calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_DateTimeTextBox" src="Emplyee%20Dashboard_files/_DateTimeTextBox.js"></script><link type="text/css" rel="stylesheet" href="Emplyee%20Dashboard_files/Dashboard.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/date" src="Emplyee%20Dashboard_files/date.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-attr" src="Emplyee%20Dashboard_files/dom-attr.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-class" src="Emplyee%20Dashboard_files/dom-class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/keys" src="Emplyee%20Dashboard_files/keys.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/on" src="Emplyee%20Dashboard_files/on.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/CalendarLite" src="Emplyee%20Dashboard_files/CalendarLite.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_Widget" src="Emplyee%20Dashboard_files/_Widget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_CssStateMixin" src="Emplyee%20Dashboard_files/_CssStateMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_TemplatedMixin" src="Emplyee%20Dashboard_files/_TemplatedMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/DropDownButton" src="Emplyee%20Dashboard_files/DropDownButton.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/date/stamp" src="Emplyee%20Dashboard_files/stamp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/RangeBoundTextBox" src="Emplyee%20Dashboard_files/RangeBoundTextBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_HasDropDown" src="Emplyee%20Dashboard_files/_HasDropDown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/text" src="Emplyee%20Dashboard_files/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cldr/supplemental" src="Emplyee%20Dashboard_files/supplemental.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom" src="Emplyee%20Dashboard_files/dom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/string" src="Emplyee%20Dashboard_files/string.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_WidgetBase" src="Emplyee%20Dashboard_files/_WidgetBase.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/a11yclick" src="Emplyee%20Dashboard_files/a11yclick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/hccss" src="Emplyee%20Dashboard_files/hccss_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/mouse" src="Emplyee%20Dashboard_files/mouse.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/touch" src="Emplyee%20Dashboard_files/touch.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/i18n" src="Emplyee%20Dashboard_files/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/regexp" src="Emplyee%20Dashboard_files/regexp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cache" src="Emplyee%20Dashboard_files/cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-construct" src="Emplyee%20Dashboard_files/dom-construct.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_AttachMixin" src="Emplyee%20Dashboard_files/_AttachMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/query" src="Emplyee%20Dashboard_files/query.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/popup" src="Emplyee%20Dashboard_files/popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/Button" src="Emplyee%20Dashboard_files/Button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_Container" src="Emplyee%20Dashboard_files/_Container.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/selector/_loader" src="Emplyee%20Dashboard_files/_loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/MappedTextBox" src="Emplyee%20Dashboard_files/MappedTextBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/selector/lite" src="Emplyee%20Dashboard_files/lite.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/hccss" src="Emplyee%20Dashboard_files/hccss.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/domReady" src="Emplyee%20Dashboard_files/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/ValidationTextBox" src="Emplyee%20Dashboard_files/ValidationTextBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-style" src="Emplyee%20Dashboard_files/dom-style.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-prop" src="Emplyee%20Dashboard_files/dom-prop.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/aspect" src="Emplyee%20Dashboard_files/aspect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/connect" src="Emplyee%20Dashboard_files/connect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/ready" src="Emplyee%20Dashboard_files/ready.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_OnDijitClickMixin" src="Emplyee%20Dashboard_files/_OnDijitClickMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_FocusMixin" src="Emplyee%20Dashboard_files/_FocusMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/uacss" src="Emplyee%20Dashboard_files/uacss.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/Deferred" src="Emplyee%20Dashboard_files/Deferred_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-geometry" src="Emplyee%20Dashboard_files/dom-geometry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/focus" src="Emplyee%20Dashboard_files/focus.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request" src="Emplyee%20Dashboard_files/request.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request/default" src="Emplyee%20Dashboard_files/default.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request/xhr" src="Emplyee%20Dashboard_files/xhr_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/errors/RequestError" src="Emplyee%20Dashboard_files/RequestError.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request/watch" src="Emplyee%20Dashboard_files/watch.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request/handlers" src="Emplyee%20Dashboard_files/handlers.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/request/util" src="Emplyee%20Dashboard_files/util.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/errors/create" src="Emplyee%20Dashboard_files/create.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/errors/RequestTimeoutError" src="Emplyee%20Dashboard_files/RequestTimeoutError.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/errors/CancelError" src="Emplyee%20Dashboard_files/CancelError.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/Deferred" src="Emplyee%20Dashboard_files/Deferred.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/promise/Promise" src="Emplyee%20Dashboard_files/Promise.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/json" src="Emplyee%20Dashboard_files/json_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/Stateful" src="Emplyee%20Dashboard_files/Stateful.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/topic" src="Emplyee%20Dashboard_files/topic.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/Destroyable" src="Emplyee%20Dashboard_files/Destroyable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/xhr" src="Emplyee%20Dashboard_files/xhr.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/place" src="Emplyee%20Dashboard_files/place.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/BackgroundIframe" src="Emplyee%20Dashboard_files/BackgroundIframe.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/Viewport" src="Emplyee%20Dashboard_files/Viewport.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_FormWidget" src="Emplyee%20Dashboard_files/_FormWidget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_ButtonMixin" src="Emplyee%20Dashboard_files/_ButtonMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/Evented" src="Emplyee%20Dashboard_files/Evented.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/window" src="Emplyee%20Dashboard_files/window.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_FormWidgetMixin" src="Emplyee%20Dashboard_files/_FormWidgetMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/TextBox" src="Emplyee%20Dashboard_files/TextBox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/Tooltip" src="Emplyee%20Dashboard_files/Tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_FormValueWidget" src="Emplyee%20Dashboard_files/_FormValueWidget.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_TextBoxMixin" src="Emplyee%20Dashboard_files/_TextBoxMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/_FormValueMixin" src="Emplyee%20Dashboard_files/_FormValueMixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/event" src="Emplyee%20Dashboard_files/event.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/sniff" src="Emplyee%20Dashboard_files/sniff.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/when" src="Emplyee%20Dashboard_files/when.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/a11y" src="Emplyee%20Dashboard_files/a11y.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/dom-form" src="Emplyee%20Dashboard_files/dom-form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/json" src="Emplyee%20Dashboard_files/json.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/fx" src="Emplyee%20Dashboard_files/fx.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/_base/manager" src="Emplyee%20Dashboard_files/manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cldr/nls/gregorian" src="Emplyee%20Dashboard_files/gregorian_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dijit/form/nls/validate" src="Emplyee%20Dashboard_files/validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/_base/Color" src="Emplyee%20Dashboard_files/Color.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dojo/cldr/nls/en/gregorian" src="Emplyee%20Dashboard_files/gregorian.js"></script></head>
+
+<body class="pentaho-transparent tundra ext-gecko pentaho-page-background" id="ext-gen6" style="">
+
+<div id="wrapper" class="wrapper">
+
+  <div id="dashboard-content"><!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+  <div id="titlebar" class="title" style="position: absolute; display: block; left: 0px; top: 0px; width: 1600px; height: 23px;">
+    <h1 class="pageTitle" id="dashboard-title">Employee DashBoard</h1>
+  </div>
+<!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start box-scrollarea -->
+  <div id="widget-area" class="widget-area" style="display: block; top: 29px; width: 1600px; height: 772px; left: 0px; z-index: 30;" scrollexception="true">
+    <div id="widget-area-scroll-shim" style="width:100%;height:100%;"></div>
+    <div id="select-frame-left"></div>
+    <div id="select-frame-top"></div>
+    <div id="select-frame-bottom"></div>
+    <div id="select-frame-right"></div>
+
+      
+<!-- Plugin content type support files -->
+<script type="text/javascript" src="Emplyee%20Dashboard_files/AnalyzerDashboardWidget_002.js"></script>
+<!-- start dashboard script -->
+<script type="text/javascript">
+
+printVisible = false;
+var xulDomJson = {
+  "window" : { 
+    "type" : "array",
+    "properties" : {
+      "width" : 0,
+      "id" : "Dashboard",
+      "parentId" : "",
+      "type" : "",
+      "height" : 0
+    }
+    ,
+    "items" : [
+    {
+      "box" : { 
+        "type" : "array",
+        "properties" : {
+          "hidden" : "false",
+          "collapsed" : false,
+          "width" : 0,
+          "id" : "titlebar",
+          "parentId" : "Dashboard",
+          "type" : "pagetitle",
+          "title" : "",
+          "height" : 23
+        }
+        ,
+        "items" : [
+        ] 
+      }
+    }
+    ,
+    {
+      "vbox" : { 
+        "type" : "array",
+        "properties" : {
+          "flex" : 1,
+          "id" : "widget-area",
+          "parentId" : "Dashboard",
+          "type" : "scrollarea"
+        }
+        ,
+        "items" : [
+        {
+          "box" : { 
+            "type" : "array",
+            "properties" : {
+              "hidden" : "true",
+              "collapsed" : false,
+              "width" : 0,
+              "id" : "FilterPanel",
+              "parentId" : "widget-area",
+              "type" : "povpanel",
+              "title" : "",
+              "height" : 100
+            }
+            ,
+            "items" : [
+            ] 
+          }
+        }
+        ,
+        {
+          "hbox" : { 
+            "type" : "array",
+            "properties" : {
+              "flex" : 1,
+              "id" : "hbox1",
+              "parentId" : "widget-area",
+              "type" : "layout"
+            }
+            ,
+            "items" : [
+            {
+              "box" : { 
+                "type" : "array",
+                "properties" : {
+                  "flex" : 1,
+                  "collapsed" : false,
+                  "id" : "Panel_1",
+                  "parentId" : "hbox1",
+                  "type" : "titled-panel",
+                  "title" : "Department Salaries"
+                }
+                ,
+                "items" : [
+                ] 
+              }
+            }
+            ,
+            {
+              "box" : { 
+                "type" : "array",
+                "properties" : {
+                  "flex" : 1,
+                  "collapsed" : false,
+                  "id" : "Panel_2",
+                  "parentId" : "hbox1",
+                  "type" : "titled-panel",
+                  "title" : "Job Salary"
+                }
+                ,
+                "items" : [
+                ] 
+              }
+            }
+            ,
+            {
+              "box" : { 
+                "type" : "array",
+                "properties" : {
+                  "flex" : 1,
+                  "collapsed" : false,
+                  "id" : "Panel_3",
+                  "parentId" : "hbox1",
+                  "type" : "titled-panel",
+                  "title" : "Salary and Dapartment"
+                }
+                ,
+                "items" : [
+                ] 
+              }
+            }
+            ] 
+          }
+        }
+        ,
+        {
+          "hbox" : { 
+            "type" : "array",
+            "properties" : {
+              "flex" : 1,
+              "id" : "hbox2",
+              "parentId" : "widget-area",
+              "type" : "layout"
+            }
+            ,
+            "items" : [
+            {
+              "box" : { 
+                "type" : "array",
+                "properties" : {
+                  "flex" : 1,
+                  "collapsed" : false,
+                  "id" : "Panel_4",
+                  "parentId" : "hbox2",
+                  "type" : "titled-panel",
+                  "title" : "Employee InterActive Report"
+                }
+                ,
+                "items" : [
+                ] 
+              }
+            }
+            ] 
+          }
+        }
+        ] 
+      }
+    }
+    ] 
+  }
+}
+;
+dashboardSettings[ 'title' ] = "Emplyee Dashboard";
+
+dashboardSettings[ 'heading' ] = "Employee DashBoard";
+
+dashboardSettings[ 'globalRefresh' ] = "";
+
+dashboardSettings[ 'theme' ] = "0-Sapphire";
+
+dashboardSettings[ 'template' ] = "xul\/09-3-over-1.xul";
+
+var dashboardJson = {
+  "Dashboard" : { 
+    "type" : "object",
+    "properties" : {
+      "globalRefresh" : null,
+      "enableWidgetPrinting" : false,
+      "themeRef" : "0-Sapphire",
+      "templateRef" : "xul\/09-3-over-1.xul",
+      "heading" : "Employee DashBoard",
+      "Documentation" : { 
+        "type" : "object",
+        "properties" : {
+          "author" : "admin",
+          "icon" : "",
+          "description" : ""
+        }
+      }
+,
+      "title" : "Emplyee Dashboard",
+      "dashboardParameters" : { 
+        "type" : "array",
+        "properties" : {
+        }
+        ,
+        "items" : [
+        ] 
+      }
+
+    }
+  }
+}
+;
+
+var dashboardParameters = [];
+
+var dashboardWidgets = [{"xactionPath":"/public/Steel Wheels/Employee chart3.xanalyzer","localizedName":"Employee chart3","timerStart":"2019-01-28T14:32:33.720Z","refreshPeriod":"0","GUID":"30218","cl":"","timerSplit":"2019-01-28T14:32:33.720Z","staticParameters":true,"type":"AnalyzerComponent","path":"/public/Steel Wheels/Employee chart3.xanalyzer","isDirty":false,"htmlObject":"content-area-Panel_1","solution":"","name":"widget1","action":"Employee chart3.xanalyzer","iframe":true,"parameters":[],"outputParameters":[["Department Name",false,"30218$[Department Name].[Department Name]"]]},{"xactionPath":"/public/Steel Wheels/Employee chart2.xanalyzer","localizedName":"Employee chart2","timerStart":"2019-01-28T14:32:33.738Z","refreshPeriod":"0","GUID":"95024","cl":"","timerSplit":"2019-01-28T14:32:33.738Z","staticParameters":true,"type":"AnalyzerComponent","path":"/public/Steel Wheels/Employee chart2.xanalyzer","isDirty":false,"htmlObject":"content-area-Panel_2","solution":"","name":"widget2","action":"Employee chart2.xanalyzer","iframe":true,"parameters":[],"outputParameters":[["Department Name",false,"95024$[Department Name].[Department Name]"],["Job",false,"95024$[Job].[Job]"]]},{"xactionPath":"/public/Steel Wheels/Employe 2.xanalyzer","localizedName":"Employe 2","refreshPeriod":"0","GUID":"57046","cl":"","staticParameters":true,"type":"AnalyzerComponent","path":"/public/Steel Wheels/Employe 2.xanalyzer","isDirty":false,"htmlObject":"content-area-Panel_3","solution":"","name":"widget3","action":"Employe 2.xanalyzer","iframe":true,"parameters":[],"outputParameters":[["Department Name",false,"57046$[Department Name].[Department Name]"],["Job",false,"57046$[Job].[Job]"]]},{"timerStart":"2019-01-28T14:32:33.717Z","logColor":"rgb(83,184,81)","refreshPeriod":"0","timerSplit":"2019-01-28T14:32:33.788Z","type":"PentahoPrptComponent","elapsedSinceSplit":"5","autoSubmit":true,"path":"public/Steel Wheels","iconImgSrc":"../../../../../repos/pentaho-interactive-reporting/resources/images/prptiFileType.png","isDirty":false,"solution":"","action":"Employe InterActive Report.prpti","paramExtraInfo":[{"id":"output-target","required":"true"}],"iframe":true,"outputParameters":[],"xactionPath":"/public/Steel Wheels/Employe InterActive Report.prpti","localizedName":"Vendor Sales Report (interactive report)","GUID":"13127","elapsedSinceStart":"71","staticParameters":true,"_iframe":{},"initInstance":"0","paramServiceUrl":"/pentaho/api/repos/%3Apublic%3ASteel%20Wheels%3AEmploye%20InterActive%20Report.prpti/parameter?frameless=true&showParameters=false&renderMode=PARAMETER","htmlObject":"content-area-Panel_4","name":"widget4","parameters":[["output-target","","table/html;page-mode=stream"]]}];
+
+var overlayXml = "<overlay xmlns:pho=\"http:\/\/www.pentaho.com\" pho:fixie=\"withme\">\n<box id=\"Panel_1\" pho:title=\"Department Salaries\" flex=\"1\" collapsed=\"false\" type=\"titled-panel\"\/>\n<box id=\"Panel_2\" pho:title=\"Job Salary\" flex=\"1\" collapsed=\"false\" type=\"titled-panel\"\/>\n<box id=\"Panel_3\" pho:title=\"Salary and Dapartment\" flex=\"1\" collapsed=\"false\" type=\"titled-panel\"\/>\n<box id=\"Panel_4\" pho:title=\"Employee InterActive Report\" flex=\"1\" collapsed=\"false\" type=\"titled-panel\"\/>\n<box id=\"Panel_5\" pho:title=\"Untitled 5\"\/>\n<box id=\"Panel_6\" pho:title=\"Untitled 6\"\/>\n<box id=\"Panel_7\" pho:title=\"Untitled 7\"\/>\n<box id=\"Panel_8\" pho:title=\"Untitled 8\"\/>\n<box id=\"Panel_9\" pho:title=\"Untitled 9\"\/>\n<box id=\"Panel_10\" pho:title=\"Untitled 10\"\/>\n<box id=\"Label_1\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_2\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_3\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_4\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_5\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_6\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_7\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_8\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_9\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"Label_10\" pho:value=\"!DashboardRenderer.DEFAULT_LABEL_TEXT!\"\/>\n<box id=\"titlebar\" hidden=\"false\" collapsed=\"false\" width=\"0\" type=\"pagetitle\" title=\"\" height=\"23\"\/><box id=\"widget-area\" flex=\"1\"\/><box id=\"widget-area\" type=\"scrollarea\"\/><box id=\"FilterPanel\" hidden=\"true\" collapsed=\"false\" width=\"0\" type=\"povpanel\" title=\"\" height=\"100\"\/><box id=\"hbox1\" flex=\"1\"\/><box id=\"hbox1\" type=\"layout\"\/><box id=\"hbox2\" flex=\"1\"\/><box id=\"hbox2\" type=\"layout\"\/><box id=\"widget-area\" flex=\"1\"\/><box id=\"widget-area\" type=\"scrollarea\"\/><box id=\"hbox1\" flex=\"1\"\/><box id=\"hbox1\" type=\"layout\"\/><box id=\"hbox2\" flex=\"1\"\/><box id=\"hbox2\" type=\"layout\"\/><\/overlay>";
+
+var editperms = {'sqlfilter':true,'urlwidget':true};
+
+</script>
+<!-- end dashboard script -->
+
+
+  <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start box-povpanel -->
+<div pho:panel="FilterPanel" id="FilterPanel" class="povContainer" style="position: absolute; top: 0px; width: 100%; height: 100%; left: 0px; z-index: 30; display: none;">
+	
+	<div class="widget" style="width: 100%" onclick="pentahoDashboardController.panelTitleClick('FilterPanel', true)"><!-- removed style="position:absolute" -->
+		<div class="wgtHead" id="wgtHead-FilterPanel" style="height: 18;">
+			<div id="filterArrow" class="panelTitleIcon" onclick="pentahoDashboardController.toggleFilterPanel()"></div>
+			<h1 pho:paneltitle="FilterPanel" id="panel-title-FilterPanel">Prompts</h1>
+			<div class="rightCorner"></div>
+		</div>
+
+		<div class="dataContainer" id="dataContainer-FilterPanel">
+			<div class="rightCorner">
+				<div class="wgtData">
+					<div id="content-area-FilterPanel" class="panel-contentarea scroll-panel" style="top: 0px; left: 0px; width: 100%;" scrollexception="true"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wgtFooter" id="wgtFooter-FilterPanel">
+			<div class="rightCorner"></div>
+		</div>
+	</div>
+</div>
+<!-- end box-povpanel --><!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+  <div id="hbox1" style="position: absolute; top: 0px; width: 1583px; height: 386px; left: 0px;">
+     <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start vbox-titled-panel -->
+
+    <div pho:panel="Panel_1" id="Panel_1" class="widgetContainer" style="position: absolute; top: 4px; width: 519.667px; height: 378px; left: 4px; z-index: 30;">
+      <div class="widget">
+        <!-- removed style="position:absolute" -->
+        <div class="wgtHead" id="wgtHead-Panel_1" onclick="pentahoDashboardController.panelTitleClick('Panel_1', true);" ondblclick="pentahoDashboardController.panelTitleDoubleClick('Panel_1')">
+          <h1 pho:paneltitle="Panel_1" id="panel-title-Panel_1" title="Department Salaries">Department Salaries</h1>
+          <div class="rightCorner"></div>
+      <!-- rpb: PDB 33 print button -->
+      <div class="widget-tools">
+        <span id="print-btn-Panel_1" title="Print widget" class="print-btn" style="display:none" onclick="pentahoDashboardController.printWidget('Panel_1');"></span>
+      </div>
+
+      <div class="editLabel" style="display:none; float:right">
+      	<span id="insert-btn-Panel_1" class="insert-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_1', false); pentahoDashboardController.showContentDropDown('Panel_1', this)"></span>
+      	<span id="edit-btn-Panel_1" class="edit-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_1', false); pentahoDashboardEditor.editSelectedWidget('Panel_1')"></span>
+
+        <!-- REMOVED for an issue with IE where the page "bounces" on certain widgets tooltip [PDB-896],
+             as well as consistency of tooltips on the dashboard page -->
+          <!--
+            <script type="text/javascript">
+            pentahoDashboardController.addOnLoadScript(function(){
+              $('#edit-btn-Panel_1').tooltip({showURL: false});
+              $('#insert-btn-Panel_1').tooltip({showURL: false});
+            });
+            </script>
+          -->
+      </div>
+      </div>
+        <div class="dataContainer" id="dataContainer-Panel_1" style="height: 356px;">
+          <div class="rightCorner">
+            <div class="wgtData">
+                <div id="content-area-Panel_1" class="panel-contentarea" style="top: 23px; width: 519.667px; height: 356px; left: 0px;" onclick="pentahoDashboardController.panelTitleClick('Panel_1', false)"><iframe onload="AnalyzerComponent.updateScreenPos(this)" id="iframe_content-area-Panel_1" cl="" action="Employee%20chart3.xanalyzer" src="Emplyee%20Dashboard_files/viewer.htm" width="100%" height="100%" frameborder="0"></iframe></div>
+            </div>
+          </div>
+        </div>
+        <div class="wgtFooter" id="wgtFooter-Panel_1">
+          <div class="rightCorner"></div>
+        </div>
+      </div>
+    </div>
+<!-- end vbox-titled-panel -->
+<!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start vbox-titled-panel -->
+
+    <div pho:panel="Panel_2" id="Panel_2" class="widgetContainer" style="position: absolute; top: 4px; width: 519.667px; height: 378px; left: 531.667px; z-index: 30;">
+      <div class="widget">
+        <!-- removed style="position:absolute" -->
+        <div class="wgtHead" id="wgtHead-Panel_2" onclick="pentahoDashboardController.panelTitleClick('Panel_2', true);" ondblclick="pentahoDashboardController.panelTitleDoubleClick('Panel_2')">
+          <h1 pho:paneltitle="Panel_2" id="panel-title-Panel_2" title="Job Salary">Job Salary</h1>
+          <div class="rightCorner"></div>
+      <!-- rpb: PDB 33 print button -->
+      <div class="widget-tools">
+        <span id="print-btn-Panel_2" title="Print widget" class="print-btn" style="display:none" onclick="pentahoDashboardController.printWidget('Panel_2');"></span>
+      </div>
+
+      <div class="editLabel" style="display:none; float:right">
+      	<span id="insert-btn-Panel_2" class="insert-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_2', false); pentahoDashboardController.showContentDropDown('Panel_2', this)"></span>
+      	<span id="edit-btn-Panel_2" class="edit-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_2', false); pentahoDashboardEditor.editSelectedWidget('Panel_2')"></span>
+
+        <!-- REMOVED for an issue with IE where the page "bounces" on certain widgets tooltip [PDB-896],
+             as well as consistency of tooltips on the dashboard page -->
+          <!--
+            <script type="text/javascript">
+            pentahoDashboardController.addOnLoadScript(function(){
+              $('#edit-btn-Panel_2').tooltip({showURL: false});
+              $('#insert-btn-Panel_2').tooltip({showURL: false});
+            });
+            </script>
+          -->
+      </div>
+      </div>
+        <div class="dataContainer" id="dataContainer-Panel_2" style="height: 356px;">
+          <div class="rightCorner">
+            <div class="wgtData">
+                <div id="content-area-Panel_2" class="panel-contentarea" style="top: 23px; width: 519.667px; height: 356px; left: 0px;" onclick="pentahoDashboardController.panelTitleClick('Panel_2', false)"><iframe onload="AnalyzerComponent.updateScreenPos(this)" id="iframe_content-area-Panel_2" cl="" action="Employee%20chart2.xanalyzer" src="Emplyee%20Dashboard_files/viewer_002.htm" width="100%" height="100%" frameborder="0"></iframe></div>
+            </div>
+          </div>
+        </div>
+        <div class="wgtFooter" id="wgtFooter-Panel_2">
+          <div class="rightCorner"></div>
+        </div>
+      </div>
+    </div>
+<!-- end vbox-titled-panel -->
+<!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start vbox-titled-panel -->
+
+    <div pho:panel="Panel_3" id="Panel_3" class="widgetContainer" style="position: absolute; top: 4px; width: 519.667px; height: 378px; left: 1059.33px; z-index: 30;">
+      <div class="widget">
+        <!-- removed style="position:absolute" -->
+        <div class="wgtHead" id="wgtHead-Panel_3" onclick="pentahoDashboardController.panelTitleClick('Panel_3', true);" ondblclick="pentahoDashboardController.panelTitleDoubleClick('Panel_3')">
+          <h1 pho:paneltitle="Panel_3" id="panel-title-Panel_3" title="Salary and Dapartment">Salary and Dapartment</h1>
+          <div class="rightCorner"></div>
+      <!-- rpb: PDB 33 print button -->
+      <div class="widget-tools">
+        <span id="print-btn-Panel_3" title="Print widget" class="print-btn" style="display:none" onclick="pentahoDashboardController.printWidget('Panel_3');"></span>
+      </div>
+
+      <div class="editLabel" style="display:none; float:right">
+      	<span id="insert-btn-Panel_3" class="insert-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_3', false); pentahoDashboardController.showContentDropDown('Panel_3', this)"></span>
+      	<span id="edit-btn-Panel_3" class="edit-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_3', false); pentahoDashboardEditor.editSelectedWidget('Panel_3')"></span>
+
+        <!-- REMOVED for an issue with IE where the page "bounces" on certain widgets tooltip [PDB-896],
+             as well as consistency of tooltips on the dashboard page -->
+          <!--
+            <script type="text/javascript">
+            pentahoDashboardController.addOnLoadScript(function(){
+              $('#edit-btn-Panel_3').tooltip({showURL: false});
+              $('#insert-btn-Panel_3').tooltip({showURL: false});
+            });
+            </script>
+          -->
+      </div>
+      </div>
+        <div class="dataContainer" id="dataContainer-Panel_3" style="height: 356px;">
+          <div class="rightCorner">
+            <div class="wgtData">
+                <div id="content-area-Panel_3" class="panel-contentarea" style="top: 23px; width: 519.667px; height: 356px; left: 0px;" onclick="pentahoDashboardController.panelTitleClick('Panel_3', false)"><iframe onload="AnalyzerComponent.updateScreenPos(this)" id="iframe_content-area-Panel_3" cl="" action="Employe%202.xanalyzer" src="Emplyee%20Dashboard_files/viewer_003.htm" width="100%" height="100%" frameborder="0"></iframe></div>
+            </div>
+          </div>
+        </div>
+        <div class="wgtFooter" id="wgtFooter-Panel_3">
+          <div class="rightCorner"></div>
+        </div>
+      </div>
+    </div>
+<!-- end vbox-titled-panel -->
+
+  </div>
+<!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+  <div id="hbox2" style="position: absolute; top: 386px; width: 1583px; height: 386px; left: 0px;">
+     <!-- /*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */ -->
+
+<!-- start vbox-titled-panel -->
+
+    <div pho:panel="Panel_4" id="Panel_4" class="widgetContainer" style="position: absolute; top: 4px; width: 1575px; height: 378px; left: 4px; z-index: 30;">
+      <div class="widget">
+        <!-- removed style="position:absolute" -->
+        <div class="wgtHead" id="wgtHead-Panel_4" onclick="pentahoDashboardController.panelTitleClick('Panel_4', true);" ondblclick="pentahoDashboardController.panelTitleDoubleClick('Panel_4')">
+          <h1 pho:paneltitle="Panel_4" id="panel-title-Panel_4" title="Employee InterActive Report">Employee InterActive Report</h1>
+          <div class="rightCorner"></div>
+      <!-- rpb: PDB 33 print button -->
+      <div class="widget-tools">
+        <span id="print-btn-Panel_4" title="Print widget" class="print-btn" style="display:none" onclick="pentahoDashboardController.printWidget('Panel_4');"></span>
+      </div>
+
+      <div class="editLabel" style="display:none; float:right">
+      	<span id="insert-btn-Panel_4" class="insert-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_4', false); pentahoDashboardController.showContentDropDown('Panel_4', this)"></span>
+      	<span id="edit-btn-Panel_4" class="edit-btn" onclick="pentahoDashboardController.panelTitleClick('Panel_4', false); pentahoDashboardEditor.editSelectedWidget('Panel_4')"></span>
+
+        <!-- REMOVED for an issue with IE where the page "bounces" on certain widgets tooltip [PDB-896],
+             as well as consistency of tooltips on the dashboard page -->
+          <!--
+            <script type="text/javascript">
+            pentahoDashboardController.addOnLoadScript(function(){
+              $('#edit-btn-Panel_4').tooltip({showURL: false});
+              $('#insert-btn-Panel_4').tooltip({showURL: false});
+            });
+            </script>
+          -->
+      </div>
+      </div>
+        <div class="dataContainer" id="dataContainer-Panel_4" style="height: 356px;">
+          <div class="rightCorner">
+            <div class="wgtData">
+                <div id="content-area-Panel_4" class="panel-contentarea" style="top: 23px; width: 1575px; height: 356px; left: 0px;" onclick="pentahoDashboardController.panelTitleClick('Panel_4', false)"><iframe style="width:100%;height:100%;border:0px" border="0" src="Emplyee%20Dashboard_files/prpt.htm" frameborder="0"></iframe></div>
+            </div>
+          </div>
+        </div>
+        <div class="wgtFooter" id="wgtFooter-Panel_4">
+          <div class="rightCorner"></div>
+        </div>
+      </div>
+    </div>
+<!-- end vbox-titled-panel -->
+
+  </div>
+
+
+  </div>
+<!-- end box-scrollarea -->
+</div>
+
+  
+
+</div>
+
+
+
+
+<div id="dialog-glass" style="display:none" class="dialog-base-style dialog-glass-style">
+
+</div>
+
+<div style="display:none" class="resize-exit-control-style" id="resize-exit-control">
+  <button class="pentaho-button" onclick="pentahoDashboardEditor.enterResizeMode(false)">Close</button>    </div>
+
+<div id="resize-wrapper" style="display:none" class="dialog-base-style">
+
+
+  <div class="resize-wrapper-top"></div>
+
+  <div class="resize-wrapper-inner"></div>
+  <div class="resize-wrapper-inner"></div>
+
+  <div class="resize-wrapper-top resize-wrapper-bottom"></div>
+
+  <div id="resize-glass" style="resize-glass-style">
+
+  </div>
+
+</div>
+
+<div id="dialog-plane" style="display:none" class="dialog-base-style dialog-plane-style">
+
+</div>
+
+<form id="submitform" action="dashboards" method="POST" target="saveIframe">
+  <input id="dashboardXml" name="dashboardXml" type="hidden" value="">
+  <input id="solution" name="solution" type="hidden" value="">
+  <input id="path" name="path" type="hidden" value="">
+  <input id="action_name" name="action_name" type="hidden" value="">
+  <input id="command" name="command" type="hidden" value="save">
+</form>
+
+
+<iframe src="javascript:''" id="resourceBundle" style="position: absolute; width: 0px; height: 0px; border: medium none;" tabindex="-1"></iframe><iframe src="javascript:''" id="dashboardviewer" style="position: absolute; width: 0px; height: 0px; border: medium none;" tabindex="-1"></iframe><div id="cdfErrorDiv"></div></body></html>

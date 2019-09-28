@@ -1,0 +1,1715 @@
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+
+/******** NEW SKIN STYLES *************/
+
+/* Hide browser scroll bar */
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+
+}
+
+.statusIcon {
+  vertical-align: middle;
+  padding-right: 6px;
+  width: 15px;
+  height: 15px;
+}
+
+.disabled {
+  cursor: default;
+}
+
+/* Message bar padding */
+#commonMsgText, #commonMsgBarBackground {
+  margin-left:256px;
+}
+
+#layoutPanel{
+  width: auto;
+  height: 100%;
+}
+
+/* Available Fields */
+.fieldListWrapper{
+  width: 200px;
+  height: 100%;
+}
+
+.fieldList {
+  height: 100%;
+  width: auto;
+  font-size: 13px;
+}
+
+.fieldList .fieldListTop {
+  width: 100%;
+  padding: 0px;
+}
+
+.fieldList .fieldListTop .fieldListHeading {
+  width: 100%;
+  padding: 7px 7px 5px 7px;
+}
+
+.fieldList .fieldListTop .fieldListOptions {
+  width: 100%;
+  height: 45px;
+  padding: 5px 7px 5px 7px;
+}
+
+.fieldList .fieldListTop .searchFieldLabel {
+  line-height: 21px;
+}
+
+.fieldList .fieldListTop .searchBox {
+  width: 100%;
+  padding: 0px 8px 0px 0px;
+}
+
+.fieldList .fieldListTop .searchField {
+  width: 100%;
+  height: 18px;
+}
+
+.fieldList .fieldListTop #editDatasource {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.fieldList .fieldListTop .clearSearchField {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  cursor: pointer;
+  background: url("../images/report/deleteFilterItem.gif");
+}
+
+.fieldList .fieldListTop .viewFieldOptions {
+  height: 15px;
+  padding: 0 3px;
+  cursor: pointer;
+  width: auto;
+}
+
+.fieldList .fieldListTree {
+  position: relative;
+  overflow: auto;
+  padding-left: 3px;
+}
+
+.fieldListTree .folder {
+  position: relative;
+  clear: left;
+  white-space: nowrap;
+  margin: 2px 2px 2px 0;
+  padding-left: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fieldListTree .folderContent {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+.fieldListTree .field {
+  position: relative;
+  clear: left;
+  white-space: nowrap;
+  padding: 0 11px 0 18px;
+  cursor: move;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-image: none;
+  border: 1px solid #ffffff;
+  height: 17px;
+  border-radius: 0px;
+  margin-bottom: 4px;
+  min-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fieldListTree .hiddenField {
+  display: none;
+}
+
+#fieldListTrashcan {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: none;
+}
+
+.fieldListTree #fieldListTreeContent .field{
+	margin-bottom:0px;
+	padding-top:2px;
+	padding-bottom:2px;
+	background-position:0px 2px;
+}
+
+.propPanelItem .gem:hover{
+  background-color: #E8DC78;
+  border: 1px solid #D6B225;
+  transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+}
+
+.dojoDndContainerOver .gem[type="measure"]:hover{
+  background-color: #BADFEC;
+  border: 1px solid #7EC9F2;
+}
+
+.fieldListTree .gem .gemMenuHandle.scalable{
+	position: absolute;
+	right: 0px;
+}
+
+.fieldListTree .fieldDrill {
+  white-space: nowrap;
+  padding: 0 0 0 18px;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 24px;
+  background-repeat: no-repeat;
+  background-image: none;
+}
+
+.fieldListSelectAllDrill {
+  padding-bottom: 5px;
+}
+
+.fieldListTree INPUT {
+  position: absolute;
+  margin-left: -37px;
+  margin-top: 1px;
+}
+
+.cvTooltip {
+  width: 200px;
+  position: absolute;
+  font-size: 86%;
+  padding: 2px;
+  z-index: 10;
+  display: block;
+}
+
+.fieldTooltipTitle {
+  width: 100%;
+}
+
+.fieldTooltipFooter {
+  /*width: auto;*/
+}
+
+/* End measures and attributes bar */
+
+.editor #reportContent {
+  padding: 10px 0 0;
+}
+
+#reportContent {
+}
+
+/* Report Buttons Bar */
+
+#reportBtns {
+  height: 30px;
+  padding: 5px;
+}
+
+#main_toolbar{
+  float:left;
+}
+
+.btnContainer {
+  position: relative;
+  float: left;
+}
+
+#main_toolbar .reportBtn {
+  float: left;
+  margin-right: 6px;
+  margin-top: 2px;
+  padding: 2px;
+  cursor:pointer;
+  text-align: center;
+  z-index: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+#main_toolbar .reportBtn IMG {
+  width: 16px;
+  height: 16px;
+}
+
+#main_toolbar .separator {
+  float: left;
+  margin-left: 3px;
+  margin-right: 9px;
+  border-left: 1px solid #999999;
+  height: 30px;
+}
+
+#reportBtns IMG.downArrow {
+  width: 11px;
+  height: 9px;
+  padding: 6px 0;
+}
+
+.reportImgBtn{
+  display: block;
+  float:left;
+  height:18px;
+  width: 18px;
+  margin-right: 15px;
+  cursor:pointer;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.reportImgBtn img {
+  cursor: pointer;
+}
+
+
+/* End Report Buttons Bar */
+/* Glow styles */
+
+.glow {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+/* End glow styles */
+
+.reportMain {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.VIEW .EDIT_Only {
+  display: none;
+}
+
+.MINI .EDIT_Only {
+  display: none;
+}
+
+/* Title bar */
+.reportTitle {
+  padding: 5px 10px 5px 0px;
+  overflow: hidden;
+}
+
+.reportTitle H2 {
+  font-size: 1.29em;
+  display: inline;
+  cursor: pointer;
+  line-height: 21px;
+}
+
+.titleLink {
+  float: left;
+  text-decoration:none;
+  padding-left: 4px;
+}
+
+.reportName {
+	padding-top: 5px;
+	position: absolute;
+	font-weight: bold;
+	cursor: default;
+}
+
+.boldLabel {
+  font-weight: bold;
+}
+
+.VIEW .reportTitle A {
+  cursor: default;
+}
+
+.VIEW .reportTitle .titleLink {
+  padding-left: 5px;
+}
+
+.reportTitle .titleLink IMG {
+  float: left;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-top: 4px;
+  padding-right: 2px;
+}
+
+.reportFormatDiv {
+  height: 24px;
+  width: 240px;
+  overflow: hidden;
+  float: right;
+  padding: 4px;
+}
+
+.reportFormatShowDiv {
+  height: 21px;
+  overflow: hidden;
+  float: right;
+}
+
+.reportDisplayFormat {
+  float: right;
+  cursor: pointer;
+}
+
+/* End title bar */
+
+/* Report summary bar */
+
+.filterSummary {
+  cursor: pointer;
+}
+
+.filterSummary SPAN {
+  float: left;
+  height: 20px;
+  padding: 3px 3px 0 3px;
+}
+
+.filterPaneToggle {
+  height: 20px;
+  width: 22px;
+  float: left;
+  margin: 4px 2px 0 5px;
+  cursor: pointer;
+}
+
+.statusBar {
+  float: right;
+  padding: 5px 10px 0 0;
+}
+
+/* End report summary bar */
+
+/* Field zones */
+.commonDragObject {
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+
+.dropZoneAttributes {
+  vertical-align: top;
+  width: 98%;
+  min-height: 24px;
+  height: auto !important;
+  height: 24px;
+  overflow: auto;
+}
+
+.dropZoneMeasures {
+  vertical-align: top;
+  width: 98%;
+  min-height: 24px;
+  height: auto !important;
+  height: 24px;
+  overflow: auto;
+}
+
+.reportLayout .attributeItem {
+  width: 120px;
+}
+
+.reportLayout .attributeMultiChartItem {
+  width: 120px;
+}
+
+
+.reportLayout .metricItem {
+  margin: 2px 0 2px 2px;
+  width: 120px;
+}
+
+
+.reportLayout TABLE {
+  width: 100%;
+  float: left;
+  table-layout: fixed;
+  border: 0;
+}
+
+.reportLayout .hideLayoutPane {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+TD.dropZoneLabel {
+  width: 125px;
+  text-align: right;
+  padding-right: 3px;
+  font-size: .86em;
+}
+
+.dropZoneItem {
+  cursor: move;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
+}
+
+.gemLabel {
+  width: 114px;
+  height: 17px;
+  overflow: hidden;
+  padding-top: 3px;
+  padding-left: 6px;
+}
+
+/* End fields stuff */
+
+/* Filter related styles */
+
+.reportFilter {
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.filters {
+  vertical-align: top;
+  min-height: 82px;
+  width: 92%;
+  margin: 2px 0 2px 8px;
+  overflow: auto;
+}
+
+.filterPaneHint {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.filterGroup {
+  float: left;
+  width: 97%;
+}
+
+.lockImg {
+  width: 11px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: top;
+  background-image: url(../images/icons/locked.gif);
+  cursor: pointer;
+}
+
+.unlocked .lockImg, .lockedForUser .filterAction {
+  display: none;
+}
+
+.filterItem {
+  width: 100%;
+  overflow: auto;
+  min-height: 17px;
+}
+
+.filterItem i {
+  cursor: pointer;
+  margin: 0 5px 0 2px;
+  display: inline-block;
+}
+
+.filterItemList {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+.filterLine {
+  height: 26px;
+}
+
+.filterIndent {
+  float: left;
+  width: 50px;
+  overflow: hidden;
+}
+
+.filterIndent2 {
+  float: left;
+  width: 65px;
+}
+
+.filterText {
+  width: 70%;
+  padding: 3px 0;
+  vertical-align: middle;
+  float: left;
+}
+
+.optionItem {
+  float: left;
+  clear: left;
+  width: 90%;
+}
+
+
+/******** END NEW SKIN STYLES *************/
+/******** TEMP STYLES *************/
+.timePresets {display:none;}
+
+/******** END TEMP STYLES *************/
+.closeBox {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.helpIcon {
+  margin-top: 5px;
+}
+
+/* Main Report Content */
+.reportRefresh {
+  height: 31px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.reportArea {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.reportArea .reportEmpty, .reportArea .noData {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.reportArea .reportEmpty, .reportArea .noData .noDataHeader {
+  font-size: 152%;
+}
+
+.reportArea .noData .noDataHint {
+  float: left;
+  clear: left;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reportArea IMG {
+  display: block;
+  margin: auto;
+}
+
+.reportArea PRE {
+  overflow: auto;
+  float: left;
+  clear: left;
+  width: 95%;
+  height: 80%;
+}
+
+.reportArea .reportMsgIcon {
+  vertical-align: top;
+  float: left;
+  margin-right: 10px;
+  background-image: url(../images/icons/exception_l.gif);
+  height: 46px; width: 46px;
+}
+
+.reportArea .reportMsgText {
+  overflow: none;
+  width: 85%;
+  float: left;
+  padding-top: 10px;
+}
+
+.reportArea #selectionFilterPanel {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  padding: 2px 3px 5px 3px;
+  background-color: #888888;
+  opacity: .8;
+  border-left: 1px #333333 solid;
+  border-right: 1px #333333 solid;
+  border-bottom: 1px #333333 solid;
+}
+
+.reportArea .pentaho-visual-base-model {
+  overflow: hidden;
+}
+
+.reportArea .pentaho-visual-base-model.vertical-axis-overflow {
+  overflow-y: auto;
+}
+
+.reportArea .pentaho-visual-base-model.horizontal-axis-overflow {
+  overflow-x: auto;
+}
+
+/* Pivot Table Styles */
+.pivotTable {
+  margin: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+  -moz-user-select:none;
+  cursor:default;
+  padding: 0 0 0 0;
+}
+
+.pivotTable TABLE {
+  border-spacing: 0;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.pivotTable .pivotTableRowLabelHeaderSection {
+  vertical-align: bottom;
+}
+
+.pivotTable .pivotTableRowLabelHeaderContainer {
+  vertical-align: bottom;
+}
+
+.pivotTable .pivotTableRowLabelHeaderContainer TABLE {
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.pivotTable .pivotTableColumnHeaderSection {
+  vertical-align: bottom;
+  position:relative;
+  overflow:hidden;
+  width: auto;
+}
+
+
+.pivotTable .pivotTableColumnHeaderSection TABLE {
+  position: relative;
+}
+
+.pivotTable .pivotTableColumnHeaderContainer {
+  overflow: hidden;
+  vertical-align: bottom;
+  width: auto;
+  position: relative;
+}
+
+.pivotTable .pivotTableColumnHeaderContainer TABLE {
+  border-collapse: collapse;
+  table-layout: fixed;
+  cursor: pointer;
+  position: relative;
+}
+
+.pivotTable .pivotTableDataSection {
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.pivotTable .pivotTableDataContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.pivotTable .pivotTableDataContainer TABLE {
+  table-layout: fixed;
+  position: relative;
+}
+
+.pivotTable .pivotTableRowLabelSection {
+  vertical-align: top;
+}
+
+.pivotTable .pivotTableRowLabelSection.empty {
+  background: #999999;
+}
+
+.pivotTable .pivotTableRowLabelContainer {
+  overflow: hidden;
+  vertical-align: top;
+  position: relative;
+}
+
+.pivotTable .pivotTableRowLabelContainer TABLE {
+  border-collapse: collapse;
+  cursor: pointer;
+  position: relative;
+}
+
+.pivotTable .pivotTableScrollbars {
+  overflow: scroll;
+  position: relative;
+  z-index: 100;
+}
+
+.pivotTable .pivotTableContent {
+  position: relative;
+  z-index: 101;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.pivotTable .pivotTableContent TABLE {
+  border-collapse: collapse;
+}
+
+.pivotTable .pivotTableContent A {
+  color: #003D89;
+}
+
+.pivotTable .slicer {
+  background-color: white;
+}
+
+.pivotTable .columnHeaders TD {
+  padding: 0 0 0 0;
+  vertical-align: top;
+  text-overflow: ellipsis;
+}
+
+.pivotTable .columnHeaders .member {
+  text-align: center;
+}
+
+
+.pivotTable .columnHeaders .memberSubTotal {
+  text-align: center;
+}
+
+.pivotTable .columnHeaders .metricNoData {
+  text-align: center;
+}
+
+.pivotTable .columnHeaders .metric {
+  text-align: center;
+}
+
+.pivotTable .columnHeaders DIV {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 2px 4px 2px 4px;
+}
+
+.pivotTable .rowLabelHeaders TD {
+  vertical-align: top;
+}
+
+
+.pivotTable .rowLabelHeaders TD DIV {
+  white-space: nowrap;
+  margin: 2px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pivotTable .rowHeaders TD DIV {
+  white-space: nowrap;
+  padding: 2px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pivotTable .cells TD {
+  padding: 0 0 0 0;
+  text-align: right;
+  cursor: move;
+}
+
+.pivotTable .cells DIV {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 2px 4px 2px 4px;
+}
+
+
+.pivotTable .cells  .databar-red
+{
+  margin: 0px;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.pivotTable .cells  .databar-green
+{
+  margin: 0px;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.pivotTable .cells  .databar-blue
+{
+  margin: 0px;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.pivotTable .cells .databar-wrapper
+{
+  position: relative;
+  margin: 0px;
+}
+
+.pivotTable .sortActiveAsc > .resize > .sort,
+.pivotTable .sortActiveDesc > .resize > .sort {
+  padding-right: 13px;
+}
+
+.pivotTable .sortActiveAsc {
+  background: url("../images/icons/ascending.png") no-repeat right top;
+}
+
+.pivotTable .sortActiveDesc {
+  background: url("../images/icons/descending.png") no-repeat right top;
+}
+
+/* Used to tag headers that aren't actively being sorted */
+.pivotTable .sortInactive {
+}
+
+.rowTruncate {
+  position: absolute;
+  left: 10px;
+  padding: 5px;
+  width: 600px;
+  z-Index: 200;
+}
+
+.colTruncate {
+  position: absolute;
+  padding: 5px;
+  width: 300px;
+  z-Index: 200;
+}
+
+.reportMain .trashcan {
+  position: absolute;
+  width: 138px;
+  height: 147px;
+  z-index: 1000;
+}
+
+
+/* Dojo widget styles */
+
+/* Dojo popup menus */
+body .dojoMenuItem2 {
+  height: 25px;
+}
+
+body .dojoMenuItem2Hover {
+  background-color: #CBEFA3;
+}
+
+#progressPane #progressPaneActions div {
+  width: 100%;
+  clear: both;
+}
+
+.pivotTable .rowLabelHeaders .resize,
+.pivotTable .columnHeaders .resize {
+  cursor: default;
+  margin-left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right:0;
+}
+
+.pivotTable .rowLabelHeaders .sortActiveAsc > .resize,
+.pivotTable .rowLabelHeaders .sortActiveDesc > .resize,
+.pivotTable .columnHeaders .sortActiveAsc > .resize,
+.pivotTable .columnHeaders .sortActiveDesc > .resize {
+  padding-right: 2px;
+}
+
+.pivotTable .rowLabelHeaders .sort,
+.pivotTable .columnHeaders .sort {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.pivotTable .rowLabelHeaders .resizeHandle{
+  cursor:col-resize;
+  line-height: 0px;
+  position: absolute;
+  width: 0px;
+  bottom: 0px;
+  height: 118px;
+  margin:0;
+  padding:0;
+}
+/*IE6 doesn't support transparent border, do IE6 hack here*/
+*html .pivotTable .rowLabelHeaders .resizeHandle
+{
+  border-color: pink;
+  filter: chroma(color=pink);
+}
+
+.pivotTable .columnHeaders .resizeHandle{
+  cursor:col-resize;
+  line-height: 0px;
+  position: absolute;
+  width: 0px;
+  bottom: 0px;
+  height: 118px;
+  margin:0;
+  padding:0;
+}
+
+*html .pivotTable .columnHeaders .resizeHandle
+{
+  border-color: pink;
+  filter: chroma(color=pink);
+}
+
+.pivotTable .resizeIndicator{
+  float: top;
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 1000px;
+  cursor: col-resize;
+}
+
+.rptInfoTitle {
+  color:#9dace0;
+}
+.rptInfo {
+  width: 460px;
+  border: 2px solid #848484;
+  background-color: #ffffff;
+}
+.rptInfoContent {
+  width: 460px;
+  background-color: #FFFFFF;
+  font-family: verdana, geneva, arial, helvetica, sans-serif;
+}
+
+.cvRptInfoTooltip{
+  position: absolute;
+}
+
+.cvRptInfoTooltipHeader {
+  height: 25px;
+  width: 460px;
+}
+
+.cvRptInfoTooltipTitle {
+}
+
+.cvRptInfoTooltipBody_2 {
+  height: 102px;
+  width: 460px;
+  padding-top:8px;
+}
+
+.cvRptInfoTooltipFooter {
+  height: 10px;
+  width: 460px;
+}
+
+.buttonOK {
+  margin-right: 0px;
+  align: right;
+}
+.buttonCancel {
+  margin-right:0px;
+}
+
+.refreshPaneComplete {
+  padding: 3px 5px 0px 15px;
+}
+
+*html refreshPaneComplete
+{
+  border-color: pink;
+  filter: chroma(color=pink);
+}
+
+.refreshPaneCanceledMode {
+  padding-top: 3px;
+  padding-bottom:0px;
+  padding-right:5px;
+  height: 18px;
+}
+
+.progressPaneUp {
+  width: 240px;
+  height:66px;
+  z-index: 1100;
+  top:105px;
+  right:5%;
+}
+
+.progressPaneContent {
+  width: 220px;
+  padding-left:10px;
+  z-index: 1100;
+  word-wrap: break-word;
+  white-space-collapse:collapse;
+}
+
+.progressPaneDown {
+  width: 240px;
+  height:20px;
+  background-repeat:no-repeat;
+  z-index: 1100;
+}
+
+.progressPaneHeaderLabel {
+  padding-top:40px;
+  padding-left:15px;
+}
+
+.progressPaneDiv {
+  float:right;
+  margin-top:3px;
+  height:18px;
+}
+
+.reportTooltipTextArea {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.cmdActionsBtn{
+  border: 1px solid #848484;
+  margin:2px 10px 0px 0px;
+  padding-right: 10px;
+  padding-left: 6px;
+  height: 19px;
+  display:block;
+  width: 60px;
+  cursor: pointer;
+}
+
+.cmdActionsBtn span{
+  line-height: 19px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.autoRefreshDirtyPane{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 998;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#gridChartDiv #gridChartTable {
+  border-collapse:collapse;
+}
+
+#gridChartDiv #gridChartTable .gridChartItem {
+  padding: 5px 0px 0px 0px;
+}
+
+.multiChartCmdButton {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#reportContainerWrapper{
+  padding: 0px 0px 0px 0px;
+}
+
+.rubberBand {
+  position: absolute;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  border: 2px solid #86fe00;
+  z-index: 999;
+  background-color: #cbefa3;
+  opacity: 0.6;
+  filter:alpha(opacity=60);
+}
+
+#selectChartWait {
+	position:absolute;
+	cursor:wait;
+	width:100%;
+	height:100%;
+	z-index:999;
+	background-color: white;
+	opacity: .01;
+	filter:alpha(opacity=1)
+}
+
+.fieldListTree .attribute {
+  background-image: url(../images/gemBar_level.png);
+}
+
+.fieldListTree .measure {
+  background-image: url(../images/gemBar_measure.png);
+}
+
+.fieldListTree .measure.inlineCalcMeasure {
+  background: url("../images/icon_inline_measure.png") no-repeat;
+}
+
+.dijitDialogTitleBar.Caption{ /* we do not use this diji dialog element, hide */
+  display: none;
+}
+
+.IE #reportContent, .IE #borderContainer{
+  position:fixed;
+  top:0px;
+  left: 0px;
+}
+
+#pageLoading {
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size:100%;
+  padding-left:250px;
+  background: #FFF;
+}
+
+/***** Theme-able icon styles - override styles and images within resource/styles/themes/_theme_.css  *****/
+.page-loading-icon {
+  background: url("../images/indicator_circle_ball.gif");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+#pageLoadingMessage {
+  display: inline-block;
+}
+
+.edit-datasource-icon {
+  float:right;
+  visibility:hidden;
+}
+
+#arrow-menu,
+.arrow-menu-icon {
+  background: url("../images/icons/arrow_menu.gif");
+  height: 9px;
+  width: 11px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.field-panel-icon {
+  background-image: url("../images/toolbar/field_panel.png");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.field-layout-icon {
+  background-image: url("../images/toolbar/field_layout.png");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.back-icon {
+  background-image: url("../images/toolbar/back.png");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.auto-refresh-icon {
+  background-image: url("../images/toolbar/auto_refresh.png");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.more-menu-icon {
+  background-image: url("../images/toolbar/more_menu.png");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.show-chart-icon {
+  background-image: url("../images/toolbar/btn_chart.png");
+  height: 23px;
+  width: 28px;
+  display: inline-block;
+}
+.show-pivot-icon {
+  background-image: url("../images/toolbar/btn_table.png");
+  height: 23px;
+  width: 28px;
+  display: inline-block;
+}
+
+#cmdSelectChartType.reportDisplayFormat.pentaho-downbutton {
+  height: 23px;
+}
+
+.button-close {
+  height: 16px; width: 16px;
+  background-image: url(../images/report/button_close.gif);
+  cursor: pointer;
+}
+.info-icon {
+  height: 18px; width: 23px;
+  background-image: url(../images/icons/info.gif);
+  cursor: pointer;
+  display: inline-block;
+}
+.warn-icon {
+  height: 18px; width: 23px;
+  background-image: url(../images/icons/warn.png);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3px;
+}
+.button-cancel {
+  background-image: url(../images/report/button_cancel.png);
+  height: 16px; width: 55px;
+  cursor: pointer;
+  float: left;
+}
+#RP_editDescButton {
+  padding-right: 4px;
+}
+.icon-object-desc {
+  background-image: url(../images/report/icon_object_desc.png);
+  height: 16px; width: 12px;
+  cursor: pointer;
+}
+.button-add-condition {
+  background: url(../images/dialog/button_add_condition.gif) no-repeat center left;
+  border: 1px solid #c8c8c8;
+	padding: 2px 10px 2px 21px;
+	font-size: .85em;
+	color: rgb(100,100,100);
+  cursor: pointer;
+  background-color: rgb(247,247,247);
+}
+
+.icon-report-abstract {
+  background-image: url(../images/icon_report_abstract.png);
+  height: 96px; width: 200px;
+  display: inline-block;
+}
+
+.gem-bar-level {
+  background-image: url(../images/gemBar_level.png);
+  height: 16px; width: 16px;
+  display: inline-block;
+}
+.gem-bar-measure {
+  background-image: url(../images/gemBar_measure.png);
+  height: 16px; width: 16px;
+  display: inline-block;
+}
+.gem-bar-filter {
+  background-image: url(../images/gemBar_filter.png);
+  height: 16px; width: 16px;
+  display: inline-block;
+}
+
+.dnd-indicator-horizontal-left {
+  position:relative;
+  top:6px;
+  height:16px;
+  width:14px;
+  float:left;
+  overflow:hidden;
+  background:url(../images/dnd_left_arrow.png) no-repeat;
+}
+.dnd-indicator-horizontal-line {
+  position:relative;
+  top:10px;
+  height:12px;
+  float:left;
+  background:url(../images/dnd_horz_line.png) repeat-x;
+  /* width will be set inline by javascript to be dynamic */
+}
+.dnd-indicator-horizontal-right {
+  position:relative;
+  top:6px;
+  height:16px;
+  width:14px;
+  float:left;
+  overflow:hidden;
+  background:url(../images/dnd_right_arrow.png) no-repeat;
+}
+
+.dnd-indicator-vertical-top {
+  position:relative;
+  left:6px;
+  width:16px;
+  height:14px;
+  overflow:hidden;
+  background:url(../images/dnd_top_arrow.png);
+}
+.dnd-indicator-vertical-line {
+  position:relative;
+  left:11px;
+  width:7px;
+  background:url(../images/dnd_vert_line.png) repeat-y;
+  /* height will be set inline by javascript to be dynamic */
+}
+.dnd-indicator-vertical-bottom {
+  position:relative;
+  left:6px;
+  width:16px;
+  height:14px;
+  overflow:hidden;
+  background:url(../images/dnd_bottom_arrow.png);
+}
+
+
+.viz-image {
+  margin: 0 auto;
+}
+.viz-image.PIVOT {
+  background: url(../images/viz/PIVOT.png) no-repeat;
+  width: 168px;
+  height: 119px;
+}
+.viz-image.CCC_AREA {
+  background: url(../images/viz/CCC_AREA.png) no-repeat;
+  width: 179px;
+  height: 126px;
+}
+.viz-image.CCC_BAR {
+  background: url(../images/viz/CCC_BAR.png) no-repeat;
+  width: 179px;
+  height: 124px;
+}
+.viz-image.CCC_BARLINE {
+  background: url(../images/viz/CCC_BARLINE.png) no-repeat;
+  width: 179px;
+  height: 124px;
+}
+.viz-image.CCC_BARNORMALIZED {
+  background: url(../images/viz/CCC_BARNORMALIZED.png) no-repeat;
+  width: 179px;
+  height: 127px;
+}
+.viz-image.CCC_BARSTACKED {
+  background: url(../images/viz/CCC_BARSTACKED.png) no-repeat;
+  width: 179px;
+  height: 125px;
+}
+.viz-image.CCC_HEATGRID {
+  background: url(../images/viz/CCC_HEATGRID.png) no-repeat;
+  width: 179px;
+  height: 133px;
+}
+.viz-image.CCC_HORZBAR {
+  background: url(../images/viz/CCC_HORZBAR.png) no-repeat;
+  width: 179px;
+  height: 129px;
+}
+.viz-image.CCC_HORZBARNORMALIZED {
+  background: url(../images/viz/CCC_HORZBARNORMALIZED.png) no-repeat;
+  width: 179px;
+  height: 126px;
+}
+.viz-image.CCC_HORZBARSTACKED {
+  background: url(../images/viz/CCC_HORZBARSTACKED.png) no-repeat;
+  width: 179px;
+  height: 132px;
+}
+.viz-image.CCC_LINE {
+  background: url(../images/viz/CCC_LINE.png) no-repeat;
+  width: 179px;
+  height: 127px;
+}
+.viz-image.CCC_PIE {
+  background: url(../images/viz/CCC_PIE.png) no-repeat;
+  width: 73px;
+  height: 108px;
+}
+.viz-image.CCC_SCATTER {
+  background: url(../images/viz/CCC_SCATTER.png) no-repeat;
+  width: 179px;
+  height: 128px;
+}
+.viz-image.CCC_TREEMAP {
+  background: url(../images/viz/CCC_TREEMAP.png) no-repeat;
+  width: 179px;
+  height: 132px;
+}
+.viz-image.CCC_SUNBURST {
+  background: url(../images/viz/CCC_SUNBURST.png) no-repeat;
+  width: 179px;
+  height: 132px;
+}
+.viz-image.HORIZONTAL_BAR {
+  background: url(../images/viz/HORIZONTAL_BAR.png) no-repeat;
+  width: 179px;
+  height: 129px;
+}
+.viz-image.LINE {
+  background: url(../images/viz/LINE.png) no-repeat;
+  width: 179px;
+  height: 127px;
+}
+.viz-image.MULTIPLE_PIE {
+  background: url(../images/viz/MULTIPLE_PIE.png) no-repeat;
+  width: 73px;
+  height: 108px;
+}
+.viz-image.OPEN_LAYERS {
+  background: url(../images/viz/OPEN_LAYERS.png) no-repeat;
+  width: 162px;
+  height: 126px;
+}
+.viz-image.PCT_STACKED_HORIZONTAL_BAR {
+  background: url(../images/viz/PCT_STACKED_HORIZONTAL_BAR.png) no-repeat;
+  width: 179px;
+  height: 126px;
+}
+.viz-image.PCT_STACKED_VERTICAL_BAR {
+   background: url(../images/viz/PCT_STACKED_VERTICAL_BAR.png) no-repeat;
+   width: 179px;
+   height: 127px;
+}
+.viz-image.SCATTER {
+  background: url(../images/viz/SCATTER.png) no-repeat;
+  width: 179px;
+  height: 128px;
+}
+.viz-image.STACKED_AREA {
+  background: url(../images/viz/STACKED_AREA.png) no-repeat;
+  width: 179px;
+  height: 126px;
+}
+.viz-image.STACKED_HORIZONTAL_BAR {
+  background: url(../images/viz/STACKED_HORIZONTAL_BAR.png) no-repeat;
+  width: 179px;
+  height: 128px;
+}
+.viz-image.STACKED_VERTICAL_BAR {
+  background: url(../images/viz/STACKED_VERTICAL_BAR.png) no-repeat;
+  width: 179px;
+  height: 125px;
+}
+.viz-image.VERTICAL_BAR {
+  background: url(../images/viz/VERTICAL_BAR.png) no-repeat;
+  width: 179px;
+  height: 124px;
+}
+
+/* Shared dialog properties */
+.dialog-content .form-input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.dialog-content .left-column {
+  width: 35%;
+  float: left;
+  margin: 5px 0px;
+}
+
+.dialog-content .right-column {
+  width: 65%;
+  float: left;
+  margin: 5px 0px;
+}
+
+.dialog-content .error-msg {
+  display: none;
+  margin-top: 5px;
+  color: #ff0000;
+  font-size: 10px;
+}
+
+.dialog-content .inline-msg {
+  margin-top: 5px;
+  color: #999999;
+  font-size: 10px;
+}
+
+.button-panel-container {
+  float: right;
+}
+
+/* Measure Properties Dialog */
+#measure-properties-dialog {
+  width: 530px;
+  max-height: 540px;
+}
+
+.format-wrapper .left-column {
+  width: 75%;
+  margin: 0;
+}
+
+.format-wrapper .right-column {
+  width: 25%;
+  margin: 0;
+}
+
+.format-wrapper .reportBtn {
+  margin-left: 15px;
+  padding: 0;
+  width: 24px;
+  border: solid 1px transparent;
+  float: right;
+  background: transparent;
+}
+
+.format-wrapper .reportBtn:hover, .gem .gemMenuHandle {
+  cursor: pointer;
+}
+
+.dialog-content > .left-column{
+  padding-top: 4px;
+}
+
+.dj_gecko .dialog-content select.form-input {
+  height: 25px;
+}
+
+.IE #MP_formatText{
+	height: 24px;
+}
+
+.dialog-content select.form-input {
+  height: 24px;
+  padding-top: 3px;
+}
+
+.IE .dialog-content select.form-input {
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+#measure-properties-dialog-header{
+	padding-left: 10px;
+}
+
+/* Attribute Properties Dialog */
+#attribute-properties-dialog {
+  width: 530px;
+  max-height: 345px;
+}
+
+.dialog-content > div.wrapper > .left-column{
+  padding-top: 4px;
+}
+
+.ellipse-long-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: calc(100% - 12px);
+}
+
+#MA_applyDataSourceWrapper {
+  clear: left;
+}
+#subtotal-calc-container {
+  padding-top: 10px;
+}
+#subtotal-calc-container > div {
+  height: 25px;
+}
+#MA_ops {
+  text-align:right;
+  float:right;
+  width:100%;
+  margin-top: 10px;
+}
+#MA_measures {
+  width:260px;
+  height:202px;
+}
+textarea#MA_content {
+  display:block;
+  width:100%;
+  height:200px;
+  float:right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#MA_calculateSubtotalsUsingFormula, #MA_applyDataSource {
+  float:left;
+  margin-left:0px;
+}
+#MA_name {
+  width:300px;
+  float:left;
+}
+#MA_type, #MA_mdx {
+  float:left;
+  width: calc(100% - 110px);
+}
+#MA_formatCategory {
+  margin-right:5px;
+  float:left;
+}

@@ -1,0 +1,321 @@
+/*
+ * This program is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU Lesser General Public License, version 2.1 as published by the Free Software
+ * Foundation.
+ *
+ * You should have received a copy of the GNU Lesser General Public License along with this
+ * program; if not, you can obtain a copy at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+ * or from the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Lesser General Public License for more details.
+ *
+ * Copyright 2005 - 2017 Hitachi Vantara.  All rights reserved.
+ */
+
+@charset "utf-8";
+/* CSS Document */
+html,body{margin:0;padding:0}
+body{background-color:#534E58;}
+p{}
+a{}
+
+.wrapper {
+height: 100%;
+}
+
+.pageTitle {
+font-weight: normal;
+padding-left: 10px;
+color: #333;
+  line-height: 18px;
+}
+
+.title{
+    margin:0px;
+ paddingx: 0px 0px 0px 10px;
+    border-bottom: 1px solid #848484;
+    width:auto;
+    background-color: #FFF;
+ color: #000;
+ background: #d7d7d7;
+ background-image: url(bg_s2header.png);
+}
+
+div#FilterPanel{
+border-bottom: 1px solid #848484;
+border-left: 1px solid #848484;
+border-right: 1px solid #848484;
+height: 12px;
+background-color: #ffffff;
+}
+
+div#FilterPanel .panel-contentarea{
+  overflow: auto;
+  height: 100%;
+}
+
+div#FilterPanel .wgtHead{
+	/*display: none;*/
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner .wgtData {
+	background: transparent;
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter {
+ background: transparent;
+}
+
+div#FilterPanel .vbox table {
+	border: 2px solid #95b1ca
+}
+
+div#FilterPanel .povdiv {
+	border: 1px solid #95b1ca
+	padding: 5px 5px 5px 5px;
+	width: 100%;
+}
+
+div#FilterPanel .vbox .label {
+/* text-align: center;
+ background: #f2f2f2;*/
+ font-size: 14px;
+margin: 0;
+padding: 0;
+width: 100%
+}
+
+div#FilterPanel .vbox-tr {
+	/*text-align: center;*/
+	/*	background: #f2f2f2;*/
+margin: 0;
+padding: 2px 2px 0 0;
+width: 100%
+}
+
+div#FilterPanel .vbox-td {
+	/*text-align: center;*/
+	/*	background: #f2f2f2;
+	 background: red;*/
+margin: 0;
+padding: 2px 14px 0 0;
+}
+
+div#FilterPanel .vbox-body > .vbox-tr:first-child .vbox-td{
+	/*text-align: center;
+	background: #f2f2f2;*/
+	padding: 2px;
+	margin: 0;
+}
+
+div#FilterPanel table table {
+  margin-right: 10px;
+}
+
+
+
+div#FilterPanel ul{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel ul li{
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel .povdiv option:selected {
+ background: #d1edff;
+ border: 1px solid #97d5fe;
+}
+
+div#FilterPanel .povdiv option {
+ padding: 3px 3px 3px 3px;
+}
+
+
+.hbox {
+ border: 0px solid #eeeeee;
+ background: transparent;
+ padding: 0px;
+ margin: 0px;
+}
+
+.hboxHighlight {
+ border: 0px solid red;
+ background: red;
+ padding: 0px;
+ margin: 0px;
+}
+
+.hbox-td {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.hbox-tr {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.vbox {
+ height:100%;
+ padding: 0px;
+ margin: 0px;
+ background: transparent;
+}
+
+.vboxHighlight {
+ width:100%;
+ background: red;
+ padding: 0px;
+ margin: 0px;
+}
+
+.vbox-td {
+ padding: 0px;
+}
+
+.vbox-tr {
+ padding: 0px;
+}
+
+.widgetContainer{
+ width:100%;
+ height: auto;
+ margin: 0px 0px 0px 0px;
+ padding: 0px;
+ background: white;
+ border: 1px solid #848484;
+}
+
+.widgetContainerHighlight{
+ width:100%;
+ margin: 0px;
+ padding: 0px;
+ background: blue;
+ border: 0px solid blue;
+}
+
+.widget {
+ width:100%;
+ padding:0px auto;
+ xbackground: yellow;
+ min-width:2em;
+ color:#fff;
+ border: 0px solid #AEAEAE;
+}
+
+.wgtFooter .rightCorner {
+  display: none;
+}
+
+.widget .wgtHead .rightCorner,
+.widget .wgtFooter .rightCorner {
+ font-size:1px; /* ensure minimum height */
+ height:8px;
+}
+
+.widget .wgtFooter .rightCorner {
+ height:2px;
+}
+
+.widget .wgtHead {
+ background: #d7d7d7;
+ background-image: url(bg_s2header.png);
+ width: 100%;
+ height: 20px;
+ border-bottom:1px solid #888888;
+}
+
+.widget .wgtHead .rightCorner {
+ float:right;
+}
+
+.widget .dataContainer {
+}
+
+.widget .dataContainer .rightCorner {
+}
+
+.widget .dataContainer .rightCorner .wgtData {
+ margin:0px 0px 0px 0px;
+ background:#FFF  repeat-x 0px 0px;
+ padding: 0px;
+}
+
+.widget {
+/*background:#FFF;*/
+}
+
+.wgtFooter .rightCorner {
+  display: none;
+}
+
+.widget .wgtFooter .rightCorner {
+}
+
+/* data */
+
+.widget h1 {
+ /* header */
+ font-weight: normal;
+ padding: 2px 2px 2px 4px;
+ float: left;
+ color: #000;
+}
+
+.widget p {
+ margin:0.5em 0px 0px 0px;
+ padding:0px 4px 0 4px;
+ color:#000;
+}
+
+.widget-area {
+ position:absolute;
+ top:45px;
+ left:0px;
+ width:800px;
+ height:500px;
+ padding:0px;
+ margin:0px;
+ border:0px solid red;
+}
+
+.widgetContainerIFrame {
+    border: 0px solid green;
+    top:0px;
+    left:0px;
+    xwidth:0px;
+    xheight:0px;
+    xposition:absolute;
+}
+.widgetContainerDiv {
+    border: 0px solid green;
+    top:16px;
+    left:2px;
+    width:100px;
+    height:100px;
+    position:absolute;
+}
+.editLabel{
+  color: black;
+  float:right;
+  padding-right: 0px;
+    padding-top:3px;
+  cursor: pointer;
+   zoom: 1;
+   position: relative;
+}

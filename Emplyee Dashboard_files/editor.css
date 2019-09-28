@@ -1,0 +1,508 @@
+@charset "utf-8";
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+/* CSS Document */
+
+.edit-panel {
+z-index:100;
+left:0px;
+  width:100%;
+  height: 203px;
+  margin: 0;
+  padding: 0px;
+  position: absolute;
+  bottom:0;
+  border-top:1px solid #969696;
+  border: 1px solid rgba(255, 255, 255, 0.59375);
+  -moz-border-radius:7px 7px 0px 0px;
+  -webkit-border-radius:7px 7px 0px 0px;
+  border-radius:7px 7px 0px 0px;
+  -moz-box-shadow:2px 2px 6px 1px #000000;
+  -webkit-box-shadow:2px 2px 6px 1px #000000;
+  box-shadow:2px 2px 6px 1px #000000;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 4px 4px 4px;
+  overflow:hidden;
+}
+
+#templates-table, #themes-table{
+  font-size:13px;
+}
+
+.IE .edit-panel {
+  background: url('images/wt_transparent.png') repeat;
+}
+
+.editWrapper {
+  width: 85%;
+  margin:0px;
+  padding:0px 0px 0px 4px;
+float:left;
+}
+.editContainer {
+  width: 100%;
+}
+.objectTree {
+  overflow:hidden;
+  margin:0px;
+  padding:0px;
+  width: 15%;
+  border: 1px solid #888;
+  float:left;
+}
+.objectTree h2 {
+  margin: 0;
+  padding: 6px 2px 6px 4px;
+  font-size: 13px;
+  color: #FFF;
+}
+.treeContainer {
+  margin: 0;
+  padding: 4;
+  background: white;
+  height: 176px;
+}
+.treebox {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  background: #FFF;
+}
+.deck {
+  margin: 0;
+  padding: 0 0px 0 0px;
+  border-left: 0px solid #000;
+  width: 100%;
+  overflow: visible;
+}
+/*- Tabs --------------------------- */
+
+.tabs {
+  font-size:12px;
+  line-height:normal;
+  width:100%;
+  margin: 0;
+  padding: 4px 4px 0px 6px;
+  overflow: hidden;
+}
+
+/*- End Tabs  --------------------------- */
+.tabPanel {
+  margin: 0;
+  padding: 0px 4px 4px 4px;
+  overflow:hidden;
+  width:auto;
+  height: 100%;
+  overflow: auto;
+  clear: both;
+}
+.deckPanel {
+  margin: 0px;
+  overflow:hidden;
+  width:100%;
+  height: 100%;
+}
+
+.panelContent {
+  margin: 0;
+  padding: 2px;
+  background: #d4d6db;
+  border: 1px solid #666;
+  height: 165px;
+  overflow:auto;
+  width: auto;
+}
+
+.label {
+  color: black;
+  font-size:12px;
+  Margin: 2px 2px 2px 0;
+  padding: 2px 2px 2px 0;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.buttontext {
+  cursor: pointer;
+  color: black;
+  font-size:12px;
+  Margin: 2px 2px 2px 0;
+  padding: 2px 2px 2px 0;
+}
+
+.trigger{
+  cursor: pointer;
+  cursor: hand;
+  display: block;
+  color:black;
+}
+.branch{
+  display: block;
+  margin-left: 16px;
+  color:black;
+}
+.branch-text-selected,.leaf-text-selected{
+  font-size:12px;
+  text-decoration: none;
+  background-color:#e4e4e4;
+  color:black;
+}
+.branch-text-selected:link,.branch-text-selected:visited,.leaf-text-selected:link,.leaf-text-selected:visited{
+  font-size:12px;
+  text-decoration: none;
+  background-color:#e4e4e4;
+  color:black;
+  padding-left:2px;
+  padding-right:2px;
+}
+.branch-text, a.branch-text, .leaf-text, a.leaf-text {
+  font-size:12px;
+  color: black;
+  text-decoration: none;
+  padding-left:2px;
+  padding-right:2px;
+}
+.branch-text:hover,.leaf-text:hover{
+  font-size:12px;
+  text-decoration: underline;
+  padding-left:2px;
+  padding-right:2px;
+  color:black;
+}
+
+.objectlist-hover a {
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.objectlist-span {
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.objectlist a:hover {
+  color:black;
+  background-color: #cbefa3;
+}
+
+.objectlist-selected a:hover {
+  color:black;
+  background-color: #cbefa3;
+}
+
+.objectlist-selected a {
+  cursor: pointer;
+  background-color: #dbdbdb;
+  padding-left: 3px;
+  color:black;
+  vertical-align: top;
+  font-size:12px;
+}
+
+
+.objectlist a {
+  cursor: pointer;
+  font-size:12px;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:0px;
+  padding-bottom:0px;
+  color:black;
+  padding-left: 3px;
+  vertical-align: top;
+}
+
+.leaf-table {
+  margin:0px;
+  padding: 0px;
+  border:0px solid red;
+}
+
+.leaf-cell {
+  margin:0px;
+  padding: 3px;
+  border:0px solid green;
+}
+
+.editcues {
+  display:block;
+  position:absolute:
+  top:0px;
+  left:0px;
+  width:100%;
+  height:50px;
+  text-align:right;
+  border:0px solid red;
+  z-index:100;
+}
+
+.selection-box{
+  border-color: #00D9FA;
+  border-style: solid;
+}
+
+.xaction-widget-title-span {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.xaction-widget-title-span:hover {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.column-header {
+  background-color: #d6d6d6;
+  color: black;
+  border-right:1px solid #848484;
+  border-top:1px solid #848484;
+  padding-left: 4px;
+}
+
+.column-header-first {
+  background-color: #d6d6d6;
+  color: black;
+  border-left:1px solid #848484;
+  border-right:1px solid #848484;
+  border-top:1px solid #848484;
+  padding-left: 4px;
+}
+
+.treerow-table-td {
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  padding-left: 4px;
+  height:20px;
+}
+
+.edit-panel-splitter {
+  height: 8px;
+  border-bottom: 1px solid #969696;
+  clear:both;
+  width:100%;
+  background-image:url(images/splitter_vert_bg.png);
+  font-size: 1px;
+}
+
+.editLabel img { 
+  display: inline;
+  float: left;
+}
+
+.editLabel .edit-btn{
+  height: 16px;
+  width: 16px;
+  background-image:url("images/edit.png");
+  display: inline;
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+}
+
+.editLabel .edit-btn-disabled{
+  height:16px;
+  width:16px;
+  background-image:url("images/edit_disabled.png");
+  display: inline;
+  float: left;
+  color: #666;
+  cursor: default;
+  margin-left: 5px;
+}
+
+.editLabel .insert-btn {
+	width: 22px;
+	height:16px;
+	background-image:url("images/insert.png");
+	display: inline;
+	float: left;
+	cursor: default;
+  	margin-left: 5px;
+}
+
+/*
+ select-frame-XXXX styles are used for browsers that don't
+ support box-shadow to construct a selection highlight
+ */
+#select-frame-left {
+  padding: 0px;
+  position: absolute;
+  background-color: #6ed202;
+  width: 4px;
+  display: block;
+  left: 1px;
+}
+#select-frame-top {
+  padding: 0px;
+  position: absolute;
+  height: 4px;
+  background-color: #6ed202;
+  display: block;
+  left: 1px;
+}
+#select-frame-bottom {
+  padding: 0px;
+  position: absolute;
+  height: 4px;
+  background-color: #6ed202;
+  display: block;
+  left: 1px;
+}
+#select-frame-right {
+  padding: 0px;
+  position: absolute;
+  background-color: #6ed202;
+  width: 4px;
+  display: block;
+}
+
+/* this style is used to highlight the selected widget panel in dashbaords */
+.highlight-shadow {
+  -moz-box-shadow: 0 0 4px 4px #6ed202;
+  -webkit-box-shadow: 0 0 4px 4px #6ed202;
+  box-shadow: 0 0 4px 4px #6ed202;
+}
+.content-menu-link{
+width: 100%;
+cursor: pointer;
+}
+.content-menu-link td{
+white-space: nowrap;
+}
+.content-menu-link img{
+}
+
+.drag_and_drop_label_content{
+  color: black;
+  width: 220px;
+  height: 100px;
+  background-image:  url('images/drop_here_default.png');
+  background-repeat: no-repeat;
+  background-position: 1px 0px;
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.drag_and_drop_label_text{
+  font-size: 21px;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  padding: 0px 0px 0 70px;
+}
+
+.drag_and_drop_label_wrapper{
+  height: 100px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fff;
+  display: none;
+  padding: 0px;
+}
+
+.drag_and_drop_label .drag_and_drop_label_wrapper {
+  display: block;
+}
+
+.dialog-glass-style {
+  z-index: 200; 
+  opacity: 0.0; 
+  filter:alpha(opacity=10);
+  background-color: #8080bb;
+}
+
+.resize-exit-control-style {
+  background-repeat: no-repeat; 
+  position: absolute; 
+  bottom: 0px; 
+  right: 5px; 
+  z-index:2000; 
+  cursor:pointer; 
+  padding: 0px 4px 3px 0px;
+}
+
+.dialog-base-style {
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 200; 
+  overflow: hidden;
+}
+
+.resize-wrapper-top {
+  opacity: 0.7; 
+  filter: alpha(opacity=70); 
+  background-color: black; 
+  height: 6px; 
+  width:100%; 
+  clear: both; 
+  position: absolute; 
+  top: 0px;
+}
+
+.resize-wrapper-inner {
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  opacity: 0.7; 
+  filter: alpha(opacity=70); 
+  background-color: black; 
+  width: 6px; 
+  height:100%;
+}
+
+.resize-wrapper-bottom {
+  height: 37px; 
+  bottom: 0px;
+  top: auto;
+}
+
+.resize-glass-style {
+  position: absolute; 
+  z-index: 1500; 
+  top: 0px; 
+  left: 0px; 
+  width: 100%; 
+  height: 100%; 
+  border: 0px solid blue; 
+  overflow: hidden; 
+  opacity: 0.1; 
+  filter: alpha(opacity=10); 
+  background-color: #000000;
+}
+
+.dialog-plane-style {
+  z-index: 201; 
+  border: 0px solid blue; 
+  opacity: 1.0; 
+  text-align: center;
+}

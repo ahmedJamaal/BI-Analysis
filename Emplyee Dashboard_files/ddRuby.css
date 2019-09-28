@@ -1,0 +1,284 @@
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+.content-menu-link:hover {
+  background-color: #CCCCCC;
+  color: #333;
+  cursor: pointer;
+}
+
+.pickBoxHover {
+  margin: 2px 0px 0px 0px;
+  padding: 16px 5px 0px 5px;
+  width: 111px;
+  height: 111px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #CC0000;
+  -moz-box-shadow: inset 0px 0px 0px 1px #CC0000;
+  box-shadow: inset 0px 0px 0px 1px #CC0000;
+  cursor: pointer;
+}
+
+.IE .pickBoxHover {
+  border: 2px solid #dce7ed;
+}
+
+.pickBoxSelected {
+  margin: 2px 0px 0px 0px;
+  padding: 16px 5px 0px 5px;
+  width: 111px;
+  height: 111px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 1px  #CC0000;
+  -moz-box-shadow: inset 0px 0px 0px 1px  #CC0000;
+  box-shadow: inset 0px 0px 0px 1px  #CC0000;
+}
+
+.IE .pickBoxSelected {
+  border: 2px solid #848484;
+}
+
+.pickBox {
+  margin: 2px 0px 0px 0px;
+  padding: 16px 5px 0px 5px;
+  width: 111px;
+  height: 111px;
+  background-image: url(../images/pickbox_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.IE .pickBox {
+  border: 2px solid transparent;
+}
+
+.pickBox_img {
+  width: 100%;
+  height: 79px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pickBox_txt {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.x-grid3-row-selected {
+  background: #dbdbdb !important;
+  border: 1px dotted #848484;
+}
+
+.x-grid3-row-over {
+  border: 1px solid #848484;
+  background: #CBEFA3 repeat-x left top;
+}
+
+/* styling for date picker */
+#ui-datepicker-div {
+  font-size: 12px;
+}
+
+.ui-datepicker .ui-widget-header {
+  background: none;
+  border: none;
+}
+
+.ui-datepicker .ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-state-active,
+.ui-widget-content .ui-state-active {
+  background: #BBC4D0;
+  border: none !important;
+}
+
+.ui-datepicker .ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
+  text-decoration: underline !important;
+}
+
+.ui-datepicker table {
+  background: #FFF;
+  font-size: 1em;
+}
+
+.ui-datepicker {
+  background: #CCC;
+  padding: 8px;
+}
+
+.ui-datepicker th {
+  color: #293A4B;  /* Safari/Chrome */
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DFDFDF));  /* Firefox */
+  background: -moz-linear-gradient(top, #FFF, #DFDFDF);
+}
+
+.IE .ui-datepicker th {
+  background: #DFDFDF;
+}
+
+.ui-datepicker .ui-datepicker-next span {
+  background: url('../../../../common-ui/resources/themes/images/page_forward.png');
+  height: 18px;
+  width: 18px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  background: none;
+  border: 1px solid transparent;
+}
+
+.ui-datepicker .ui-datepicker-next-hover span {
+  background: url('../../../../common-ui/resources/themes/images/page_forward_over.png');
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+  background: url('../../../../common-ui/resources/themes/images/page_back.png');
+  height: 18px;
+  width: 18px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  background: none;
+  border: 1px solid transparent;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover span {
+  background: url('../../../../common-ui/resources/themes/images/page_back_over.png');
+}
+
+/* END styling for date picker */
+
+/* Added by Brett */
+#props-deck-1 > #propertiesPanel {
+  background-color: #f1f1f1;
+  padding: 4px;
+  border: 0px solid #666;
+}
+
+#propertiesPanel #addParametersToWidgetTitle img.image-button-pressed,
+#propertiesPanel #addParametersToWidgetTitle img.image-button-over,
+#propertiesPanel #addParametersToWidgetTitle img.image-button {
+  background: url('../../../../common-ui/resources/themes/sapphire/images/add_param.png');
+}
+
+/* dropdown */
+.dashboards-dropdown-widget-types .content-menu-link.pentaho-listitem div {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.content-menu-link.pentaho-listitem .tableIcon {
+  background-image: url("images/tableIcon.png");
+}
+
+.content-menu-link.pentaho-listitem .chartIcon {
+  background-image: url("images/chartIcon.png");
+}
+
+.content-menu-link.pentaho-listitem .urlIcon {
+  background-image: url("images/urlIcon.png");
+}
+
+.content-menu-link.pentaho-listitem .fileIcon {
+  background-image: url("images/fileIcon.png");
+}
+
+.icon-object-dashboard {
+  background: url(images/object-dashboard.png) no-repeat;
+}
+
+.icon-object-filters {
+  background: url(images/object-filters.png) no-repeat;
+}
+
+.icon-object-widget {
+  background: url(images/object-widget.png) no-repeat;
+}
+
+#editContainer input {
+  padding: 0px 10px;
+  line-height: 22px;
+  height: 25px;
+}
+
+#editContainer .label,
+#editContainer .xul-label {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#editContainer input#dashboard-title-edit,
+#editContainer input#propertiesPanelTitle,
+#editContainer input#propertiesPanelRefreshPeriod {
+  margin-bottom: 10px;
+}
+
+.hbox {
+  border-collapse: separate;
+  border-spacing: 3px;
+
+}
+
+#propertiesPanel #addParametersToWidgetTitle img.disabled-image-button {
+  height: 20px;
+}
+
+.gwt-TreeItem > table > tbody > tr > td:first-child {
+  padding-left: 5px;
+}
+
+.leaf-widget .gwt-TreeItem-selected > table {
+  background-color: #E6EFF6;
+}
+
+.leaf-widget .gwt-TreeItem > table {
+  color: #333;
+}
+
+.edit-panel.edit-panel {
+  height: 220px;
+}
+
+.IE11 fieldset#filterDataGroupbox > table.vbox > tbody > tr > td > div, .iE11 fieldset#filterDropDownGroupbox > table.vbox > tbody > tr > td > div {
+    margin: 2px 4px;
+}
+
+input[type='text'].x-tbar-page-number {
+  padding: 0px 0px 0px 4px;
+  width: 31px;
+  height: auto !important;
+}

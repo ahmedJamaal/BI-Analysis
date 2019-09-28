@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+/* CSS Document */
+html,body{margin:0;padding:0}
+body{background-color:#FFF;}
+p{}
+a{}
+
+.wrapper {
+height: 100%;
+}
+
+.pageTitle {
+font-weight: bold;
+padding-left: 4px;
+color: #5874a4;
+  line-height: 18px;
+}
+
+.title {
+ margin:0px;
+ border-bottom: 1px solid #bababa;
+ width:auto;
+ background-color: transparent;
+ color: #5874a4;
+ background-image: url(bg_s2header.png);
+}
+
+div#FilterPanel{
+height: 12px;
+border-bottom: 1px solid #bababa;
+border-left: 0px solid #848484;
+border-right: 0px solid #848484;
+background-color: #FFF;
+}
+
+div#FilterPanel .panel-contentarea{
+  overflow: auto;
+  height: 100%;
+}
+
+div#FilterPanel .wgtHead{
+/*display: none;*/
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner .wgtData {
+background: transparent;
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter {
+ background: transparent;
+}
+
+
+
+div#FilterPanel ul{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel ul li{
+margin: 0;
+padding: 0;
+}
+
+.hbox {
+ border: 0px solid #eeeeee;
+ background: transparent; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hboxHighlight {
+ border: 0px solid red;
+ background: red; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hbox-td {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.hbox-tr {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.vbox {
+ height:100%;
+ padding: 0px;
+ margin: 0px;
+ background: transparent; 
+}
+
+.vboxHighlight {
+ width:100%;
+ background: red;
+ padding: 0px;
+ margin: 0px;
+}
+
+.vbox-td {
+ padding: 0px;
+}
+
+.vbox-tr {
+ padding: 0px;
+}
+
+.widgetContainer{ 
+ width:100%;
+ margin: 0px 0px 0px 0px; 
+ padding: 0px;  
+ background: white; 
+ border: 1px solid #bababa;
+}
+
+.widgetContainerHighlight{ 
+ width:100%;
+ margin: 0px; 
+ padding: 0px;  
+ background: blue; 
+ border: 0px solid blue;
+}
+
+.widget {
+ width:100%;
+ padding:0px auto;
+ xbackground: yellow;
+ min-width:2em;
+ color:#fff;
+ border: 0px solid #5673a7;
+}
+
+.wgtFooter .rightCorner {
+  display: none;
+}
+
+.widget .wgtHead .rightCorner,
+.widget .wgtFooter .rightCorner {
+ font-size:1px; /* ensure minimum height */
+ height:8px;
+}
+
+.widget .wgtFooter .rightCorner {
+ height:2px;
+}
+
+.widget .wgtHead {
+
+ border-bottom:1px solid #bababa;
+ color: #5874a4;
+ background: #d7d7d7;
+ background-image: url(bg_s2header.png);
+  width: 100%;
+  height: 20px;
+}
+
+.widget .wgtHead .rightCorner {
+  background: transparent;
+  float: right;
+}
+
+.widget .dataContainer {
+}
+
+.widget .dataContainer .rightCorner {
+}
+
+.widget .dataContainer .rightCorner .wgtData {
+ margin:0px 0px 0px 0px;
+ background:#FFF  repeat-x 0px 0px;
+ padding: 0px;
+}
+
+.widget .wgtFooter {
+background:#FFF;
+}
+
+.widget .wgtFooter .rightCorner {
+}
+
+/* data */
+
+.widget h1 {
+ /* header */
+ font-weight: bold;
+ padding: 1px 2px 2px 4px;
+ color: #5874A4;
+ float: left;
+}
+
+.widget p {
+ margin:0.5em 0px 0px 0px;
+ padding:0px 4px 0 4px;
+ color:#000;
+}
+
+.widget-area {
+ position:absolute;
+ top:45px;
+ left:0px;
+ width:800px;
+ height:500px;
+ padding:0px;
+ margin:0px;
+ border:0px solid red;
+ background: transparent;
+}
+
+.widgetContainerIFrame {
+    border: 0px solid green;
+    top:0px;
+    left:0px;
+    xwidth:0px;
+    xheight:0px;
+    xposition:absolute;
+}
+.widgetContainerDiv {
+    border: 0px solid green;
+    top:16px;
+    left:2px;
+    width:100px;
+    height:100px;
+    position:absolute;
+}
+
+.selection-box{
+    border-color: #f5581e;
+    border-style: solid;
+}
+
+.editLabel{
+    color: black;
+    float:right;
+    padding-right: 4px;
+    padding-top:4px;
+    cursor: pointer;
+     zoom: 1;
+     position: relative;
+}

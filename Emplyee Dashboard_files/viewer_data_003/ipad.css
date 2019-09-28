@@ -1,0 +1,217 @@
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+
+/* Specify iPad specific CSS that should override existing CSS */
+
+#fieldList #fieldListTop #searchField {
+  font-size: .6em;
+  width: 93%;
+}
+
+.reportArea .reportEmpty {
+  font-size: 1.2em;
+}
+
+.reportMain {
+  font-size: .85em;
+}
+
+
+#standardDialog .selectableList {
+  width: 215px;
+  height: 180px;
+  border: 1px solid #c8c8c8;
+  background-color: white;
+  margin-top: 2px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+#standardDialog #mainTabContainer {
+  height: 375px !important;
+}
+
+@media all and (orientation:portrait) {
+  #borderContainer, #reportMain, #reportContainer, #reportContainerWrapper {
+    width: 768px !important;
+  }
+}
+
+@media all and (orientation:landscape) {
+  #borderContainer, #reportMain, #reportContainer, #reportContainerWrapper{
+    width: 1024px !important;
+  }
+}
+
+/* Toolbar CSS **/
+
+#reportBtns {
+  height: 30px;
+  padding: 8px;
+}
+
+#main_toolbar .reportBtn
+{
+  margin-right: 10px;
+}
+
+#main_toolbar .separator {
+  height: 30px;
+  margin-right: 13px;
+}
+
+#main_toolbar .reportBtn IMG {
+  width: 24px;
+  height: 24px; 
+}
+
+#main_toolbar .reportDisplayFormat {
+  margin-right: 6px;
+  margin-top: 1px;
+  padding: 2px;
+  cursor:pointer;
+}
+
+/* Used in the hyperlink dialog */
+#AL_fileLabel {
+  width: 250px;	
+}
+
+#AL_linkParamsTable INPUT {
+	width: 150px;
+}
+
+#MT_Table .dialogLabel {
+  width:150px;
+}
+
+.cmdActionsBtn {
+	width: 83px;
+}
+
+/* hide datasource buttons */
+#description > table:first-child{
+  display:none;
+}
+
+
+.gwt-Label{
+  font-size:1.1em !important;
+}
+
+.fileChooserHeader, .fileChooserCell {
+  font-size:1.1em;
+}
+
+.fileChooserCell img{
+  margin-top: 3px;
+  margin-right: 4px;
+}
+
+.reportBtn .mobile {
+  height: 24px; width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.field-panel-icon.mobile {
+  background-image: url("../images/toolbar/mobile/field_panel.png");
+}
+
+.field-layout-icon.mobile {
+  background-image: url("../images/toolbar/mobile/field_layout.png");
+}
+
+.back-icon.mobile {
+  background-image: url("../images/toolbar/mobile/back.png");
+}
+
+.auto-refresh-icon.mobile {
+  background-image: url("../images/toolbar/mobile/auto_refresh.png");
+}
+
+.more-menu-icon.mobile {
+  background-image: url("../images/toolbar/mobile/more_menu.png");
+}
+
+.show-chart-icon.mobile {
+  background-image: url("../images/toolbar/mobile/btn_chart.png");
+}
+.show-pivot-icon.mobile {
+  background-image: url("../images/toolbar/mobile/btn_table.png");
+}
+.pentaho-filterbutton.mobile {
+  background-image: url("../images/toolbar/mobile/filter.png");
+}
+.pentaho-newbutton-small.mobile {
+  background-image: url("../images/toolbar/mobile/new.png");
+}
+.pentaho-openbutton-small.mobile {
+  background-image: url("../images/toolbar/mobile/open.png");
+  width: 29px;
+}
+.pentaho-savebutton-small.mobile {
+  background-image: url("../images/toolbar/mobile/save.png");
+}
+.pentaho-saveasbutton-small.mobile {
+  background-image: url("../images/toolbar/mobile/saveas.png");
+}
+.pentaho-undobutton {
+  background-image: url("../images/toolbar/mobile/undo.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+.pentaho-undobutton.disabled {
+  background-image: url("../images/toolbar/mobile/undo_disabled.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+.pentaho-redobutton {
+  background-image: url("../images/toolbar/mobile/redo.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+.pentaho-redobutton.disabled {
+  background-image: url("../images/toolbar/mobile/redo_disabled.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+
+.show-chart-icon {
+  background-image: url("../images/toolbar/mobile/btn_chart.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+.show-pivot-icon {
+  background-image: url("../images/toolbar/mobile/btn_table.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 24px; width: 24px;
+}
+.pentaho-downbutton {
+  background-image: url("../images/toolbar/mobile/arrow_down.png");
+  height: 24px; width: 24px;
+}

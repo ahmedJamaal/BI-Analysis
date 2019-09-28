@@ -1,0 +1,355 @@
+@charset "utf-8";
+/*!
+ * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2017 Hitachi Vantara. All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Hitachi Vantara and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Hitachi Vantara and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Hitachi Vantara is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Hitachi Vantara,
+ * explicitly covering such access.
+ */
+
+/* CSS Document */
+html,body{margin:0;padding:0}
+body{
+background-color:#FFF;
+}
+p{}
+a{}
+
+.wrapper {
+height: 100%;
+}
+
+.pageTitle {
+  font-weight: normal;
+  font-family: OpenSanslight, sans-serif;
+  padding: 0;
+  color: #3d6380;
+  line-height: 18px;
+  padding: 2px 0 0 12px;
+  text-align: center;
+}
+
+
+.title {
+ margin:0px;
+ border-bottom: 0px solid #cbdde8;
+ width:auto;
+ background-color: #FFF;
+ font-family: OpenSansLight, sans-serif;
+ color: #8ab3c6;
+}
+
+div#FilterPanel{
+height: 12px;
+border-bottom: 0px solid #cbdde8;
+border-left: 0px solid #848484;
+border-right: 0px solid #848484;
+background-color: #FFF;
+}
+
+div#FilterPanel .panel-contentarea{
+  overflow: auto;
+  height: 100%;
+}
+
+div#FilterPanel .wgtHead{
+/*display: none;*/
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner .wgtData {
+background: transparent;
+}
+
+div#FilterPanel .widget .dataContainer .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter .rightCorner {
+ background: transparent;
+}
+
+div#FilterPanel .widget .wgtFooter {
+ background: transparent;
+}
+
+
+div#FilterPanel ul{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+div#FilterPanel ul li{
+margin: 0;
+padding: 0;
+}
+
+
+div#FilterPanel table table {
+  margin-right: 10px;
+}
+
+.hbox {
+ border: 0px solid #eeeeee;
+ background: transparent; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hboxHighlight {
+ border: 0px solid red;
+ background: red; 
+ padding: 0px;
+ margin: 0px;
+}
+
+.hbox-td {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.hbox-tr {
+ padding: 0px;
+ vertical-align:top;
+}
+
+.vbox {
+ height:100%;
+ padding: 0px;
+ margin: 0px;
+ background: transparent; 
+}
+
+.vboxHighlight {
+ width:100%;
+ background: red;
+ padding: 0px;
+ margin: 0px;
+}
+
+.vbox-td {
+ padding: 0px;
+}
+
+.vbox-tr {
+ padding: 0px;
+}
+
+.widgetContainer{ 
+ width:100%;
+ margin: 0px 0px 0px 0px; 
+ padding: 0px;  
+ background: white; 
+ border: 1px solid #e9f1f4;
+}
+
+.widgetContainerHighlight{ 
+ width:100%;
+ margin: 0px; 
+ padding: 0px;  
+ background: blue; 
+ border: 0px solid blue;
+}
+
+.widget {
+ width:100%;
+ padding:0px auto;
+ xbackground: yellow;
+ min-width:2em;
+ color:#fff;
+ border: 0px solid #cbdde8;
+}
+
+.widget .wgtHead .rightCorner,
+.widget .wgtFooter .rightCorner {
+ font-size:1px; /* ensure minimum height */
+ height:8px;
+}
+
+.widget .wgtFooter .rightCorner {
+ height:2px;
+}
+
+.widget .wgtHead {
+ background: #FFF;
+ width: 100%;
+ height: 20px;
+}
+
+.widget .wgtHead .rightCorner {
+  float:right;
+  background: transparent;
+}
+
+.widget .dataContainer {
+}
+
+.widget .dataContainer .rightCorner {
+}
+
+.widget .dataContainer .rightCorner .wgtData {
+ margin:0px 0px 0px 0px;
+ background:#FFF  repeat-x 0px 0px;
+ padding: 0px;
+}
+
+.widget .wgtFooter {
+background:#FFF;
+}
+
+.widget .wgtFooter .rightCorner {
+}
+
+/* data */
+
+.widget h1 {
+ /* header */
+ font-weight: normal;
+ padding: 2px 2px 2px 4px;
+ color: #3d6380;
+ float:left;
+}
+
+.widget p {
+ margin:0.5em 0px 0px 0px;
+ padding:0px 4px 0 4px;
+ color:#000;
+}
+
+.widget-area {
+ position:absolute;
+ top:45px;
+ left:0px;
+ width:800px;
+ height:500px;
+ padding:0px;
+ margin:0px;
+ border:0px solid red;
+ background: transparent;
+}
+
+.widgetContainerIFrame {
+    border: 0px solid green;
+    top:0px;
+    left:0px;
+    xwidth:0px;
+    xheight:0px;
+    xposition:absolute;
+}
+.widgetContainerDiv {
+    border: 0px solid green;
+    top:16px;
+    left:2px;
+    width:100px;
+    height:100px;
+    position:absolute;
+}
+
+.selection-box{
+    border-color: #f5581e;
+    border-style: solid;
+}
+.editLabel{
+    color: black;
+    float:right;
+    padding-right: 4px;
+    padding-top:4px;
+    cursor: pointer;
+     zoom: 1;
+     position: relative;
+}
+.objectlist-selected a:hover {
+  color: black;
+  background-color: #dce7ed;
+}
+.objectlist-selected a {
+  cursor: pointer;
+  background-color: #d7e9cd;
+  padding-left: 3px;
+  color: black;
+  vertical-align: top;
+  font-size: 12px;
+}
+.objectlist a:hover {
+  color: black;
+  background-color: #dce7ed;
+}
+.povContainer .panelTitleIcon{
+	background-image: url("images/16x16_down.png");
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.povContainer .panelTitleIcon.collapsed {
+  background-image: url("images/16x16_right.png");
+}
+
+.editLabel .edit-btn{
+  background: url('images/edit_16.png') no-repeat;
+}
+.editLabel .insert-btn{
+  background: url('images/insert_16.png') no-repeat;
+}
+.widget-tools .print-btn {
+  background: url('images/print_16.png') no-repeat;
+}
+
+.drag_and_drop_label_content{
+  color: black;
+  width: 220px;
+  height: 100px;
+  background-image:  url('images/drop_here.png');
+  background-repeat: no-repeat;
+  background-position: 1px 0px;
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.drag_and_drop_label_text{
+  font-size: 21px;
+  color: #3D6380;
+  margin: 0;
+  text-align: left;
+  font-family: OpenSansLight,  Helvetica, Arial, Sans serif;
+  position: relative;
+  padding: 0px 0px 0 70px;
+}
+
+.drag_and_drop_label_wrapper{
+  height: 100px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fff;
+  display: none;
+  padding: 0px;
+}
+
+.drag_and_drop_label .drag_and_drop_label_wrapper {
+  display: block;
+}
+
+/* dashbarod resize mode - resize handler colors */
+.resizeHandle{
+  background-color: #dce7ed;
+  border: 1px solid #1973bc;
+}
